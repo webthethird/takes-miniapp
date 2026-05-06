@@ -1,33 +1,41 @@
-// Local sentence-transformers via @xenova/transformers. Runs in Node runtime
-// (not Edge); first call downloads a ~80MB model and caches it. Good enough
-// for prototype clustering. For production, swap to Voyage/OpenAI if quality
-// matters or to keep cold-starts fast.
+// Embedding via OpenAI text-embedding-3-small (1536-dim).
+// Hosted API — works in Vercel serverless. Earlier prototype used Xenova
+// for local inference, but that depends on ONNX runtime + filesystem caching
+// which doesn't work in Vercel functions.
 
-import { pipeline, type FeatureExtractionPipeline } from "@xenova/transformers";
+import OpenAI from "openai";
 
-const MODEL = "Xenova/all-MiniLM-L6-v2";
-
-let extractorPromise: Promise<FeatureExtractionPipeline> | null = null;
-
-async function getExtractor(): Promise<FeatureExtractionPipeline> {
-  if (!extractorPromise) {
-    extractorPromise = pipeline("feature-extraction", MODEL) as Promise<FeatureExtractionPipeline>;
-  }
-  return extractorPromise;
-}
+const client = new OpenAI();
 
 export async function embed(text: string): Promise<number[]> {
-  const extractor = await getExtractor();
-  const out = await extractor(text, { pooling: "mean", normalize: true });
-  return Array.from(out.data as Float32Array);
+  const r = await client.embeddings.create({
+    model: "text-embedding-3-small",
+    input: text,
+  });
+  return r.data[0].embedding;
+}
+
+export async function embedMany(texts: string[]): Promise<number[][]> {
+  if (texts.length === 0) return [];
+  const r = await client.embeddings.create({
+    model: "text-embedding-3-small",
+    input: texts,
+  });
+  return r.data.map((d) => d.embedding);
 }
 
 export function cosine(a: number[], b: number[]): number {
   if (a.length !== b.length) {
     throw new Error(`Embedding dim mismatch: ${a.length} vs ${b.length}`);
   }
-  // L2-normalized inputs → cosine == dot product
   let dot = 0;
-  for (let i = 0; i < a.length; i++) dot += a[i] * b[i];
-  return dot;
+  let na = 0;
+  let nb = 0;
+  for (let i = 0; i < a.length; i++) {
+    dot += a[i] * b[i];
+    na += a[i] * a[i];
+    nb += b[i] * b[i];
+  }
+  if (na === 0 || nb === 0) return 0;
+  return dot / (Math.sqrt(na) * Math.sqrt(nb));
 }
