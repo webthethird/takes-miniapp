@@ -17,6 +17,8 @@ type Status =
   | "market-not-found"
   | "error";
 
+type ErrorDetail = { status?: number; message?: string };
+
 const QUICK_STAKES = [1, 5, 20, 100] as const;
 
 export function Composer({
@@ -35,6 +37,7 @@ export function Composer({
   const [casting, setCasting] = useState(false);
   const [stake, setStake] = useState<number>(1);
   const [tally, setTally] = useState<Tally | null>(null);
+  const [error, setError] = useState<ErrorDetail | null>(null);
   // In reply mode, the side is fixed by the URL (or user toggle)
   const [replySide, setReplySide] = useState<"yes" | "no">(initialSide ?? "yes");
   const [castOutcome, setCastOutcome] = useState<
@@ -83,6 +86,7 @@ export function Composer({
     }
     const ctrl = new AbortController();
     setStatus("loading-classify");
+    setError(null);
     const t = setTimeout(async () => {
       try {
         const r = await fetch("/api/classify", {
@@ -92,6 +96,18 @@ export function Composer({
           signal: ctrl.signal,
         });
         if (!r.ok) {
+          let message: string | undefined;
+          try {
+            const body = (await r.json()) as { error?: string };
+            message = body.error;
+          } catch {
+            try {
+              message = await r.text();
+            } catch {
+              message = undefined;
+            }
+          }
+          setError({ status: r.status, message });
           setStatus("error");
           return;
         }
@@ -100,7 +116,9 @@ export function Composer({
         setTally(data.market?.tally ?? null);
         setStatus(data.is_opinion && data.claim ? "classified" : "no-opinion");
       } catch (e) {
-        if ((e as Error).name !== "AbortError") setStatus("error");
+        if ((e as Error).name === "AbortError") return;
+        setError({ message: (e as Error).message });
+        setStatus("error");
       }
     }, 600);
     return () => {
@@ -205,9 +223,15 @@ export function Composer({
         )}
 
         {status === "error" && (
-          <p className="text-xs text-red-400">
-            Hit an error. Try again, or just cast normally.
-          </p>
+          <div className="space-y-1 rounded-lg border border-red-900/50 bg-red-950/30 p-3 text-xs text-red-300">
+            <p>Classifier hit an error. Try again, or just cast normally.</p>
+            {(error?.status || error?.message) && (
+              <p className="font-mono break-all text-[11px] text-red-400/80">
+                {error.status ? `${error.status}: ` : ""}
+                {error.message ?? "(no message)"}
+              </p>
+            )}
+          </div>
         )}
 
         {status === "market-not-found" && (
