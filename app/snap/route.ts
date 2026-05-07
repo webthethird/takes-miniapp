@@ -84,19 +84,24 @@ function formatVotes(n: number): string {
 
 function marketCard(market: Market, base: string): SnapHandlerResult {
   const t = tally(market);
-  const total = Math.max(t.total_amount, 1);
-  const yesPct = Math.round((t.yes_amount / total) * 100);
-  const noPct = 100 - yesPct;
   const hasVolume = t.total_amount > 0;
+  const isPredictive = market.claim_type === "predictive";
+
+  // Bar chart visualizes STANDING (time-weighted), which is what determines
+  // the winner at settlement. Dollar amounts shown in the caption below.
+  const yesStanding = hasVolume ? t.yes_standing_pct : 0;
+  const noStanding = hasVolume ? 100 - t.yes_standing_pct : 0;
 
   const deepLinkBase = `${base}/?market=${encodeURIComponent(market.id)}`;
 
+  const rootChildren: string[] = ["title", "meta"];
+  if (isPredictive) rootChildren.push("predictiveNote");
+  rootChildren.push("comparison");
+  if (hasVolume) rootChildren.push("stakesCaption");
+  rootChildren.push("actionRow");
+
   const elements: Record<string, SnapElementInput> = {
-    page: {
-      type: "stack",
-      props: {},
-      children: ["title", "meta", "comparison", "actionRow"],
-    },
+    page: { type: "stack", props: {}, children: rootChildren },
     title: {
       type: "text",
       props: { content: clamp(market.question, 320), weight: "bold" },
@@ -115,16 +120,8 @@ function marketCard(market: Market, base: string): SnapHandlerResult {
       props: {
         max: 100,
         bars: [
-          {
-            label: clamp(hasVolume ? `YES — $${t.yes_amount}` : "YES", 40),
-            value: hasVolume ? yesPct : 0,
-            color: "green",
-          },
-          {
-            label: clamp(hasVolume ? `NO — $${t.no_amount}` : "NO", 40),
-            value: hasVolume ? noPct : 0,
-            color: "red",
-          },
+          { label: "YES", value: yesStanding, color: "green" },
+          { label: "NO", value: noStanding, color: "red" },
         ],
       },
     },
@@ -154,6 +151,27 @@ function marketCard(market: Market, base: string): SnapHandlerResult {
       },
     },
   };
+
+  if (isPredictive) {
+    elements.predictiveNote = {
+      type: "text",
+      props: {
+        content:
+          "🔮 Resolves by time-weighted stake at lockup — popular side wins, regardless of real-world outcome",
+        size: "sm",
+      },
+    };
+  }
+
+  if (hasVolume) {
+    elements.stakesCaption = {
+      type: "text",
+      props: {
+        content: `$${t.yes_amount} YES · $${t.no_amount} NO (raw stakes)`,
+        size: "sm",
+      },
+    };
+  }
 
   return {
     version: SPEC_VERSION,

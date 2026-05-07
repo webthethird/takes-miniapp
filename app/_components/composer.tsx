@@ -389,52 +389,70 @@ function ClassifiedCard({
         <p className="mt-1 text-base font-medium leading-snug">{market.question}</p>
       </div>
 
-      <div className="flex items-end justify-between">
-        <div>
-          <p className="text-xs uppercase tracking-wide text-zinc-500">Your side</p>
-          {replyMode && onFlipSide ? (
-            <div className="mt-1 flex gap-1">
-              <button
-                type="button"
-                onClick={() => onFlipSide("yes")}
-                className={
-                  "rounded-md px-2 py-1 text-sm font-bold transition " +
-                  (claim.answer === "yes"
-                    ? "bg-emerald-700 text-white"
-                    : "border border-zinc-700 text-zinc-400 hover:border-emerald-700/50")
-                }
-              >
-                YES
-              </button>
-              <button
-                type="button"
-                onClick={() => onFlipSide("no")}
-                className={
-                  "rounded-md px-2 py-1 text-sm font-bold transition " +
-                  (claim.answer === "no"
-                    ? "bg-rose-700 text-white"
-                    : "border border-zinc-700 text-zinc-400 hover:border-rose-700/50")
-                }
-              >
-                NO
-              </button>
-            </div>
-          ) : (
-            <p className={`mt-1 text-lg font-bold ${sideColor}`}>{sideLabel}</p>
-          )}
+      {claim.claim_type === "predictive" && (
+        <div className="rounded-md border border-amber-900/40 bg-amber-950/20 px-3 py-2 text-[11px] leading-relaxed text-amber-200">
+          🔮 <span className="font-medium">Predictive take.</span>{" "}
+          Resolves by time-weighted stake at the end of the 30-day lockup —
+          early stakers count more, and the side that&apos;s correct in the real
+          world doesn&apos;t matter.
         </div>
-        {tally && tally.total_amount > 0 && (
-          <div className="text-right text-xs text-zinc-400">
-            <p className="uppercase tracking-wide text-zinc-500">Backing</p>
-            <p className="mt-1 tabular-nums">
-              <span className="text-emerald-400">${tally.yes_amount} YES</span>
+      )}
+
+      {tally && tally.total_amount > 0 && (
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between text-xs">
+            <span className="uppercase tracking-wide text-zinc-500">Standing</span>
+            <span className="tabular-nums text-zinc-400">
+              <span className="text-emerald-400">{tally.yes_standing_pct}% YES</span>
               <span className="text-zinc-600"> · </span>
-              <span className="text-rose-400">${tally.no_amount} NO</span>
-            </p>
-            <p className="mt-0.5 tabular-nums text-[11px] text-zinc-500">
-              {tally.total_backers} backer{tally.total_backers === 1 ? "" : "s"}
-            </p>
+              <span className="text-rose-400">{100 - tally.yes_standing_pct}% NO</span>
+            </span>
           </div>
+          <div className="h-2 overflow-hidden rounded-full bg-rose-900/50">
+            <div
+              className="h-full bg-emerald-500 transition-all"
+              style={{ width: `${tally.yes_standing_pct}%` }}
+            />
+          </div>
+          <p className="text-[11px] tabular-nums text-zinc-500">
+            <span className="text-zinc-400">${tally.yes_amount} YES · ${tally.no_amount} NO</span>
+            <span className="text-zinc-600"> · </span>
+            {tally.total_backers} backer{tally.total_backers === 1 ? "" : "s"}
+          </p>
+        </div>
+      )}
+
+      <div>
+        <p className="text-xs uppercase tracking-wide text-zinc-500">Your side</p>
+        {replyMode && onFlipSide ? (
+          <div className="mt-1 flex gap-1">
+            <button
+              type="button"
+              onClick={() => onFlipSide("yes")}
+              className={
+                "rounded-md px-3 py-1 text-sm font-bold transition " +
+                (claim.answer === "yes"
+                  ? "bg-emerald-700 text-white"
+                  : "border border-zinc-700 text-zinc-400 hover:border-emerald-700/50")
+              }
+            >
+              YES
+            </button>
+            <button
+              type="button"
+              onClick={() => onFlipSide("no")}
+              className={
+                "rounded-md px-3 py-1 text-sm font-bold transition " +
+                (claim.answer === "no"
+                  ? "bg-rose-700 text-white"
+                  : "border border-zinc-700 text-zinc-400 hover:border-rose-700/50")
+              }
+            >
+              NO
+            </button>
+          </div>
+        ) : (
+          <p className={`mt-1 text-lg font-bold ${sideColor}`}>{sideLabel}</p>
         )}
       </div>
 

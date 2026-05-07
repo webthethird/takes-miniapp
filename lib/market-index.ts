@@ -81,32 +81,56 @@ export async function listMarkets(): Promise<Market[]> {
 }
 
 export type Tally = {
+  // Raw stake totals (USDC dollars)
   yes_amount: number;
   no_amount: number;
   total_amount: number;
+  // Time-weighted standing — units = amount × seconds_locked.
+  // This is what determines the winner at settlement and yield distribution.
+  yes_units: number;
+  no_units: number;
+  total_units: number;
+  // Standing percentage 0-100 (yes_units / total_units * 100).
+  // 0 when total_units is 0 (no stakes yet, or all stakes are ts=now).
+  yes_standing_pct: number;
+  // Backers
   yes_backers: number;
   no_backers: number;
   total_backers: number;
 };
 
 export function tally(market: Market): Tally {
+  const nowMs = Date.now();
   let yes_amount = 0;
   let no_amount = 0;
+  let yes_units = 0;
+  let no_units = 0;
   let yes_backers = 0;
   let no_backers = 0;
   for (const p of market.positions) {
+    const elapsedSec = Math.max(0, Math.floor((nowMs - p.ts) / 1000));
+    const units = p.amount * elapsedSec;
     if (p.side === "yes") {
       yes_amount += p.amount;
+      yes_units += units;
       yes_backers++;
     } else {
       no_amount += p.amount;
+      no_units += units;
       no_backers++;
     }
   }
+  const total_units = yes_units + no_units;
+  const yes_standing_pct =
+    total_units > 0 ? Math.round((yes_units / total_units) * 100) : 0;
   return {
     yes_amount,
     no_amount,
     total_amount: yes_amount + no_amount,
+    yes_units,
+    no_units,
+    total_units,
+    yes_standing_pct,
     yes_backers,
     no_backers,
     total_backers: yes_backers + no_backers,
