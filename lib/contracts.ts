@@ -5,7 +5,7 @@ import type { Address } from "viem";
 
 export const CHAIN = baseSepolia;
 
-export const TAKES_FACTORY: Address = "0x93f70a2f739863Be8C9B3275D1d13083D6C3688A";
+export const TAKES_FACTORY: Address = "0x93f70a2f739863BE8C9B3275D1d13083D6C3688A";
 export const USDC: Address = "0x2cebb3DFf94B7cCB09FC218F91B70Ea35A0fFd1a";
 
 export const USDC_DECIMALS = 6;
