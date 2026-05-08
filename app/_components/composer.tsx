@@ -5,6 +5,12 @@ import { sdk } from "@farcaster/miniapp-sdk";
 import type { ClassifyResponse } from "@/app/api/classify/route";
 import type { MarketResponse } from "@/app/api/markets/[id]/route";
 import { MIN_STAKE, MAX_STAKE } from "@/lib/constants";
+import {
+  StakeError,
+  progressLabel,
+  stakeOnChain,
+  type StakeProgress,
+} from "@/lib/onchain";
 
 type Tally = NonNullable<ClassifyResponse["market"]>["tally"];
 type Status =
@@ -46,6 +52,8 @@ export function Composer({
     | { kind: "skipped" }
     | { kind: "error"; msg: string }
   >(null);
+  const [onchainStatus, setOnchainStatus] = useState<StakeProgress>("idle");
+  const [onchainError, setOnchainError] = useState<string | null>(null);
 
   // Reply mode: fetch the deep-linked market on mount and synthesize a result
   useEffect(() => {
@@ -131,6 +139,33 @@ export function Composer({
     if (!result?.claim || !result.market) return;
     setCasting(true);
     setCastOutcome(null);
+    setOnchainError(null);
+    setOnchainStatus("idle");
+
+    // 1) On-chain stake first. If this fails, no cast goes out.
+    let stakeTxHash: `0x${string}` | undefined;
+    try {
+      const out = await stakeOnChain({
+        question: result.market.question,
+        side: result.claim.answer,
+        amountDollars: stake,
+        onProgress: setOnchainStatus,
+      });
+      stakeTxHash = out.stakeTxHash;
+    } catch (e) {
+      const msg =
+        e instanceof StakeError
+          ? `${progressLabel(e.step) || "On-chain"}: ${e.message}`
+          : e instanceof Error
+            ? e.message
+            : "Unknown on-chain error";
+      setOnchainError(msg);
+      setOnchainStatus("idle");
+      setCasting(false);
+      return;
+    }
+
+    // 2) Compose the cast
     const sideLabel = result.claim.answer.toUpperCase();
     const userText = text.trim();
     const footer = `— ${sideLabel} on "${result.claim.question}" via Takes`;
@@ -142,6 +177,8 @@ export function Composer({
         embeds: [snapUrl],
       });
       if (!out?.cast) {
+        // The stake landed on-chain even though the cast was cancelled — record it.
+        // No cast_hash, but the position is real.
         setCastOutcome({ kind: "skipped" });
         return;
       }
@@ -158,6 +195,7 @@ export function Composer({
               side: result.claim.answer,
               amount: stake,
               cast_hash: out.cast.hash,
+              stake_tx_hash: stakeTxHash,
             }),
           },
         );
@@ -274,14 +312,25 @@ export function Composer({
         )}
       </div>
 
+      {onchainStatus !== "idle" && onchainStatus !== "done" && (
+        <p className="rounded-lg border border-purple-700/40 bg-purple-950/40 p-3 text-sm text-purple-200">
+          {progressLabel(onchainStatus)}
+        </p>
+      )}
+      {onchainError && (
+        <p className="rounded-lg border border-red-700/40 bg-red-950/40 p-3 text-sm text-red-300">
+          {onchainError}
+        </p>
+      )}
+
       {castOutcome?.kind === "ok" && (
         <p className="rounded-lg border border-emerald-700/40 bg-emerald-950/40 p-3 text-sm text-emerald-300">
-          Posted! ✓ Position recorded.
+          Posted! ✓ Position staked on-chain.
         </p>
       )}
       {castOutcome?.kind === "skipped" && (
-        <p className="rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm text-zinc-400">
-          Cast cancelled. (No position recorded.)
+        <p className="rounded-lg border border-amber-700/40 bg-amber-950/30 p-3 text-sm text-amber-200">
+          Cast cancelled — but your stake already landed on-chain. The position is live.
         </p>
       )}
       {castOutcome?.kind === "error" && (
@@ -519,7 +568,8 @@ function ClassifiedCard({
         )}
       </div>
       <p className="text-[11px] text-zinc-500">
-        v0: position simulated. v2 will require a real USDC stake at this point.
+        Stakes USDC on Base Sepolia. Funds lock for 30 days; the side with the
+        most time-weighted standing at the end takes the yield.
       </p>
     </div>
   );
