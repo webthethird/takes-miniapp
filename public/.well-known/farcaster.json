@@ -1,0 +1,10 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Takes",
+    "homeUrl": "https://takes-miniapp.vercel.app",
+    "iconUrl": "https://takes-miniapp.vercel.app/icon.png",
+    "description": "Stake on Takes. Cast an opinion, back it with USDC, see who else is on your side.",
+    "tags": ["opinion", "prediction", "social", "defi"]
+  }
+}
