@@ -247,7 +247,7 @@ function notFoundCard(base: string, id?: string): SnapHandlerResult {
           type: "text",
           props: {
             content: id
-              ? clamp(`Couldn't find a Takes market for "${id}".`, 320)
+              ? "This market is still being indexed — refresh in a moment."
               : "Open Takes to cast an opinion as a stake.",
             size: "sm",
           },

@@ -143,16 +143,13 @@ export function Composer({
     setOnchainStatus("idle");
 
     // 1) On-chain stake first. If this fails, no cast goes out.
-    let stakeTxHash: `0x${string}` | undefined;
     try {
-      const out = await stakeOnChain({
+      await stakeOnChain({
         question: result.market.question,
         side: result.claim.answer,
         amountDollars: stake,
         onProgress: setOnchainStatus,
       });
-      // Last hash in the bundle is always the stake itself
-      stakeTxHash = out.txHashes[out.txHashes.length - 1];
     } catch (e) {
       const msg =
         e instanceof StakeError
@@ -166,7 +163,39 @@ export function Composer({
       return;
     }
 
-    // 2) Compose the cast
+    // 2) Persist market + position BEFORE opening the composer. Otherwise
+    // Warpcast pre-fetches the snap embed URL during composer init, our
+    // /snap endpoint sees the market doesn't exist yet, and the embed
+    // renders the "not found" preview instead of the live snap.
+    const ctx = await sdk.context;
+    const fid = ctx.user?.fid;
+    if (fid && result.market) {
+      try {
+        const r = await fetch(
+          `/api/markets/${encodeURIComponent(result.market.id)}/positions`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              fid,
+              side: result.claim.answer,
+              amount: stake,
+              claim: result.claim,
+            }),
+          },
+        );
+        if (r.ok) {
+          const data = (await r.json()) as { tally: Tally };
+          if (data.tally) setTally(data.tally);
+        }
+      } catch {
+        // Off-chain persistence failure is non-fatal — the on-chain stake
+        // is still real. The cast embed may briefly show the "not found"
+        // state but the contract is the source of truth.
+      }
+    }
+
+    // 3) Compose the cast
     const sideLabel = result.claim.answer.toUpperCase();
     const userText = text.trim();
     const footer = `— ${sideLabel} on "${result.claim.question}" via Takes`;
@@ -178,36 +207,8 @@ export function Composer({
         embeds: [snapUrl],
       });
       if (!out?.cast) {
-        // The stake landed on-chain even though the cast was cancelled — record it.
-        // No cast_hash, but the position is real.
         setCastOutcome({ kind: "skipped" });
         return;
-      }
-      const ctx = await sdk.context;
-      const fid = ctx.user?.fid;
-      if (fid && result.market) {
-        const r = await fetch(
-          `/api/markets/${encodeURIComponent(result.market.id)}/positions`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              fid,
-              side: result.claim.answer,
-              amount: stake,
-              cast_hash: out.cast.hash,
-              stake_tx_hash: stakeTxHash,
-              // Include the claim so the server can create the market on
-              // demand if it hasn't been persisted yet (we defer the write
-              // until the user actually stakes on-chain).
-              claim: result.claim,
-            }),
-          },
-        );
-        if (r.ok) {
-          const data = (await r.json()) as { tally: Tally };
-          if (data.tally) setTally(data.tally);
-        }
       }
       setCastOutcome({ kind: "ok", hash: out.cast.hash });
     } catch (e) {
