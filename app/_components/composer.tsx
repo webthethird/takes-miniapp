@@ -197,6 +197,10 @@ export function Composer({
               amount: stake,
               cast_hash: out.cast.hash,
               stake_tx_hash: stakeTxHash,
+              // Include the claim so the server can create the market on
+              // demand if it hasn't been persisted yet (we defer the write
+              // until the user actually stakes on-chain).
+              claim: result.claim,
             }),
           },
         );

@@ -1,7 +1,7 @@
 import { classifyCast } from "@/lib/classify";
 import {
-  createMarket,
   findOrPropose,
+  proposeMarket,
   tally,
 } from "@/lib/market-index";
 import type { Market } from "@/lib/storage";
@@ -69,9 +69,10 @@ export async function POST(request: Request) {
     if (outcome.kind === "match") {
       marketBlock = shape(outcome.market, false, outcome.similarity);
     } else {
-      // Treat ambiguous + new the same in v0: create a new market and let the
-      // user override later if needed. (Ambiguous-as-choice UI is v0.5.)
-      const m = await createMarket(claim);
+      // Treat ambiguous + new the same in v0: propose a fresh market.
+      // We do NOT persist here — the storage write happens after the user
+      // successfully stakes on-chain (positions route creates on demand).
+      const m = await proposeMarket(claim);
       marketBlock = shape(m, true);
     }
     return Response.json({

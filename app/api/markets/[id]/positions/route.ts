@@ -1,9 +1,12 @@
 import { MAX_STAKE, MIN_STAKE } from "@/lib/constants";
 import {
+  commitMarket,
   getMarket,
+  proposeMarket,
   recordPosition,
   tally,
 } from "@/lib/market-index";
+import type { Claim } from "@/lib/schema";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -13,11 +16,15 @@ export async function POST(
   { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params;
-  const { fid, side, amount, cast_hash } = (await request.json()) as {
+  const { fid, side, amount, cast_hash, claim } = (await request.json()) as {
     fid?: number;
     side?: "yes" | "no";
     amount?: number;
     cast_hash?: string;
+    // Optional: when the market hasn't been persisted yet (user is the first
+    // staker), include the claim so we can create the market on demand. This
+    // keeps proposed-but-never-staked markets out of the DB.
+    claim?: Claim;
   };
   if (!fid || (side !== "yes" && side !== "no")) {
     return Response.json(
@@ -32,7 +39,25 @@ export async function POST(
       { status: 400 },
     );
   }
-  const result = await recordPosition(id, fid, side, stake, cast_hash);
+
+  // Create-on-first-stake: if the market doesn't exist yet, the caller must
+  // include a claim so we can build the market.
+  let resolvedId = id;
+  const existing = await getMarket(id);
+  if (!existing) {
+    if (!claim) {
+      return Response.json(
+        { error: "market not found and no claim provided to create it" },
+        { status: 404 },
+      );
+    }
+    const proposed = await proposeMarket(claim);
+    // Use the requested id (matches what the client got from /api/classify)
+    const committed = await commitMarket({ ...proposed, id });
+    resolvedId = committed.id;
+  }
+
+  const result = await recordPosition(resolvedId, fid, side, stake, cast_hash);
   if (!result.market) {
     return Response.json({ error: "market not found" }, { status: 404 });
   }

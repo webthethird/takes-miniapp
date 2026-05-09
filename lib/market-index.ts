@@ -48,17 +48,13 @@ export async function findOrPropose(claim: Claim): Promise<MatchOutcome> {
   return { kind: "new" };
 }
 
-export async function createMarket(claim: Claim): Promise<Market> {
+/// Pure: returns the Market shape with a proposed id. Does NOT write to
+/// storage. Use this in the classify hot path so we don't pollute the DB
+/// with markets the user never actually stakes on.
+export async function proposeMarket(claim: Claim): Promise<Market> {
   const emb = await embed(claim.question);
-  const baseSlug = slugify(claim.question);
-  const all = await storage.listMarkets();
-  let id = baseSlug || `market-${all.length + 1}`;
-  let n = 1;
-  while (all.some((m) => m.id === id)) {
-    n++;
-    id = `${baseSlug}-${n}`;
-  }
-  const m: Market = {
+  const id = slugify(claim.question) || `market-${Date.now()}`;
+  return {
     id,
     question: claim.question,
     claim_type: claim.claim_type,
@@ -67,8 +63,29 @@ export async function createMarket(claim: Claim): Promise<Market> {
     created_at: Date.now(),
     positions: [],
   };
-  await storage.putMarket(m);
-  return m;
+}
+
+/// Persists a proposed market. If a market with the same id already exists
+/// AND has the same question text, returns the existing one (idempotent).
+/// On a slug collision with a different question, appends -2/-3/etc.
+export async function commitMarket(proposed: Market): Promise<Market> {
+  const existing = await storage.getMarket(proposed.id);
+  if (existing && existing.question === proposed.question) return existing;
+  if (!existing) {
+    await storage.putMarket(proposed);
+    return proposed;
+  }
+  // Slug collision with a different question — find a free suffix
+  const all = await storage.listMarkets();
+  let n = 2;
+  let id = `${proposed.id}-${n}`;
+  while (all.some((m) => m.id === id)) {
+    n++;
+    id = `${proposed.id}-${n}`;
+  }
+  const market = { ...proposed, id };
+  await storage.putMarket(market);
+  return market;
 }
 
 export async function getMarket(id: string): Promise<Market | null> {
