@@ -151,7 +151,8 @@ export function Composer({
         amountDollars: stake,
         onProgress: setOnchainStatus,
       });
-      stakeTxHash = out.stakeTxHash;
+      // Last hash in the bundle is always the stake itself
+      stakeTxHash = out.txHashes[out.txHashes.length - 1];
     } catch (e) {
       const msg =
         e instanceof StakeError

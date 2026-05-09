@@ -5,7 +5,7 @@ import type { Address } from "viem";
 
 export const CHAIN = baseSepolia;
 
-export const TAKES_FACTORY: Address = "0x93f70a2f739863BE8C9B3275D1d13083D6C3688A";
+export const TAKES_FACTORY: Address = "0x23d535a31A4DEB9c58D4F8fC4f111E922509B28B";
 export const USDC: Address = "0x2cebb3DFf94B7cCB09FC218F91B70Ea35A0fFd1a";
 
 export const USDC_DECIMALS = 6;
@@ -27,6 +27,16 @@ export const FACTORY_ABI = [
     stateMutability: "view",
     inputs: [{ name: "questionHash", type: "bytes32" }],
     outputs: [{ name: "market", type: "address" }],
+  },
+  {
+    type: "function",
+    name: "predictMarket",
+    stateMutability: "view",
+    inputs: [
+      { name: "questionHash", type: "bytes32" },
+      { name: "question", type: "string" },
+    ],
+    outputs: [{ name: "", type: "address" }],
   },
 ] as const;
 
