@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjM3NDU2NSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDIyMmY5RkMxMTY2YmRiOWFGMTQ3NjRFNTgyYUVlODc3MDY2NGY0RkQifQ",
+    "payload": "eyJkb21haW4iOiJ0YWtlcy1taW5pYXBwLnZlcmNlbC5hcHAifQ",
+    "signature": "naHdZjYL0hMW+NR4EC/HD3/l9aCFJTFcyzZa1QrWx2RAbckidUi67RoJZeb/D7dzmGU+WqcZ3r2FiMW7p8SP3Rw="
+  },
   "miniapp": {
     "version": "1",
     "name": "Takes",
