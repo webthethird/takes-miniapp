@@ -25,8 +25,39 @@ function snapHeaders() {
   };
 }
 
-function textHeaders() {
-  return { "Content-Type": "text/plain; charset=utf-8" };
+/// HTML envelope served to plain GETs (browsers, Farcaster crawlers without
+/// the snap Accept header). The `Link` header advertises the snap variant
+/// so snap-aware clients can fetch it — per the snap discovery spec, a snap
+/// URL "must never be silently missed".
+function htmlHeaders(selfUrl: string) {
+  return {
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "no-store",
+    Link: `<${selfUrl}>; rel="alternate"; type="${SNAP_CT}"`,
+  };
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function htmlPreview(opts: { title: string; description: string }) {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>${escapeHtml(opts.title)}</title>
+<meta name="description" content="${escapeHtml(opts.description)}">
+</head>
+<body>
+<h1>${escapeHtml(opts.title)}</h1>
+<p>${escapeHtml(opts.description)}</p>
+</body>
+</html>`;
 }
 
 function baseUrl(request: Request): string {
@@ -46,30 +77,50 @@ export async function GET(request: Request) {
   const id = url.searchParams.get("market");
   const accept = request.headers.get("accept") || "";
   const wantsSnap = accept.includes(SNAP_CT);
+  const base = baseUrl(request);
+  const selfUrl = `${base}${url.pathname}${url.search}`;
 
   if (!id) {
     if (wantsSnap)
-      return Response.json(notFoundCard(baseUrl(request)), { headers: snapHeaders() });
-    return new Response("Takes — missing ?market= query param", { headers: textHeaders() });
+      return Response.json(notFoundCard(base), { headers: snapHeaders() });
+    return new Response(
+      htmlPreview({
+        title: "Takes",
+        description: "Cast an opinion. Back it with USDC.",
+      }),
+      { headers: htmlHeaders(selfUrl) },
+    );
   }
 
   const market = await getMarket(id);
   if (!market) {
     if (wantsSnap)
-      return Response.json(notFoundCard(baseUrl(request), id), { headers: snapHeaders() });
-    return new Response(`Takes — market ${id} not found`, { headers: textHeaders() });
+      return Response.json(notFoundCard(base, id), { headers: snapHeaders() });
+    return new Response(
+      htmlPreview({
+        title: `Takes — ${id} not found`,
+        description: `Couldn't find a market for "${id}".`,
+      }),
+      { headers: htmlHeaders(selfUrl) },
+    );
   }
 
   if (wantsSnap) {
-    return Response.json(marketCard(market, baseUrl(request)), { headers: snapHeaders() });
+    return Response.json(marketCard(market, base), { headers: snapHeaders() });
   }
-  // Browser fallback: plain text describing the market
+
+  // Plain GET (browser, Farcaster crawler without the snap Accept header).
+  // HTML preview for browsers; Link header lets snap-aware clients discover
+  // the snap variant and re-fetch with the right Accept header.
   const t = tally(market);
   return new Response(
-    `Takes market: ${market.question}\n` +
-      `${t.total_backers} backer${t.total_backers === 1 ? "" : "s"} · ` +
-      `$${t.yes_amount} YES · $${t.no_amount} NO`,
-    { headers: textHeaders() },
+    htmlPreview({
+      title: market.question,
+      description:
+        `${t.total_backers} backer${t.total_backers === 1 ? "" : "s"} · ` +
+        `$${t.yes_amount} YES · $${t.no_amount} NO`,
+    }),
+    { headers: htmlHeaders(selfUrl) },
   );
 }
 
