@@ -1,4 +1,5 @@
 import { Composer } from "./_components/composer";
+import { OnboardingModal } from "./_components/onboarding-modal";
 
 export default async function Home({
   searchParams,
@@ -15,6 +16,7 @@ export default async function Home({
           : "What's your take? Type below — we'll find a market for it."}
       </p>
       <Composer initialMarketId={market} initialSide={initialSide} />
+      <OnboardingModal />
     </main>
   );
 }
