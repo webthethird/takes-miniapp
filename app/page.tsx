@@ -13,7 +13,7 @@ export default async function Home({
       <p className="text-sm text-zinc-400">
         {market
           ? "Replying to a Take. Add your reasoning, pick a stake, cast."
-          : "What's your take? Type below — we'll find a market for it."}
+          : "What's your take? Type below, we'll find a market for it."}
       </p>
       <Composer initialMarketId={market} initialSide={initialSide} />
       <OnboardingModal />
