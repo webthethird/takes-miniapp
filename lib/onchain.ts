@@ -196,9 +196,22 @@ export async function stakeOnChain(opts: {
     step: "staking",
   });
 
-  // Send sequentially. Each call gets its own wallet popup. The Farcaster
-  // in-app wallet currently doesn't reliably handle wallet_sendCalls, so we
-  // accept N popups for now.
+  // Try to bundle everything into one wallet popup via EIP-5792
+  // wallet_sendCalls. Coinbase Smart Wallet (Farcaster's default) supports
+  // this. If the wallet doesn't, fall back to sequential popups.
+  onProgress?.("staking");
+  const batched = await trySendBatch(provider, {
+    from: account,
+    chainId: CHAIN.id,
+    calls,
+    waitForReceipt: (h) => publicClient.waitForTransactionReceipt({ hash: h }),
+  });
+  if (batched) {
+    onProgress?.("done");
+    return { marketAddress: market, txHashes: batched };
+  }
+
+  // Sequential fallback. Each call gets its own wallet popup.
   const txHashes: Hex[] = [];
   for (const call of calls) {
     onProgress?.(call.step);
@@ -213,6 +226,103 @@ export async function stakeOnChain(opts: {
 
   onProgress?.("done");
   return { marketAddress: market, txHashes };
+}
+
+// Try EIP-5792 wallet_sendCalls. Returns the underlying tx hashes on
+// success, or null if the wallet doesn't support batching (caller should
+// fall back to sequential sendTransaction).
+async function trySendBatch(
+  provider: { request: (args: { method: string; params?: unknown }) => Promise<unknown> },
+  opts: {
+    from: Address;
+    chainId: number;
+    calls: Call[];
+    waitForReceipt: (hash: Hex) => Promise<unknown>;
+  },
+): Promise<Hex[] | null> {
+  try {
+    // EIP-5792 v2 params shape
+    const params = {
+      version: "2.0.0",
+      from: opts.from,
+      chainId: toHex(opts.chainId),
+      atomicRequired: true,
+      calls: opts.calls.map((c) => ({ to: c.to, data: c.data })),
+    };
+
+    const result = (await Promise.race([
+      provider.request({
+        method: "wallet_sendCalls",
+        params: [params],
+      }),
+      new Promise<never>((_, reject) => {
+        setTimeout(
+          () => reject(new StakeError("Bundle submission timed out", "staking")),
+          WALLET_PROMPT_TIMEOUT_MS,
+        );
+      }),
+    ])) as { id: string } | string;
+
+    const bundleId = typeof result === "string" ? result : result.id;
+
+    // Poll for status
+    const txHashes = await pollBundleStatus(provider, bundleId);
+    // Wait for receipts so callers get a consistent "done" signal
+    for (const h of txHashes) await opts.waitForReceipt(h);
+    return txHashes;
+  } catch (e) {
+    if (isMethodNotSupported(e)) return null;
+    throw e;
+  }
+}
+
+function isMethodNotSupported(e: unknown): boolean {
+  const msg = e instanceof Error ? e.message.toLowerCase() : "";
+  return (
+    msg.includes("not support") ||
+    msg.includes("unsupported method") ||
+    msg.includes("method not found") ||
+    msg.includes("does not exist") ||
+    msg.includes("unknown method") ||
+    // EIP-1474 standard error code for unsupported method
+    (typeof e === "object" && e !== null && "code" in e && (e as { code: number }).code === -32601)
+  );
+}
+
+async function pollBundleStatus(
+  provider: { request: (args: { method: string; params?: unknown }) => Promise<unknown> },
+  bundleId: string,
+): Promise<Hex[]> {
+  // EIP-5792 status: 100 = pending, 200 = confirmed, 400+ = failure
+  for (let i = 0; i < 60; i++) {
+    const status = (await provider.request({
+      method: "wallet_getCallsStatus",
+      params: [bundleId],
+    })) as {
+      status: number | string;
+      receipts?: { transactionHash: Hex }[];
+    };
+    const code =
+      typeof status.status === "number"
+        ? status.status
+        : status.status === "CONFIRMED"
+          ? 200
+          : status.status === "PENDING"
+            ? 100
+            : 0;
+    if (code >= 200) {
+      const hashes = (status.receipts ?? []).map((r) => r.transactionHash);
+      if (code >= 400) {
+        throw new StakeError(
+          `Batched transaction failed (status ${code})`,
+          "staking",
+        );
+      }
+      return hashes;
+    }
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  throw new StakeError("Timed out waiting for batched tx", "staking");
 }
 
 // Direct provider.request call with clean string-only params and a timeout.
