@@ -241,12 +241,15 @@ async function trySendBatch(
   },
 ): Promise<Hex[] | null> {
   try {
-    // EIP-5792 v2 params shape
+    // EIP-5792 v2 params shape. atomicRequired is FALSE because Farcaster's
+    // wallet executes batched calls sequentially, not atomically — setting
+    // true causes the wallet to reject the bundle outright. Sequential
+    // execution within one popup is still a 3x UX win over 3 popups.
     const params = {
       version: "2.0.0",
       from: opts.from,
       chainId: toHex(opts.chainId),
-      atomicRequired: true,
+      atomicRequired: false,
       calls: opts.calls.map((c) => ({ to: c.to, data: c.data })),
     };
 
