@@ -57,25 +57,6 @@ export function Composer({
     | { kind: "error"; msg: string }
   >(null);
   const [onchainStatus, setOnchainStatus] = useState<StakeProgress>("idle");
-  const [pfpUrl, setPfpUrl] = useState<string | null>(null);
-
-  // Pull the user's Farcaster pfp once on mount so we can show it next to the
-  // input, like the native client composer.
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      try {
-        const ctx = await sdk.context;
-        const url = (ctx.user as { pfpUrl?: string } | undefined)?.pfpUrl;
-        if (!cancelled && url) setPfpUrl(url);
-      } catch {
-        // No context (e.g. dev outside Warpcast) — fall back to monogram.
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
   const [onchainError, setOnchainError] = useState<string | null>(null);
 
   // Reply mode: fetch the deep-linked market on mount and synthesize a result
@@ -291,37 +272,34 @@ export function Composer({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-start gap-2">
-        <Avatar pfpUrl={pfpUrl} />
-        <div className="min-w-0 flex-1 rounded-xl border border-zinc-800 bg-zinc-900 transition focus-within:border-zinc-600">
-          <textarea
-            ref={textareaRef}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder={
-              inReplyMode
-                ? "Why are you backing this side? (Optional)"
-                : "What's your take?"
+      <div className="rounded-xl border border-zinc-800 bg-zinc-900 transition focus-within:border-zinc-600">
+        <textarea
+          ref={textareaRef}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder={
+            inReplyMode
+              ? "Why are you backing this side? (Optional)"
+              : "What's your take?"
+          }
+          rows={4}
+          className="w-full resize-none rounded-t-xl bg-transparent px-3 py-3 text-base outline-none"
+          autoFocus
+        />
+        <div className="flex items-center justify-between border-t border-zinc-800 px-2 py-1.5">
+          <EmojiPicker onPick={insertEmoji} />
+          <span
+            className={
+              "pr-1 text-[11px] tabular-nums " +
+              (overLimit
+                ? "text-rose-400"
+                : remaining < 40
+                  ? "text-amber-400"
+                  : "text-zinc-500")
             }
-            rows={4}
-            className="w-full resize-none rounded-t-xl bg-transparent px-3 py-3 text-base outline-none"
-            autoFocus
-          />
-          <div className="flex items-center justify-between border-t border-zinc-800 px-2 py-1.5">
-            <EmojiPicker onPick={insertEmoji} />
-            <span
-              className={
-                "pr-1 text-[11px] tabular-nums " +
-                (overLimit
-                  ? "text-rose-400"
-                  : remaining < 40
-                    ? "text-amber-400"
-                    : "text-zinc-500")
-              }
-            >
-              {remaining}
-            </span>
-          </div>
+          >
+            {remaining}
+          </span>
         </div>
       </div>
 
@@ -673,21 +651,5 @@ function NoOpinionCard({
         {casting ? "Opening composer…" : "Cast normally"}
       </button>
     </div>
-  );
-}
-
-function Avatar({ pfpUrl }: { pfpUrl: string | null }) {
-  if (pfpUrl) {
-    // eslint-disable-next-line @next/next/no-img-element
-    return (
-      <img
-        src={pfpUrl}
-        alt=""
-        className="mt-1 h-9 w-9 shrink-0 rounded-full border border-zinc-800 object-cover"
-      />
-    );
-  }
-  return (
-    <div className="mt-1 h-9 w-9 shrink-0 rounded-full border border-zinc-800 bg-zinc-800" />
   );
 }
