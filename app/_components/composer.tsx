@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sdk } from "@farcaster/miniapp-sdk";
 import type { ClassifyResponse } from "@/app/api/classify/route";
 import type { MarketResponse } from "@/app/api/markets/[id]/route";
@@ -11,6 +11,10 @@ import {
   stakeOnChain,
   type StakeProgress,
 } from "@/lib/onchain";
+import { EmojiPicker } from "./emoji-picker";
+
+// Farcaster cast text limit. We don't enforce, just surface remaining count.
+const CAST_LIMIT = 320;
 
 type Tally = NonNullable<ClassifyResponse["market"]>["tally"];
 type Status =
@@ -243,20 +247,61 @@ export function Composer({
     }
   }
 
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  function insertEmoji(emoji: string) {
+    const ta = textareaRef.current;
+    if (!ta) {
+      setText((t) => t + emoji);
+      return;
+    }
+    const start = ta.selectionStart ?? text.length;
+    const end = ta.selectionEnd ?? text.length;
+    const next = text.slice(0, start) + emoji + text.slice(end);
+    setText(next);
+    // Restore cursor position after the inserted emoji on the next tick
+    requestAnimationFrame(() => {
+      ta.focus();
+      const cursor = start + emoji.length;
+      ta.setSelectionRange(cursor, cursor);
+    });
+  }
+
+  const remaining = CAST_LIMIT - text.length;
+  const overLimit = remaining < 0;
+
   return (
     <div className="space-y-4">
-      <textarea
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder={
-          inReplyMode
-            ? "Why are you backing this side? (Optional — you can cast just the embed.)"
-            : "What's your take?"
-        }
-        rows={4}
-        className="w-full resize-none rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-3 text-base outline-none transition focus:border-zinc-600"
-        autoFocus
-      />
+      <div className="rounded-xl border border-zinc-800 bg-zinc-900 transition focus-within:border-zinc-600">
+        <textarea
+          ref={textareaRef}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder={
+            inReplyMode
+              ? "Why are you backing this side? (Optional)"
+              : "What's your take?"
+          }
+          rows={4}
+          className="w-full resize-none rounded-t-xl bg-transparent px-3 py-3 text-base outline-none"
+          autoFocus
+        />
+        <div className="flex items-center justify-between border-t border-zinc-800 px-2 py-1.5">
+          <EmojiPicker onPick={insertEmoji} />
+          <span
+            className={
+              "pr-1 text-[11px] tabular-nums " +
+              (overLimit
+                ? "text-rose-400"
+                : remaining < 40
+                  ? "text-amber-400"
+                  : "text-zinc-500")
+            }
+          >
+            {remaining}
+          </span>
+        </div>
+      </div>
 
       <div className="min-h-[140px]">
         {status === "loading-classify" && (
