@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 // Bumping the version reshows the modal to everyone — useful when the
-// mechanic copy changes meaningfully.
-const STORAGE_KEY = "takes_onboarding_v1";
+// mechanic copy changes meaningfully. v2 added the 10% loser slash.
+const STORAGE_KEY = "takes_onboarding_v2";
 
 export function OnboardingModal() {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,8 @@ export function OnboardingModal() {
             Welcome to Takes
           </h2>
           <p className="text-sm text-zinc-400">
-            Back your opinions with USDC. Be early. Be right (or popular).
+            Skin in the game for your opinions. Be right early, take a slice
+            of the wrong side.
           </p>
         </div>
 
@@ -66,7 +67,8 @@ export function OnboardingModal() {
             </span>
             <span>
               <strong className="text-white">Stake USDC</strong> ($1–$1000) on
-              your side. Funds lock for 30 days and earn yield.
+              your side. Funds lock for 30 days and earn yield from a Morpho
+              vault.
             </span>
           </li>
           <li className="flex gap-3">
@@ -78,8 +80,19 @@ export function OnboardingModal() {
                 Time-weighted standing wins.
               </strong>{" "}
               At lockup end, the side with more <em>amount × time-locked</em>{" "}
-              splits the yield. Early conviction counts more than late piling
-              on. Losers get their principal back.
+              wins. Winners get their principal, the yield, plus{" "}
+              <strong className="text-white">10% of the losing side's principal</strong>.
+              Early conviction counts more than late piling on.
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-rose-700 text-[11px] font-semibold">
+              !
+            </span>
+            <span>
+              <strong className="text-white">Losers forfeit 10%</strong> of
+              their principal to the winning side. Get back 90% if you're on
+              the wrong side. Pick a side you'd defend.
             </span>
           </li>
         </ol>

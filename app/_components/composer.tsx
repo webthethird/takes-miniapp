@@ -574,8 +574,9 @@ function ClassifiedCard({
         )}
       </div>
       <p className="text-[11px] text-zinc-500">
-        Stakes USDC on Base Sepolia. Funds lock for 30 days; the side with the
-        most time-weighted standing at the end takes the yield.
+        Stakes USDC on Base Sepolia. Funds lock for 30 days. Side with the most
+        time-weighted standing wins the yield + 10% of the losing side's
+        principal. Losers get 90% back.
       </p>
     </div>
   );
