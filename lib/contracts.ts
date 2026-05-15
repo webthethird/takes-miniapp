@@ -1,12 +1,12 @@
 // On-chain config: addresses, ABIs, chain.
-// Base Sepolia testnet deployment from /Users/webthethird/Ethereum/farcaster/takes-contracts.
+// Base Sepolia testnet — USDC is Circle's canonical testnet token.
 import { baseSepolia } from "viem/chains";
 import type { Address } from "viem";
 
 export const CHAIN = baseSepolia;
 
-export const TAKES_FACTORY: Address = "0xaC1B4496e85a4A4F8Dd23E2aBB6f87eC48752259";
-export const USDC: Address = "0x2cebb3DFf94B7cCB09FC218F91B70Ea35A0fFd1a";
+export const TAKES_FACTORY: Address = "0x9C3d7933DB8d03446810B5c07987e987a4bc78Db";
+export const USDC: Address = "0x036CbD53842c5426634e7929541eC2318f3dCF7e";
 
 export const USDC_DECIMALS = 6;
 
