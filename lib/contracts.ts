@@ -5,7 +5,8 @@ import type { Address } from "viem";
 
 export const CHAIN = baseSepolia;
 
-export const TAKES_FACTORY: Address = "0x9C3d7933DB8d03446810B5c07987e987a4bc78Db";
+// v3 factory: configurable lockup + multi-stake (position top-ups).
+export const TAKES_FACTORY: Address = "0x83B1AE07f092a0dbAD55cE47548F7aF5ee21B653";
 export const USDC: Address = "0x036CbD53842c5426634e7929541eC2318f3dCF7e";
 
 export const USDC_DECIMALS = 6;
@@ -13,11 +14,25 @@ export const USDC_DECIMALS = 6;
 export const FACTORY_ABI = [
   {
     type: "function",
+    name: "stake",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "questionHash", type: "bytes32" },
+      { name: "question", type: "string" },
+      { name: "lockupDuration", type: "uint256" },
+      { name: "side", type: "uint8" },
+      { name: "amount", type: "uint256" },
+    ],
+    outputs: [{ name: "market", type: "address" }],
+  },
+  {
+    type: "function",
     name: "getOrCreate",
     stateMutability: "nonpayable",
     inputs: [
       { name: "questionHash", type: "bytes32" },
       { name: "question", type: "string" },
+      { name: "lockupDuration", type: "uint256" },
     ],
     outputs: [{ name: "market", type: "address" }],
   },
@@ -25,7 +40,10 @@ export const FACTORY_ABI = [
     type: "function",
     name: "getMarket",
     stateMutability: "view",
-    inputs: [{ name: "questionHash", type: "bytes32" }],
+    inputs: [
+      { name: "questionHash", type: "bytes32" },
+      { name: "lockupDuration", type: "uint256" },
+    ],
     outputs: [{ name: "market", type: "address" }],
   },
   {
@@ -35,21 +53,9 @@ export const FACTORY_ABI = [
     inputs: [
       { name: "questionHash", type: "bytes32" },
       { name: "question", type: "string" },
+      { name: "lockupDuration", type: "uint256" },
     ],
     outputs: [{ name: "", type: "address" }],
-  },
-] as const;
-
-export const MARKET_ABI = [
-  {
-    type: "function",
-    name: "stake",
-    stateMutability: "nonpayable",
-    inputs: [
-      { name: "side", type: "uint8" },
-      { name: "amount", type: "uint256" },
-    ],
-    outputs: [],
   },
 ] as const;
 
