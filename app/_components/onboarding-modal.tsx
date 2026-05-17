@@ -125,8 +125,8 @@ export function OnboardingModal() {
             </ol>
 
             <div className="rounded-md border border-amber-900/40 bg-amber-950/20 px-3 py-2 text-[11px] leading-relaxed text-amber-200">
-              🧪 Testnet — running on Base Sepolia with mock USDC. Real funds
-              coming when we move to Base mainnet.
+              🧪 Testnet — running on Base Sepolia with Circle test USDC.
+              Real funds when we move to Base mainnet.
             </div>
 
             <button
@@ -134,7 +134,7 @@ export function OnboardingModal() {
               onClick={close}
               className="w-full rounded-lg bg-purple-600 px-3 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700"
             >
-              Got it
+              Let&apos;s go
             </button>
           </div>
         </div>

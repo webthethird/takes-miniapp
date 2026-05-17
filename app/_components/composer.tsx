@@ -31,6 +31,16 @@ type ErrorDetail = { status?: number; message?: string };
 
 const QUICK_STAKES = [1, 5, 20, 100] as const;
 
+// Cold-start seed for the empty compose state. Tapping a chip pre-fills
+// the textarea; the existing debounced classifier picks it up from there.
+// Examples chosen to span the classifier's output shapes (predictive,
+// evaluative, broad-claim) so first-timers see the format range.
+const EXAMPLE_TAKES = [
+  "ETH will hit $5k this cycle",
+  "Coinbase layoffs are bullish for $COIN",
+  "Vibe-coding will kill the IDE within 2 years",
+] as const;
+
 export function Composer({
   initialMarketId,
   initialSide,
@@ -236,10 +246,13 @@ export function Composer({
     }
   }
 
-  function flipReplySide(next: "yes" | "no") {
+  function flipSide(next: "yes" | "no") {
     setReplySide(next);
     if (result?.claim && result.market) {
-      // Re-synthesize with the flipped side so the card + cast text update
+      // Re-synthesize with the flipped side so the card + cast text update.
+      // In reply mode this also feeds the deep-linked re-fetch effect; in
+      // compose mode setReplySide is harmless (the re-fetch is gated on
+      // initialMarketId, which is null in compose mode).
       setResult({
         ...result,
         claim: { ...result.claim, answer: next },
@@ -304,6 +317,29 @@ export function Composer({
       </div>
 
       <div className="min-h-[140px]">
+        {status === "idle" && !inReplyMode && text.length === 0 && (
+          <div className="space-y-2">
+            <p className="text-xs uppercase tracking-wide text-zinc-500">
+              Try a take
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {EXAMPLE_TAKES.map((example) => (
+                <button
+                  key={example}
+                  type="button"
+                  onClick={() => {
+                    setText(example);
+                    textareaRef.current?.focus();
+                  }}
+                  className="rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 transition hover:border-purple-700/60 hover:text-purple-200"
+                >
+                  {example}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         {status === "loading-classify" && (
           <p className="text-xs text-zinc-500">Reading your take…</p>
         )}
@@ -350,7 +386,7 @@ export function Composer({
               onSkip={castNormally}
               casting={casting}
               replyMode={status === "reply"}
-              onFlipSide={status === "reply" ? flipReplySide : undefined}
+              onFlipSide={flipSide}
             />
           )}
 
@@ -524,7 +560,7 @@ function ClassifiedCard({
 
       <div>
         <p className="text-xs uppercase tracking-wide text-zinc-500">Your side</p>
-        {replyMode && onFlipSide ? (
+        {onFlipSide ? (
           <div className="mt-1 flex gap-1">
             <button
               type="button"
