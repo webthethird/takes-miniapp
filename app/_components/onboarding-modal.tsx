@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 
 // Bumping the version reshows the modal to everyone — useful when the
-// mechanic copy changes meaningfully. v2 added the 10% loser slash.
-const STORAGE_KEY = "takes_onboarding_v2";
+// mechanic copy changes meaningfully. v2 added the 10% loser slash;
+// v3 added the time-weighting diagram.
+const STORAGE_KEY = "takes_onboarding_v3";
 
 export function OnboardingModal() {
   const [open, setOpen] = useState(false);
@@ -104,12 +105,12 @@ export function OnboardingModal() {
                     Time-weighted standing wins.
                   </strong>{" "}
                   At lockup end, the side with more{" "}
-                  <em>amount × time-locked</em> wins. Winners get their
-                  principal, the yield, plus{" "}
+                  <em>amount × time locked</em> wins — winners take the
+                  yield plus{" "}
                   <strong className="text-white">
                     10% of the losing side&apos;s principal
                   </strong>
-                  . Early conviction counts more than late piling on.
+                  .
                 </span>
               </li>
               <li className="flex gap-3">
@@ -123,6 +124,52 @@ export function OnboardingModal() {
                 </span>
               </li>
             </ol>
+
+            {/* Step 3 visual: same $10, staked at different times, earns
+                different weight. Bars are right-aligned to a shared
+                "lockup ends" edge — bar length = days locked = weight. */}
+            <div className="space-y-2.5 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3">
+              <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">
+                Same $10 — earlier counts more
+              </p>
+
+              <div className="space-y-2.5">
+                <div className="space-y-1">
+                  <div className="flex items-baseline justify-between text-[11px]">
+                    <span className="text-zinc-300">$10 · staked day 1</span>
+                    <span className="font-semibold text-emerald-400">
+                      290 weight
+                    </span>
+                  </div>
+                  <div className="flex h-4 justify-end overflow-hidden rounded bg-zinc-800/70">
+                    <div className="h-full w-[97%] rounded bg-emerald-500/80" />
+                  </div>
+                </div>
+
+                <div className="space-y-1">
+                  <div className="flex items-baseline justify-between text-[11px]">
+                    <span className="text-zinc-300">$10 · staked day 24</span>
+                    <span className="font-semibold text-zinc-400">
+                      60 weight
+                    </span>
+                  </div>
+                  <div className="flex h-4 justify-end overflow-hidden rounded bg-zinc-800/70">
+                    <div className="h-full w-[20%] rounded bg-emerald-500/40" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-between text-[10px] text-zinc-600">
+                <span>day 0</span>
+                <span>lockup ends</span>
+              </div>
+
+              <p className="text-[11px] leading-relaxed text-zinc-500">
+                Weight = dollars × days locked. Both staked $10 — the
+                earlier one is worth ~5× more when the winning side is
+                decided.
+              </p>
+            </div>
 
             <div className="rounded-md border border-amber-900/40 bg-amber-950/20 px-3 py-2 text-[11px] leading-relaxed text-amber-200">
               🧪 Testnet — running on Base Sepolia with Circle test USDC.
