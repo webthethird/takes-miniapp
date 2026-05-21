@@ -59,7 +59,7 @@ export function OnboardingModal() {
           onClick={close}
         >
           <div
-            className="w-full max-w-md space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-2xl"
+            className="max-h-[80dvh] w-full max-w-md space-y-4 overflow-y-auto overscroll-contain rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-1">
@@ -137,12 +137,12 @@ export function OnboardingModal() {
                 <div className="space-y-1">
                   <div className="flex items-baseline justify-between text-[11px]">
                     <span className="text-zinc-300">$10 · staked day 1</span>
-                    <span className="font-semibold text-emerald-400">
+                    <span className="font-semibold text-purple-300">
                       290 weight
                     </span>
                   </div>
                   <div className="flex h-4 justify-end overflow-hidden rounded bg-zinc-800/70">
-                    <div className="h-full w-[97%] rounded bg-emerald-500/80" />
+                    <div className="h-full w-[97%] rounded bg-purple-500/80" />
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ export function OnboardingModal() {
                     </span>
                   </div>
                   <div className="flex h-4 justify-end overflow-hidden rounded bg-zinc-800/70">
-                    <div className="h-full w-[20%] rounded bg-emerald-500/40" />
+                    <div className="h-full w-[20%] rounded bg-purple-500/40" />
                   </div>
                 </div>
               </div>
