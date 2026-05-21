@@ -5,3 +5,14 @@
 html {
   color-scheme: dark;
 }
+
+/* Hide the scrollbar track while keeping scroll functional. Used by
+   internally-scrolling overlays (e.g. the onboarding modal) where the
+   visible track is visual noise. */
+.no-scrollbar {
+  -ms-overflow-style: none; /* old Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit — Farcaster's iOS webview */
+}

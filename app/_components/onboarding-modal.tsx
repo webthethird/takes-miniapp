@@ -59,7 +59,7 @@ export function OnboardingModal() {
           onClick={close}
         >
           <div
-            className="max-h-[80dvh] w-full max-w-md space-y-4 overflow-y-auto overscroll-contain rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-2xl"
+            className="no-scrollbar max-h-[80dvh] w-full max-w-md space-y-4 overflow-y-auto overscroll-contain rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-1">
