@@ -44,6 +44,47 @@ export function Provenance({ cast }: { cast: FeedMember["cast"] }) {
   );
 }
 
+/// A cast's own words, with its line breaks intact.
+///
+/// Farcaster casts are written as short paragraphs and read as walls without
+/// them — the lead quote was collapsing 26 paragraph breaks into one block.
+///
+/// Long casts are clamped in the feed and shown whole on the detail page: a
+/// 2,800-character cast otherwise pushes the question and the Back/Challenge
+/// buttons off the bottom of the card, which buries the thing the card is for.
+const CLAMP_OVER_CHARS = 700;
+
+export function CastQuote({
+  text,
+  clamp = false,
+  href,
+}: {
+  text: string;
+  clamp?: boolean;
+  href?: string;
+}) {
+  const long = clamp && text.length > CLAMP_OVER_CHARS;
+  return (
+    <div className="space-y-1.5">
+      <blockquote
+        className={`whitespace-pre-wrap break-words border-l-[3px] border-purple-500 pl-3.5 text-[17px] leading-relaxed text-zinc-100 ${
+          long ? "line-clamp-[14]" : ""
+        }`}
+      >
+        {text}
+      </blockquote>
+      {long && href ? (
+        <Link
+          href={href}
+          className="ml-3.5 inline-block text-[12px] font-medium text-purple-400 hover:underline"
+        >
+          Read the full cast →
+        </Link>
+      ) : null}
+    </div>
+  );
+}
+
 export function StanceChip({ stance }: { stance: "yes" | "no" }) {
   // Amber/cyan rather than green/red: Takes does not adjudicate truth, so the
   // palette must not imply one side is correct.
@@ -112,9 +153,11 @@ export function FeedCard({ item, rank }: { item: FeedItem; rank: number }) {
         </span>
       </header>
 
-      <blockquote className="border-l-[3px] border-purple-500 pl-3.5 text-[17px] leading-snug text-zinc-100">
-        {rep.cast.text}
-      </blockquote>
+      <CastQuote
+        text={rep.cast.text}
+        clamp
+        href={`/feed/${encodeURIComponent(item.id)}`}
+      />
 
       {engagement ? (
         <p className="font-mono text-[11px] text-zinc-600">{engagement}</p>

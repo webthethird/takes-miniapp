@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CastBlock, Provenance } from "@/app/_components/feed-card";
+import { CastBlock, CastQuote, Provenance } from "@/app/_components/feed-card";
 import { StakeActions } from "@/app/_components/stake-actions";
 import {
   getFeedItem,
@@ -58,9 +58,8 @@ export default async function FeedDetail({
 
       <article className="space-y-3 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
         <Provenance cast={rep.cast} />
-        <blockquote className="border-l-[3px] border-purple-500 pl-3.5 text-[17px] leading-snug text-zinc-100">
-          {rep.cast.text}
-        </blockquote>
+        {/* Full text here — this is where someone comes to read it. */}
+        <CastQuote text={rep.cast.text} />
       </article>
 
       <section className="space-y-1 rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
