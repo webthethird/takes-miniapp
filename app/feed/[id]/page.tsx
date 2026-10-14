@@ -47,8 +47,10 @@ export default async function FeedDetail({
 
   return (
     <main className="space-y-5">
+      {/* The feed is the landing page; /feed only exists as a redirect, so
+          link straight to / and skip the hop. */}
       <Link
-        href="/feed"
+        href="/"
         className="inline-block font-mono text-[11px] text-zinc-500 hover:text-zinc-300"
       >
         ← back to feed

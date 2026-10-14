@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 
 // Bumping the version reshows the modal to everyone — useful when the
 // mechanic copy changes meaningfully. v2 added the 10% loser slash;
-// v3 added the time-weighting diagram.
-const STORAGE_KEY = "takes_onboarding_v3";
+// v3 added the time-weighting diagram; v4 rewrote the flow around the feed,
+// which changed the first step from "write something" to "pick a side".
+const STORAGE_KEY = "takes_onboarding_v4";
 
 export function OnboardingModal() {
   const [open, setOpen] = useState(false);
@@ -59,9 +60,13 @@ export function OnboardingModal() {
           onClick={close}
         >
           <div
-            className="no-scrollbar max-h-[80dvh] w-full max-w-md space-y-4 overflow-y-auto overscroll-contain rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-2xl"
+            className="flex max-h-[80dvh] w-full max-w-md flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Scroll body. The footer below stays out of this container so
+                the CTA is always on screen — the scrollbar is hidden, so a
+                modal that silently overflows has no visible way out. */}
+            <div className="no-scrollbar flex-1 space-y-4 overflow-y-auto overscroll-contain p-5">
             <div className="space-y-1">
               <h2
                 id="onboarding-title"
@@ -70,8 +75,8 @@ export function OnboardingModal() {
                 Welcome to Takes
               </h2>
               <p className="text-sm text-zinc-400">
-                Skin in the game for your opinions. Be right early, take a slice
-                of the wrong side.
+                Skin in the game for opinions. Back someone who&apos;s right, or
+                challenge someone who isn&apos;t — and be early about it.
               </p>
             </div>
 
@@ -81,9 +86,10 @@ export function OnboardingModal() {
                   1
                 </span>
                 <span>
-                  <strong className="text-white">Type a take.</strong> We
-                  classify it into a canonical YES/NO question and find or
-                  create the matching market.
+                  <strong className="text-white">Find a take worth arguing with.</strong>{" "}
+                  The feed is real Farcaster casts, each turned into a yes/no
+                  question. Nothing to write — unless you want to, from{" "}
+                  <strong className="text-white">Compose</strong>.
                 </span>
               </li>
               <li className="flex gap-3">
@@ -91,9 +97,9 @@ export function OnboardingModal() {
                   2
                 </span>
                 <span>
-                  <strong className="text-white">Stake USDC</strong> ($1–$1000)
-                  on your side. Funds lock for 30 days and earn yield from a
-                  Morpho vault.
+                  <strong className="text-white">Back or challenge the person.</strong>{" "}
+                  Back puts you on their side, Challenge against them — no
+                  working out which way the question is phrased.
                 </span>
               </li>
               <li className="flex gap-3">
@@ -101,12 +107,21 @@ export function OnboardingModal() {
                   3
                 </span>
                 <span>
+                  <strong className="text-white">Stake USDC</strong> ($1–$1000).
+                  Funds lock for 30 days and earn yield while they sit there.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-purple-700 text-[11px] font-semibold">
+                  4
+                </span>
+                <span>
                   <strong className="text-white">
                     Time-weighted standing wins.
                   </strong>{" "}
                   At lockup end, the side with more{" "}
-                  <em>amount × time locked</em> wins — winners take the
-                  yield plus{" "}
+                  <em>amount × time locked</em> wins — winners take the yield
+                  plus{" "}
                   <strong className="text-white">
                     10% of the losing side&apos;s principal
                   </strong>
@@ -118,9 +133,12 @@ export function OnboardingModal() {
                   !
                 </span>
                 <span>
-                  <strong className="text-white">Losers forfeit 10%</strong> of
-                  their principal to the winning side. Get back 90% if
-                  you&apos;re on the wrong side. Pick a side you&apos;d defend.
+                  <strong className="text-white">
+                    There&apos;s no oracle — the crowd decides.
+                  </strong>{" "}
+                  Takes doesn&apos;t rule on who was right, so losers forfeit
+                  10% of their principal and get 90% back. Pick a side
+                  you&apos;d defend.
                 </span>
               </li>
             </ol>
@@ -176,13 +194,17 @@ export function OnboardingModal() {
               Real funds when we move to Base mainnet.
             </div>
 
-            <button
-              type="button"
-              onClick={close}
-              className="w-full rounded-lg bg-purple-600 px-3 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700"
-            >
-              Let&apos;s go
-            </button>
+            </div>
+
+            <div className="shrink-0 border-t border-zinc-800 bg-zinc-900 p-5">
+              <button
+                type="button"
+                onClick={close}
+                className="w-full rounded-lg bg-purple-600 px-3 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700"
+              >
+                Let&apos;s go
+              </button>
+            </div>
           </div>
         </div>
       )}

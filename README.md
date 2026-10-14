@@ -20,15 +20,22 @@ composer and asked you to invent a take. That is the cold-start problem stated
 as a UI: a time-weighted market means nothing until both sides are staked, and
 nobody wants to be the first person arguing with themselves.
 
-`/feed` inverts it. You arrive to real Farcaster opinions other people already
-posted, each with the yes/no question Takes derived from it, and you back or
-challenge *that person*. Nothing to compose, no wallet needed to read.
+The feed is now the landing page. You arrive to real Farcaster opinions other
+people already posted, each with the yes/no question Takes derived from it, and
+you back or challenge *that person*. Nothing to compose, no wallet needed to
+read. The composer moved to `/compose` and is a nav tab rather than the first
+thing you meet.
+
+One routing constraint worth knowing: every snap embed already published to
+Farcaster deep-links to `/?market=<id>&side=yes`. Those casts are in the wild
+and can't be edited, so `/` still renders the composer in reply mode whenever
+`?market=` is present, and the feed otherwise. `/feed` redirects to `/`.
 
 ### What a visitor can actually do
 
 | | |
 | --- | --- |
-| Browse `/feed` and `/feed/<id>` | **Anywhere**, including a plain browser with no Farcaster account and no wallet |
+| Browse the feed at `/` and `/feed/<id>` | **Anywhere**, including a plain browser with no Farcaster account and no wallet |
 | Follow any cast back to its original | Anywhere — every card links to Farcaster |
 | Back or challenge with USDC | **Only inside Farcaster**, where the host app provides a wallet. In a browser the app says so plainly instead of showing a button that fails |
 
@@ -135,10 +142,11 @@ settlement rules, including the impaired and escrow-failure paths.
 
 ```
 app/
+├── page.tsx                      THE feed — or the composer, if ?market= (snap deep links)
 ├── feed/
-│   ├── page.tsx                  THE feed — cast-first, no wallet needed
+│   ├── page.tsx                  redirect to / (kept so old links resolve)
 │   └── [id]/page.tsx             one card: full thread, back/challenge
-├── page.tsx                      compose (or reply, via ?market=&side=)
+├── compose/page.tsx              write your own take
 ├── browse/page.tsx               all markets with live tallies
 ├── snap/route.ts                 Farcaster snap; serves snap JSON or HTML by Accept header
 ├── api/
@@ -149,6 +157,8 @@ app/
 │           ├── route.ts          GET one
 │           └── positions/route.ts POST a position (commits the market on first stake)
 └── _components/
+    ├── site-nav.tsx              primary tabs with active state (client)
+    ├── feed-list.tsx             the feed body, so / and /feed share it
     ├── feed-card.tsx             cast-first card (server component)
     ├── stake-actions.tsx         back/challenge; wallet-gated (client)
     ├── composer.tsx              the original surface: classify, stake, cast

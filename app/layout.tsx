@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { ReadySignal } from "./_components/ready-signal";
+import { SiteNav } from "./_components/site-nav";
 
 export const metadata: Metadata = {
   title: "Takes",
   description:
-    "Stake on Takes. Cast an opinion, back it with USDC, see who else is on your side.",
+    "Real Farcaster opinions, ranked by how much they invite an argument. Back the person who said it, or challenge them, with USDC on Base.",
 };
 
 export default function RootLayout({
@@ -26,26 +27,7 @@ export default function RootLayout({
             >
               Takes
             </Link>
-            <nav className="flex gap-1 text-sm">
-              <Link
-                href="/feed"
-                className="rounded-md px-3 py-1.5 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
-              >
-                Feed
-              </Link>
-              <Link
-                href="/"
-                className="rounded-md px-3 py-1.5 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
-              >
-                Compose
-              </Link>
-              <Link
-                href="/browse"
-                className="rounded-md px-3 py-1.5 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
-              >
-                Browse
-              </Link>
-            </nav>
+            <SiteNav />
           </header>
           {children}
         </div>
