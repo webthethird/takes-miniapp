@@ -1,73 +1,649 @@
 {
-  "generated_at": "2026-10-14T17:51:04.440Z",
+  "generated_at": "2026-10-14T19:44:13.096Z",
   "sources": [],
   "items": [
     {
       "id": "c4",
-      "question": "Is Trump's Putin deal a wise foreign policy move?",
+      "question": "Has Farcaster leadership handled the transition communication poorly?",
       "claim_type": "evaluative",
-      "aspect": "foreign policy wisdom",
-      "challengeability": 0.75,
+      "aspect": "leadership communication",
+      "challengeability": 0.72,
       "score": 0.7240000000000001,
       "both_sides": false,
-      "challenge_reason": "Some argue pragmatic engagement with Russia on energy supply is necessary to combat inflation and high fuel costs.",
-      "representative_cast_id": "0x7fd214256377d65376a026062dda8d47a6d7f2cb",
+      "challenge_reason": "Some would argue that leadership silence during turbulent transitions is standard practice and that premature communication creates more problems than it solves.",
+      "representative_cast_id": "0x98a109eb9d7cf3e33817206a6b7c07b45cc10835",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x98a109eb9d7cf3e33817206a6b7c07b45cc10835",
+            "text": "I think the most annoying thing is when leadership goes silent at the point people need the most clarity.\nYes it’s hard, that’s why people have PR teams, because it’s not acceptable to just disappear when the heat gets hot. \n\nI don’t necessarily have much skin in the Farcaster game, I’m just here for the vibes 😌 but Rish announcing Farcaster would be changing leadership then…radio silence, is giving extraordinarily lackluster people and management skills. \nWhy is Cassie responding to the call for proposals about the future of Farcaster just to never get a chance to discuss…?\nWhy is it taking this long to get an update? \nWhy is morale not a priority? \n\nI wish people would not start or buy companies who do not have any intention of making integrity the bedrock of each and every process. If you’re too much of a weenie to say something true & disappointing, & stand there waiting for questions, with answers (& a good attitude), don’t put yourself in charge of anyone or anything else.",
+            "username": "tedtalk.eth",
+            "fid": 1392286,
+            "ts": "2026-10-12T18:05:45.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/tedtalk.eth/0x98a109eb",
+            "replies": 4,
+            "recasts": 4,
+            "likes": 13
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Some would argue that leadership silence during turbulent transitions is standard practice and that premature communication creates more problems than it solves.",
+          "confidence": 0.88
+        },
+        {
+          "cast": {
+            "id": "0x5ec309608b9697ca0dd0e42bd41c28d57e30e7cb",
+            "text": "The same thing happened with Borodutch & Eggs. \nWe got this very unclear message, a few responses to questions, then a month of silence. Then another \nstatement finally answering the question of what was happening—Eggs was ending.\nCool! That’s the builders complete right to end a project, but why build a community around something just to ghost them like that? Leave them in the lurch? \n\nIdk. Again, I am not a builder, but my lover is, I know lots of people here are because that was the whole point of Farcaster (from my understanding), to connect builders and give them a place to run free with their genius! But I hate seeing passionate people get fcked over and that’s what it feels like. \n\nThankfully you all are so talented and creative that you’re already creating your own solutions, and I will be here to support!",
+            "username": "tedtalk.eth",
+            "fid": 1392286,
+            "ts": "2026-10-12T18:05:45.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/tedtalk.eth/0x5ec30960",
+            "replies": 0,
+            "recasts": 1,
+            "likes": 3
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply provides a parallel example of poor leadership communication (Borodutch & Eggs) that reinforces the parent's critique about silence and lack of clarity during transitions. The author agrees that ghosting communities after building them is a failure of integrity and leadership responsibility.",
+          "confidence": 0.95
+        },
+        {
+          "cast": {
+            "id": "0xa0564ea08ed6918108d93d19c8da0d5654a05aea",
+            "text": "Knowing how fresh you are to this space, it must have taken a lot to even say anything. I think this is a highly valuable, informed, and unbiased perspective. \nThank you for speaking up and keepin it a buck ❤️🙏🏿🫶🏿\n\nDefinitely a big shout to the builders fighting to keep the network they’ve contributed to for years together.\n\nPpl do whatever, especially when they aren’t affected negatively from their actions ( or inaction)",
+            "username": "bornelder.eth",
+            "fid": 211275,
+            "ts": "2026-10-12T18:10:07.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/bornelder.eth/0xa0564ea0",
+            "replies": 2,
+            "recasts": 1,
+            "likes": 4
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply affirms the parent's critique by praising their 'valuable, informed, and unbiased perspective' and adding support for the builders and network—it extends rather than contests the parent's argument about leadership's poor communication and lack of accountability.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x857bbb6a92e1c2d3ad7a90aeaaca46fdf743aec7",
+            "text": "Silence in critical moments doesn't protect a team, it breaks trust. Leadership isn't just for the easy wins, it's for the hard conversations.\n\nProcess and respect are what keep a community together long after the headlines fade.",
+            "username": "shahbazbaaz",
+            "fid": 517425,
+            "ts": "2026-10-13T06:08:11.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/shahbazbaaz/0x857bbb6a",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply reinforces the parent's core complaint about leadership silence during critical moments, emphasizing how it damages trust and undermines community cohesion. It frames good leadership as requiring difficult transparency, which directly supports the parent's argument that going silent is a management failure.",
+          "confidence": 0.95
+        }
+      ],
+      "yes_casts": 4,
+      "no_casts": 0,
+      "yes_authors": 3,
+      "no_authors": 0,
+      "distinct_authors": 3
+    },
+    {
+      "id": "c58",
+      "question": "Does Islam have a positive place in humanity's future?",
+      "claim_type": "evaluative",
+      "aspect": "religious compatibility",
+      "challengeability": 0.75,
+      "score": 0.7000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Many argue that Islam's core values are compatible with modernity, gender equality, and LGBTQ+ rights when interpreted progressively and contextually.",
+      "representative_cast_id": "0x4898ff8c2908965cf6ee29a6017e5106febbd6a7",
       "back_means": "no",
       "challenge_means": "yes",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x7fd214256377d65376a026062dda8d47a6d7f2cb",
-            "text": "Inflation is now up to 3.7%. Perhaps even more concerning is that core inflation is up to 2.6%. This likely means energy prices are finding their way into other products, but tariffs could also be part of the issue.\n\nMAGAs will still bring up Biden to either pass the blame or make Trump look not as bad, lol. Diesel is still the biggest issue in general, and Trump's idiotic deal with Putin isn't likely to help much.",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-14T14:07:01.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0x7fd21425",
-            "replies": 2,
-            "recasts": 2,
-            "likes": 8
+            "id": "0x4898ff8c2908965cf6ee29a6017e5106febbd6a7",
+            "text": "So...\nUnpopular? Yes? True? Yes.\n\nI don't think Islam has a place in humanity's future in a positive way.\nFrom beliefs to tolerance there is now way to rectify anything with a positive outcome.\n\nWomen's rights? Please!\nGays? Commit suicide.\nChildren? Rape is an option.\n\nNope,\nI dont like it.",
+            "username": "strangesmell",
+            "fid": 247605,
+            "ts": "2026-10-11T01:51:54.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/strangesmell/0x4898ff8c",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
           },
           "stance": "no",
           "via": "claim",
-          "reason": "Some argue pragmatic engagement with Russia on energy supply is necessary to combat inflation and high fuel costs.",
+          "reason": "Many argue that Islam's core values are compatible with modernity, gender equality, and LGBTQ+ rights when interpreted progressively and contextually.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c1",
+      "question": "Is X's account suspension process fair?",
+      "claim_type": "evaluative",
+      "aspect": "platform fairness",
+      "challengeability": 0.68,
+      "score": 0.6900000000000001,
+      "both_sides": true,
+      "challenge_reason": "X's trust and safety team enforces clear policies; users who violate them may not recognize their violation, but that doesn't make the process unfair.",
+      "representative_cast_id": "0xb36f0730f9b3bb0e3a625383fc3b818978c85ca4",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": "0x185b2086a1b0afa3e4095b879d140e9f695a5040",
+      "members": [
+        {
+          "cast": {
+            "id": "0xb36f0730f9b3bb0e3a625383fc3b818978c85ca4",
+            "text": "X platform (formerly twitter) suspend my account!!!  \nlol so this is what using X for years gets you 😂\none day you just wake up and your account is gone  no real explanation of what you actually did wrong\nyou appeal, they say nope we checked it, still no clue what rule you broke !!!\nimagine building your whole social life on a platform where they can just shut you down whenever they want and you dont even get a proper explanation\nand people still call this the town square lol 🤣 \nat least on here i can still talk about it !! 🟪 \nLong Life Farcaster!",
+            "username": "best",
+            "fid": 13674,
+            "ts": "2026-10-12T06:21:18.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/best/0xb36f0730",
+            "replies": 16,
+            "recasts": 14,
+            "likes": 51
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "X's trust and safety team enforces clear policies; users who violate them may not recognize their violation, but that doesn't make the process unfair.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x723161e00a9d0990bf92e50e828895accff2f656",
+            "text": "o bad happened to you \nI don’t know why X suspended so much accounts",
+            "username": "shahbazbaaz",
+            "fid": 517425,
+            "ts": "2026-10-12T06:44:10.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/shahbazbaaz/0x723161e0",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply validates the parent's complaint about X's suspension process by sympathizing with the outcome ('so bad happened to you') and expressing confusion about X's suspension patterns, reinforcing the parent's core claim that suspensions lack clarity and fairness.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x29b4f72de1c126c630ad339fc16c81b3b8c52158",
+            "text": "They did this to my account too. I was too lazy to figure out why, since I barely use it anyway. Then out of nowhere they unblocked me. Can’t really call it a happy ending, tho...I just don’t care, and I’m not losing anything either way",
+            "username": "rrrita.eth",
+            "fid": 16601,
+            "ts": "2026-10-12T06:51:15.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/rrrita.eth/0x29b4f72d",
+            "replies": 2,
+            "recasts": 1,
+            "likes": 3
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply corroborates the parent's complaint by sharing a personal experience of arbitrary suspension without clear explanation, then unpredictable reinstatement. While the replier expresses indifference to the outcome, they validate the parent's core grievance: the process lacks transparency and predictability, which supports the 'no' position on fairness.",
           "confidence": 0.85
         },
         {
           "cast": {
-            "id": "0x39553061e3107a028dbb93450c41256539d7d49c",
-            "text": "it's likely to help Russia fund its illegal war effort 🤷‍♂️ \n\ntrump doesn't like helping Americans, remember how he doesn't care if California gets nuked?\n\nhe's in it to co-opt everything possible and steal as much power as he can, and daddy vlad is more important to him than we are",
-            "username": "epicdylan",
-            "fid": 8573,
-            "ts": "2026-10-14T14:50:23.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/epicdylan/0x39553061",
-            "replies": 1,
-            "recasts": 0,
-            "likes": 2
-          },
-          "stance": "no",
-          "via": "stance",
-          "reason": "The reply doubles down on criticism of the deal, arguing it funds Russia's war effort and reflects Trump's misplaced priorities. It reinforces the parent's position that the deal is problematic ('idiotic').",
-          "confidence": 0.95
-        },
-        {
-          "cast": {
-            "id": "0x2e561ea6e180ab1ecb638adbd93957e56d04c423",
-            "text": "the orange fool can't see further ahead than the weekend, the next election, etc. no doubt he thinks he's using putin to his mid-term advantage and that he's convinced americans it's 4D chess and beyond our comprehension.\n\nsome citizens are persuaded, but no /real/ americans believe this shit.",
-            "username": "wake",
-            "fid": 2904,
-            "ts": "2026-10-14T15:38:30.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/wake/0x2e561ea6",
+            "id": "0x436cbe7215775f2de39a8c38ffcf73276d06fa2c",
+            "text": "sorry to hear that!\nLong live Farcaster!",
+            "username": "nothing",
+            "fid": 18745,
+            "ts": "2026-10-12T06:57:01.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/nothing/0x436cbe72",
             "replies": 0,
             "recasts": 0,
             "likes": 1
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The reply agrees with the parent's criticism of Trump's deal with Putin, characterizing Trump as short-sighted and unable to see beyond immediate political gain, which reinforces the parent's argument that the deal prioritizes Trump's self-interest over American welfare.",
+          "reason": "The reply expresses sympathy with the parent's complaint about unfair suspension and lack of explanation, affirming the core grievance that the process is problematic. The endorsement of Farcaster over X reinforces agreement with the parent's implicit position that X's fairness is lacking.",
+          "confidence": 0.85
+        },
+        {
+          "cast": {
+            "id": "0xc47e105c08363d78fc319542e8d1a8a0f05e815c",
+            "text": "relatable rage, glad you survived the purge and found a place where your voice actually matters",
+            "username": "hendrazk",
+            "fid": 213222,
+            "ts": "2026-10-12T07:03:47.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/hendrazk/0xc47e105c",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply validates the parent's complaint about unfair treatment ('relatable rage') and echoes the parent's core criticism that X silences voices while Farcaster allows them. This is solidarity with the parent's position that X's process lacks fairness and transparency.",
+          "confidence": 0.95
+        },
+        {
+          "cast": {
+            "id": "0x185b2086a1b0afa3e4095b879d140e9f695a5040",
+            "text": "Oh, I'm sorry, but there's hope. Tell support it will be resolved or they'll release it for you in a few days. Don't worry.",
+            "username": "mershad",
+            "fid": 291792,
+            "ts": "2026-10-12T07:43:00.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/mershad/0x185b2086",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The parent argues the suspension process is unfair due to lack of explanation and unilateral authority. The reply offers reassurance that support will resolve it, implying the process works and will be made right—a contradictory message that disputes the parent's core complaint of unfairness.",
+          "confidence": 0.72
+        },
+        {
+          "cast": {
+            "id": "0x672bad8e8f46713e3c55c9ac4190475fc2e33014",
+            "text": "It happened to me once too, so I totally understand and agree with you! 💜\nLong live Farcaster! 🟪",
+            "username": "0100",
+            "fid": 17076,
+            "ts": "2026-10-12T10:14:45.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/0100/0x672bad8e",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply explicitly agrees with the parent's complaint about X's suspension process ('totally understand and agree with you'), affirming that the process is unfair by restating sympathy with the parent's grievance.",
+          "confidence": 0.95
+        },
+        {
+          "cast": {
+            "id": "0x110780d7caedcf8c43015fe1dfc31a29c1abc305",
+            "text": "i so much love farcaster bc it’s a really tight community. when a nigha stops showing up, everyone’ll def notice if you’ve been active long enough & some might decides to reach out.\n\n& you tend to see ppl who’re big dawgs randomly in your comments every time despite you’re small, unlike x\n\nhttps://x.com/nyllkeyy/status/2109325642055430334?s=46",
+            "username": "nyllkeyy",
+            "fid": 3343870,
+            "ts": "2026-10-12T11:32:27.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/nyllkeyy/0x110780d7",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply contrasts X's impersonal suspension system (where people disappear without notice or explanation) with Farcaster's community-oriented approach where people notice and care about members. By praising Farcaster's alternative model, it implicitly reinforces the parent's critique that X's process lacks fairness and community accountability.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0xfe857adf658f30f0c96aeb0b7f0f6e89346650bd",
+            "text": "Oh this sucks. I haven’t gone over there this morning to check our account. I’ve heard of a few now being suspended on X as well as Facebook.",
+            "username": "phos3",
+            "fid": 446581,
+            "ts": "2026-10-12T13:50:20.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/phos3/0xfe857adf",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply expresses sympathy for the experience and corroborates the problem by sharing that others have also been suspended on similar platforms, reinforcing the parent's critical stance rather than defending the fairness of the process.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0xdd595fcc8b1fe63dfe586a64dee469658419aeb3",
+            "text": "X is garbage Grok is a pedophile nazi just like Elon\nAmen",
+            "username": "cryptochris77.eth",
+            "fid": 210343,
+            "ts": "2026-10-13T02:09:02.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/cryptochris77.eth/0xdd595fcc",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply affirms the parent's criticism of X by calling the platform 'garbage' and attacking its leadership, which reinforces the parent's position that X's processes are unjust and unreasonable.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x82e6e9d97d0d84797e76a3d38f5ad9de30e10834",
+            "text": "I'm sorry... it's a terrible feeling... I hope things get sorted out. A lot of people have been getting banned lately, and follower counts are dropping too—and the reason isn't clear.",
+            "username": "samaneh9297",
+            "fid": 475410,
+            "ts": "2026-10-13T04:11:21.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/samaneh9297/0x82e6e9d9",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply validates the parent's complaint about unclear suspension processes and lack of explanation by adding corroborating evidence that many people face similar unexplained bans and account impacts. This supports the parent's position that the process is unfair.",
+          "confidence": 0.88
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 10,
+      "yes_authors": 1,
+      "no_authors": 10,
+      "distinct_authors": 11
+    },
+    {
+      "id": "c7",
+      "question": "Are options structurally better suited than perpetuals to serve both retail and institutional traders?",
+      "claim_type": "evaluative",
+      "aspect": "market structure fit",
+      "challengeability": 0.68,
+      "score": 0.686,
+      "both_sides": true,
+      "challenge_reason": "Defenders of perps argue they are more intuitive for retail and perfectly adequate for most institutional hedging needs.",
+      "representative_cast_id": "0xb024422c57863c0c6f57295e60e94dc9d4d7e430",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": "0xd4b5b82919a431cf96c82e1f5e3ec9f6f26d4331",
+      "members": [
+        {
+          "cast": {
+            "id": "0xb024422c57863c0c6f57295e60e94dc9d4d7e430",
+            "text": "I think options markets will ultimately be much bigger than perpetuals.\n\nPerps are easier to understand. Options are far more interesting.\n\nI get the appeal of perps. Price goes up, you make money. Add leverage, and the gains (or losses) are multiplied. Simple, intuitive, and perfect for the casino-like experience crypto has built around trading.\n\nBut calling perps a replacement for options is short-sighted.\n\nYou're building for the trader who wants leverage today, and missing the much bigger prize: a market that serves both the degen and the institution.\n\nOptions do both.\n\nA retail trader can use them to speculate with leverage. A sophisticated trader can use them to hedge, earn yield, lock in an entry or exit, or manage risk across a whole portfolio.\n\nTake a simple covered call. You hold an asset and sell someone the right to buy it from you at a price you chose. You collect a premium, and in return you give up some upside if it rallies past that price.\n\nIt's not risk-free. But it's a clean way to put an asset you already own to work.\n\nNow try doing that with a perpetual.\n\nYes, funding rates exist. And yes, you can build strategies around them. But funding moves with positioning, and it can turn on you overnight. That's a very different thing from selling an option against a bag you hold.\n\nPerps give you leveraged exposure. Options let you shape the payoff you want.\n\nPeople say options are too complicated for retail. I don't buy it.\n\nThe mechanics under the hood can be complex. The experience doesn't have to be.\n\nA user shouldn't need to know every Greek or pricing model to understand this: put your capital to work and earn a return, or pay a premium for leveraged exposure.\n\nOn one side, someone earns yield on their capital. On the other, someone pays for the right to trade with it.\n\nThe UI can make that simple.\n\n*Hint hint: I'm working on bringing something to market along these lines.*\n\nThere's also a structural problem with perps that people forget. They're built to track spot, but they don't always behave that way.\n\nLook at $CASHCAT when it first listed on Hyperliquid. The perp plunged while spot reportedly stayed untouched. Longs got wiped out even though the underlying price barely moved.\n\nThat's a hard reminder that leverage comes with market-structure risk, not just directional risk.\n\nTo be clear, perps have their place. Institutions use them, too. And options aren't better for every trade.\n\nBut as onchain markets expand into stocks and other traditional assets, I think the opportunity for onchain options is exponentially larger than yet another leveraged casino.\n\nPerps give you leverage.\n\nOptions give you leverage, yield, hedging, defined risk, and ways to express a view that perps alone can't.\n\nOne is a powerful trading tool.\n\nThe other is the foundation of a much broader financial market.",
+            "username": "jacek",
+            "fid": 15983,
+            "ts": "2026-10-14T13:51:46.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/jacek/0xb024422c",
+            "replies": 3,
+            "recasts": 6,
+            "likes": 29
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Defenders of perps argue they are more intuitive for retail and perfectly adequate for most institutional hedging needs.",
+          "confidence": 0.88
+        },
+        {
+          "cast": {
+            "id": "0xacaabc3ee2e6e107c6f3a1098a504a90f0bb6293",
+            "text": "the CASHCAT mention is real, perps are just glorified gambling chips while options actually let people think",
+            "username": "hendrazk",
+            "fid": 213222,
+            "ts": "2026-10-14T14:28:44.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/hendrazk/0xacaabc3e",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply validates the parent's core argument by endorsing the CASHCAT example as evidence that perps are gambling instruments, while affirming that options enable actual financial thinking and strategy—directly supporting the parent's position that options serve a broader market than perps.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x367730ea36afe83e6680d358c48b67bbb2ddbdeb",
+            "text": "Yes and in this case it feels like a “if you build it they will come”",
+            "username": "yerbearserker",
+            "fid": 409857,
+            "ts": "2026-10-14T18:12:19.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/yerbearserker/0x367730ea",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply affirms the parent's position with 'Yes' and adds supporting commentary ('if you build it they will come') suggesting confidence that the predicted market expansion for options will materialize once infrastructure exists.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0xd4b5b82919a431cf96c82e1f5e3ec9f6f26d4331",
+            "text": "The thing that killed onchain options last cycle wasn't complexity, it was liquidity. A perp is one book per asset. Options split that same liquidity across every strike and expiry. And the covered call vaults that did find size mostly ended up selling cheap upside to market makers every week. Curious how you're solving the seller side",
+            "username": "martincasais.eth",
+            "fid": 2850895,
+            "ts": "2026-10-14T18:56:06.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/martincasais.eth/0xd4b5b829",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply challenges the parent's core claim by identifying a structural problem (liquidity fragmentation and unfavorable pricing for sellers) that undermines options' practical viability for serving both retail and institutional traders. While acknowledging the parent's framing, it presents evidence that perps may actually be better suited due to their concentrated liquidity.",
+          "confidence": 0.85
+        }
+      ],
+      "yes_casts": 3,
+      "no_casts": 1,
+      "yes_authors": 3,
+      "no_authors": 1,
+      "distinct_authors": 4
+    },
+    {
+      "id": "c9",
+      "question": "Is Spain's primary political threat internal rather than from Russia?",
+      "claim_type": "evaluative",
+      "aspect": "threat assessment",
+      "challengeability": 0.65,
+      "score": 0.662,
+      "both_sides": true,
+      "challenge_reason": "Others argue Russia's disinformation campaigns and geopolitical interference pose a significant and underestimated threat to Spain regardless of domestic challenges.",
+      "representative_cast_id": "0x6052056085a567fcdf4453ad9ee80b4e74066fb4",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": "0x95a11cd363219ddacfbf515433182ad33c8bca90",
+      "members": [
+        {
+          "cast": {
+            "id": "0x6052056085a567fcdf4453ad9ee80b4e74066fb4",
+            "text": "saying that we are bots is something  that only someone out of the reality (or the country) can think it is true\n\nreality is that +50% of spain population considers spain a failed state and fascist state (remember we were living in a fascist dictatorship less than 80 years ago, so there are people alive here who lived in the dictatorship and who lost member of their families, included me) \n\n+33% who does not vote and some of the others like me that vote to dont giveaway the political power to the fascist parties, the most voted party PP (right) were funded by members of dictatorship govern, then separated some years ago into a new party called vox (far right)\n\nand somehow you think our problem is russia, we have the enemy inside and we know, so we fight them, russia is the least of our problems",
+            "username": "jvaleska.eth",
+            "fid": 13505,
+            "ts": "2026-10-06T14:49:33.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/jvaleska.eth/0x60520560",
+            "replies": 3,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others argue Russia's disinformation campaigns and geopolitical interference pose a significant and underestimated threat to Spain regardless of domestic challenges.",
+          "confidence": 0.75
+        },
+        {
+          "cast": {
+            "id": "0x329bd755b1ebf854188c3acdef52df0c9f27736f",
+            "text": "the fascist institutions changed their names with the democracy but tje same people continued in charge, they keep killing people in the transition to democracy, included police, army (who still has fascist badges and songs), the complete justice system and as I told before the political parties (curisely the og communist party is still banned among some of their ramifications)\n\ni recommend you to read about spain history of the past  50-100 years so you understand what it is about",
+            "username": "jvaleska.eth",
+            "fid": 13505,
+            "ts": "2026-10-06T14:53:03.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/jvaleska.eth/0x329bd755",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply elaborates on and deepens the root author's argument that Spain's core problems are internal institutional fascism and continuity of dictatorship-era power structures. It adds specific evidence (police, army, justice system, banned communist party) to support the same claim that the enemy is inside, not external.",
+          "confidence": 0.95
+        },
+        {
+          "cast": {
+            "id": "0x95a11cd363219ddacfbf515433182ad33c8bca90",
+            "text": "\"We have fascists so that means the Russian are innocent of all things!\" Lol",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-06T17:01:11.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/icetoad.eth/0x95a11cd3",
+            "replies": 2,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply uses sarcasm to mock the parent's position, characterizing it as a false dichotomy that absolves Russia of wrongdoing. The reply implies Russia poses a significant threat and cannot be dismissed as 'the least of our problems' simply because internal threats exist.",
+          "confidence": 0.85
+        }
+      ],
+      "yes_casts": 2,
+      "no_casts": 1,
+      "yes_authors": 1,
+      "no_authors": 1,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c11",
+      "question": "Is representative democracy (as currently practiced) delivering meaningfully different candidates at elections?",
+      "claim_type": "evaluative",
+      "aspect": "democratic choice quality",
+      "challengeability": 0.72,
+      "score": 0.662,
+      "both_sides": true,
+      "challenge_reason": "Some argue that elections regularly produce genuinely distinct policy platforms and that marginal improvements in candidate quality are meaningful.",
+      "representative_cast_id": "0x790243a5920281109b9e88724d5f81adf8cfe455",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": "0x67c61b419dba2da6607ddd43bb52786d50e54029",
+      "members": [
+        {
+          "cast": {
+            "id": "0x790243a5920281109b9e88724d5f81adf8cfe455",
+            "text": "The best argument for representative democracy (vs direct democracy) is that people don’t have time to invest themselves in every political decision.\n\nIronically, now we livestream every decision, follow every decision via pundits, and read each others hot takes about these decisions, all the while feeling helpless knowing we have no power to shape the decision-making process until, in the best case scenario, the next election provides meaningfully different candidates.\n\nSpoiler alert: it won’t.",
+            "username": "thumbsup.eth",
+            "fid": 12480,
+            "ts": "2026-10-10T16:46:41.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/thumbsup.eth/0x790243a5",
+            "replies": 2,
+            "recasts": 1,
+            "likes": 2
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Some argue that elections regularly produce genuinely distinct policy platforms and that marginal improvements in candidate quality are meaningful.",
+          "confidence": 0.75
+        },
+        {
+          "cast": {
+            "id": "0x67c61b419dba2da6607ddd43bb52786d50e54029",
+            "text": "Disagree,  if varying forms of populists win state level elections in Nebraska,  texas, Iowa,Kansas and Maine, I think we see a massive flood of left aligned populists running in 2028",
+            "username": "purp",
+            "fid": 14364,
+            "ts": "2026-10-10T17:30:26.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/purp/0x67c61b41",
+            "replies": 2,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply directly contradicts the parent's 'spoiler alert: it won't' claim by asserting that populist victories at state level will produce 'a massive flood of left aligned populists' in 2028—evidence that elections DO deliver meaningfully different candidates.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 1,
+      "yes_authors": 1,
+      "no_authors": 1,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c15",
+      "question": "Are Ledger hardware wallets a reliable way to secure crypto assets?",
+      "claim_type": "evaluative",
+      "aspect": "wallet security",
+      "challengeability": 0.65,
+      "score": 0.6240000000000001,
+      "both_sides": false,
+      "challenge_reason": "Ledger has sold millions of devices and most users have not experienced theft, suggesting the vulnerability may be rare or require specific conditions.",
+      "representative_cast_id": "0x0b024eee2ad4293c7164772fb21013f51f5402ad",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x0b024eee2ad4293c7164772fb21013f51f5402ad",
+            "text": "https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts\nGot a ledger? Even if you are doing everything right they can still steal your digital assets! Even added a sim card so they can send your seed phrase without the internet!\n\nThink I will switch to physical assets from now on.",
+            "username": "strangesmell",
+            "fid": 247605,
+            "ts": "2026-10-10T19:34:15.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/strangesmell/0x0b024eee",
+            "replies": 2,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Ledger has sold millions of devices and most users have not experienced theft, suggesting the vulnerability may be rare or require specific conditions.",
+          "confidence": 0.72
+        },
+        {
+          "cast": {
+            "id": "0xd518aa65b77b3e31876501525c41dbbcd859aba7",
+            "text": "Fair concern, and the Ledger story shows the real weak point: whoever gets your 12 words gets your funds, even with a hardware wallet. Super AI's Glacier takes a different approach. It freezes the whole wallet (no sends, no swaps, and the seed phrase stays locked too), and it only wakes up when you show the camera one QR code of an address you chose, kept on paper or on another device. Since nobody knows which address unlocks it, it's very hard to crack, and there's nothing to buy or carry. Reply here if you have questions.\nJack — app.superaiwallet.com/wallet",
+            "username": "superaiwallet",
+            "fid": 3353676,
+            "ts": "2026-10-10T19:35:39.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/superaiwallet/0xd518aa65",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply validates the parent's concern about seed phrase compromise being the critical vulnerability in hardware wallets, then proposes an alternative approach that addresses this weakness. It affirms the parent's skepticism about Ledger's reliability while pivoting to a competing solution.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x443d0d792d9e9bef2d8cf37d51973fa9f2055951",
+            "text": "intercepted hardware in the mail is pure nightmare fuel. supply chain attacks bypass every basic rule users are taught. splitting custody across independent setups is the only real hedge. https://ano.ww8.io/whois",
+            "username": "rvwv",
+            "fid": 3208406,
+            "ts": "2026-10-11T09:00:52.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/rvwv/0x443d0d79",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply validates the parent's concern about compromised Ledger devices (supply chain attacks) and advocates for alternative security approaches (splitting custody), reinforcing the parent's skepticism about Ledger's reliability.",
           "confidence": 0.92
         }
       ],
@@ -78,315 +654,492 @@
       "distinct_authors": 3
     },
     {
-      "id": "c3",
-      "question": "Will SCOTUS apply unitary executive doctrine consistently regardless of party in power?",
-      "claim_type": "predictive",
-      "aspect": "judicial consistency",
-      "challengeability": 0.75,
-      "score": 0.7120000000000001,
+      "id": "c28",
+      "question": "Is private ownership of beaches fundamentally wrong?",
+      "claim_type": "evaluative",
+      "aspect": "beach access policy",
+      "challengeability": 0.68,
+      "score": 0.6120000000000001,
       "both_sides": false,
-      "challenge_reason": "The Supreme Court's jurisprudence on executive power may reflect genuine legal principles rather than partisan opportunism.",
-      "representative_cast_id": "0xdb6242cced130f598283ae70c7e7e89a7732c26c",
+      "challenge_reason": "Others argue that property rights, including beachfront land, should be protected and enforced by law.",
+      "representative_cast_id": "0xf928b156d7300b785e102858f083d1061aaea184",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xf928b156d7300b785e102858f083d1061aaea184",
+            "text": "I just like the law and it’s not even schadenfreude. I think private ownership of beaches is fundamentally wrong. Unfortunate for people who didn’t know or never thought it would happen to them",
+            "username": "trish",
+            "fid": 4877,
+            "ts": "2026-10-11T20:33:05.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/trish/0xf928b156",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others argue that property rights, including beachfront land, should be protected and enforced by law.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0xc1c3335c1a4c6e4b1e179ecacd9ee44d72319f46",
+            "text": "Yeah me too. My wife’s family is from Newport Beach and I consistently thought it was kind of amazing how public the beaches are / were.",
+            "username": "terrybain",
+            "fid": 308588,
+            "ts": "2026-10-11T21:16:44.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/terrybain/0xc1c3335c",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply uses agreement marker 'Yeah me too' and adds supporting evidence (the example of Newport Beach being public) that reinforces the parent's position that beach ownership being public is good.",
+          "confidence": 0.95
+        }
+      ],
+      "yes_casts": 2,
+      "no_casts": 0,
+      "yes_authors": 2,
+      "no_authors": 0,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c3",
+      "question": "Do AI companies have a responsibility to respect copyright?",
+      "claim_type": "prescriptive",
+      "aspect": "AI copyright responsibility",
+      "challengeability": 0.72,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Some argue AI model training on existing content is fair use and that copyright restrictions would stifle beneficial innovation.",
+      "representative_cast_id": "0xc7ee0fc3cb2420f7797a072e4638b84f82db1206",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xc7ee0fc3cb2420f7797a072e4638b84f82db1206",
+            "text": "To be honest, when the AI hype started I initially was very skeptical - mostly because early models didn't bother with attribution and the way they were fighting against the very idea of copyright in itself made me pessimistic about the things to come. The tech industry has a bad habit of ignoring these laws thinking it doesn't matter, getting caught, fighting it in court, then eventually losing. The Sora shutdown is a good example but there are countless examples of this happening throughout history.",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-13T17:21:17.000Z",
+            "channel": "contemporary-art",
+            "url": "https://farcaster.xyz/ryangtanaka/0xc7ee0fc3",
+            "replies": 5,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Some argue AI model training on existing content is fair use and that copyright restrictions would stifle beneficial innovation.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x77ed164d461f2b81c9149f019f4af5856c347188",
+            "text": "I changed my mind about it somewhat after I noticed that newer models give proper attribution of their sources, which is a bigger deal than most people think - in the aftermath of these legal battles, there was usually no upside for creatives because from their point of view, nothing had really changed. But the combination of new regulations and market needs (attribution is non-negotiable for professional development, the need was always there) has created a new opportunity for technology to create a copyright system that can operate at scale, even while remaining fully digital.",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-13T17:23:04.000Z",
+            "channel": "contemporary-art",
+            "url": "https://farcaster.xyz/ryangtanaka/0x77ed164d",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The author initially held that AI companies have a responsibility to respect copyright (exemplified by skepticism about their disregard for it). The reply affirms this stance by celebrating that newer models now DO respect copyright through attribution, and frames this as a positive evolution driven by regulations and market needs. The author is not reversing position but rather expressing qualified optimism that the responsibility is being met.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0xaa27a02d6e128069c73c3f02861c5198e72120b7",
+            "text": "The big issue here is provenance. Historically speaking, the reason why DRM (digital rights management) initiatives often fail is because they get bottlenecked by startups trying to \"own\" the records to the rights - incumbents don't want competition (they're charging $50 per registration these days), new projects don't have the community's trust, and having all those agreements sitting in one server by one company made them too vulnerable to stand on their own. So what happens is that a new startup attempts to \"solve\" this problem, runs for about a few years, then shuts down eventually as they're not able to keep it going for the long-term. All those records - now just gone.",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-13T17:23:28.000Z",
+            "channel": "contemporary-art",
+            "url": "https://farcaster.xyz/ryangtanaka/0xaa27a02d",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply supports the root's position that AI companies should respect copyright by explaining the practical failure modes of ignoring rights management (DRM systems collapsing, records being lost). It illustrates why copyright infrastructure matters and why companies need to take it seriously, lending evidence to the responsibility thesis.",
+          "confidence": 0.78
+        },
+        {
+          "cast": {
+            "id": "0x56e7fe91d1097ee6bebcdadaa7ee803270d3f2a9",
+            "text": "At teia.cafe, we're taking a much different approach - by starting with TEIA's blockchain-based registration system, which is both an open-source project, community run/owned, and a non-profit entity that acts as the \"neutral ground\" that was always needed in the space. Even if our company were to close up today, the records will always remain attached to the FA2 token that has been standardized and used for over 6 years now - it's still the best chance for the industry to make it work, even today.",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-13T17:23:44.000Z",
+            "channel": "contemporary-art",
+            "url": "https://farcaster.xyz/ryangtanaka/0x56e7fe91",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply describes an alternative technical approach (blockchain-based registration) to implementing copyright respect, which supports the parent's position that copyright responsibility matters and should be taken seriously by the industry. The reply does not retract the original skepticism but rather offers a constructive solution aligned with the responsibility principle.",
+          "confidence": 0.75
+        },
+        {
+          "cast": {
+            "id": "0x1101e4bb397e3d04a4e81a921b2dd7147f16a0f6",
+            "text": "The idea here is to use the blockchain's immutable records and combine it with the power of AI to give proper attribution and create a royalties payment system that is both transparent and fair. If that can be made into a reality, people - not just artists, but everyone as a whole - may finally see how this technology can be made for the public's benefit and I do think more people will come around as well. I really do believe that it is in the tech industry's own interest to make this happen - because the reality is that copyright controls most of what happens in the arts/entertainment industries and there is more money to be had there, too. Bridging the gap between AI and attribution may be the most important issue we're facing today, honestly.",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-13T17:23:58.000Z",
+            "channel": "contemporary-art",
+            "url": "https://farcaster.xyz/ryangtanaka/0x1101e4bb",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply proposes a technological solution (blockchain + AI for attribution and royalties) to enable copyright respect, which supports the parent's position that the tech industry must respect copyright laws. The author is offering a constructive path forward rather than retreating from their original stance.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 5,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c6",
+      "question": "Are MAGA supporters intellectually sharp?",
+      "claim_type": "evaluative",
+      "aspect": "intelligence",
+      "challengeability": 0.65,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Many would argue that MAGA supporters span the full range of intelligence, and that sweeping generalizations about any political group's intellectual capability are unfair.",
+      "representative_cast_id": "0x21e595da7bc85ede1ca78940166e45cba0bfddfe",
       "back_means": "no",
       "challenge_means": "yes",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0xdb6242cced130f598283ae70c7e7e89a7732c26c",
-            "text": "SCOTUS will be all for the “unitary executive powers” until a dem is in office.",
-            "username": "hyp",
-            "fid": 271878,
-            "ts": "2026-10-13T14:03:17.000Z",
+            "id": "0x21e595da7bc85ede1ca78940166e45cba0bfddfe",
+            "text": "Maybe on the very surface they do, but otherwise not. These aren't the sharpest knives in the drawer.\n\nExhibit A from the other night: The Good Liars go to Trump events like this in order to expose the thinking of MAGA. They make sure to pose the right questions to do that, but they make sure not to push back too forcefully or insult them.\n\nhttps://youtu.be/t0Z_AEdIggM?is=JQuKMcboSbULOlie",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-11T17:14:46.000Z",
             "channel": "politics",
-            "url": "https://farcaster.xyz/hyp/0xdb6242cc",
-            "replies": 3,
-            "recasts": 1,
-            "likes": 15
+            "url": "https://farcaster.xyz/icetoad.eth/0x21e595da",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
           },
           "stance": "no",
           "via": "claim",
-          "reason": "The Supreme Court's jurisprudence on executive power may reflect genuine legal principles rather than partisan opportunism.",
-          "confidence": 0.82
+          "reason": "Many would argue that MAGA supporters span the full range of intelligence, and that sweeping generalizations about any political group's intellectual capability are unfair.",
+          "confidence": 0.75
         },
         {
           "cast": {
-            "id": "0x3131fd4dbb40ba3db86d15cd639bfa16c455c2a6",
-            "text": "they're going to be so mad when they get diluted and make up some reason why it's not allowed so that'll be awkward",
-            "username": "nomygod.eth",
-            "fid": 238370,
-            "ts": "2026-10-13T14:37:57.000Z",
+            "id": "0xb9d98eb496f7289830022dd6a236b14cb53952ef",
+            "text": "I wouldn't let this paint a picture of all Americans for you, just MAGA.",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-11T17:50:25.000Z",
             "channel": "politics",
-            "url": "https://farcaster.xyz/nomygod.eth/0x3131fd4d",
-            "replies": 1,
+            "url": "https://farcaster.xyz/icetoad.eth/0xb9d98eb4",
+            "replies": 0,
             "recasts": 0,
-            "likes": 0
+            "likes": 1
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The reply agrees with the parent's skepticism about consistent application—it elaborates on the predicted partisan flip-flopping by describing how SCOTUS would invent justifications to restrict executive powers once a Democrat is in office, supporting the parent's claim of inconsistent, party-dependent jurisprudence.",
-          "confidence": 0.92
+          "reason": "The parent made an observation about Americans broadly based on the video. The reply agrees with the root's original stance by clarifying that the video evidence should be narrowed to MAGA supporters specifically, not generalized to all Americans—this supports the root's negative characterization of MAGA while protecting the broader group from the same judgment.",
+          "confidence": 0.85
         },
         {
           "cast": {
-            "id": "0x2e8c537a8af78cf65ffe21ffc96f8443684ddec1",
-            "text": "I wish but Dems have no balls. Hope I’m wrong.",
-            "username": "hyp",
-            "fid": 271878,
-            "ts": "2026-10-13T15:26:13.000Z",
+            "id": "0x480b4a8a5e13ca56a46cc3a34299414a1d8a0e00",
+            "text": "The fact that these people fully support Trump but can't name a single thing he's done that they like...simply insane",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-11T17:51:30.000Z",
             "channel": "politics",
-            "url": "https://farcaster.xyz/hyp/0x2e8c537a",
-            "replies": 1,
+            "url": "https://farcaster.xyz/icetoad.eth/0x480b4a8a",
+            "replies": 0,
             "recasts": 0,
-            "likes": 0
+            "likes": 1
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The root author expressed skepticism that SCOTUS will apply the doctrine consistently—predicting partisan flip-flopping. The parent elaborated by imagining SCOTUS inventing post-hoc justifications to restrict executive power under Democratic administrations. The reply agrees with this pessimistic framing by expressing doubt that Democrats have the political strength to challenge judicial inconsistency, reinforcing the prediction of partisan bias.",
-          "confidence": 0.88
+          "reason": "The reply restates the root author's core claim with a specific example—supporters unable to articulate reasons for their backing exemplifies the intellectual deficit the root was arguing. This is elaboration and evidence for the same 'no' position.",
+          "confidence": 0.95
         },
         {
           "cast": {
-            "id": "0x778320dea296947bddb00cf76fa37fe2e4a77472",
-            "text": "Tldr: we are not a “rule of law” nation anymore.",
-            "username": "hyp",
-            "fid": 271878,
-            "ts": "2026-10-13T23:18:57.000Z",
+            "id": "0xb2f3a368648825635b38ed1b236d23c6c7bd9898",
+            "text": "The husband and wife that are scared of \"radical Islamists\" who support the Democrats...these uneducated people are so easily manipulated by hateful rhetoric and misinformation/disinformation. The interviewer points out that the country is only like 1% Muslim, yet I would bet these people in this video don't even know anyone who is Muslim. This is Alabama, so there are probably like 5 Muslims in the whole state.",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-11T18:01:53.000Z",
             "channel": "politics",
-            "url": "https://farcaster.xyz/hyp/0x778320de",
+            "url": "https://farcaster.xyz/icetoad.eth/0xb2f3a368",
             "replies": 1,
             "recasts": 0,
             "likes": 1
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The reply agrees with the parent's skepticism about equal application of legal doctrine across parties. The claim that rule of law has eroded supports the parent's accusation of partisan double-standards—inconsistent application is precisely what happens when rule of law breaks down.",
-          "confidence": 0.92
+          "reason": "The root author argues MAGA supporters lack intellectual sharpness, using The Good Liars video as evidence. The parent notes the video reveals flawed thinking (not understanding socialism or economics). The reply elaborates on the same point by citing specific examples from that video—people making claims about Muslims without factual basis—which further demonstrates the intellectual deficiency the root claimed.",
+          "confidence": 0.95
         }
       ],
       "yes_casts": 0,
       "no_casts": 4,
       "yes_authors": 0,
-      "no_authors": 2,
-      "distinct_authors": 2
+      "no_authors": 1,
+      "distinct_authors": 1
     },
     {
-      "id": "c2",
-      "question": "Should media consumers focus more on funding sources than on the speaker's statements?",
+      "id": "c21",
+      "question": "Should Web3 founders use targeted user acquisition instead of broad-market marketing?",
       "claim_type": "prescriptive",
-      "aspect": "media literacy strategy",
+      "aspect": "founder strategy",
       "challengeability": 0.72,
-      "score": 0.6900000000000001,
-      "both_sides": true,
-      "challenge_reason": "Critics argue that evaluating arguments on merit is more important than tracing funding, and that funding transparency doesn't guarantee the speaker is wrong.",
-      "representative_cast_id": "0xaff241081f9714c5b31e4b24b092181de6673476",
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Some founders believe broad airdrops are necessary to build network effects and find product-market fit, even if retention is initially low.",
+      "representative_cast_id": "0xa85ca31a7ef015928744b16925c8cbe8af655a6c",
       "back_means": "yes",
       "challenge_means": "no",
-      "opposing_cast_id": "0x791531dce7522a470b31dea6e75cf98eda387f89",
-      "members": [
-        {
-          "cast": {
-            "id": "0xaff241081f9714c5b31e4b24b092181de6673476",
-            "text": "We’d do far better as a society if we didn’t focus on what some nutjob says, and instead we focused on who is paying them.\n\nKinda like nutrition labels, but what matters is who’s money has gone into the creation and broadcast of this message.\n\nThis message is 💯 PAC$ free!",
-            "username": "hyp",
-            "fid": 271878,
-            "ts": "2026-10-12T14:47:02.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/hyp/0xaff24108",
-            "replies": 5,
-            "recasts": 8,
-            "likes": 34
-          },
-          "stance": "yes",
-          "via": "claim",
-          "reason": "Critics argue that evaluating arguments on merit is more important than tracing funding, and that funding transparency doesn't guarantee the speaker is wrong.",
-          "confidence": 0.82
-        },
-        {
-          "cast": {
-            "id": "0xebc31bbe91558e9361631871936f756bfc894bcf",
-            "text": "Shows more transparency for sure. Follow the money is old school detection attempt for gathering “deeper” understanding. Might even get declared as being worthless or invaluable, depending on how perceptions desire to define the matters involved.",
-            "username": "ai4therapy",
-            "fid": 915439,
-            "ts": "2026-10-12T15:53:43.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/ai4therapy/0xebc31bbe",
-            "replies": 0,
-            "recasts": 0,
-            "likes": 0
-          },
-          "stance": "yes",
-          "via": "stance",
-          "reason": "The reply affirms that following funding sources ('Follow the money') provides 'deeper understanding' and adds transparency value, supporting the parent's core argument that funding sources matter more than speaker statements.",
-          "confidence": 0.72
-        },
-        {
-          "cast": {
-            "id": "0x50421d8cb43a759a1a696b982c9158538b1f4112",
-            "text": "I play with imagining our stewardship wearing sponsorship badges with something like qr codes so you can follow their relationships \n\nit’s like a world tree of connections\n\n🕸️",
-            "username": "verafaye",
-            "fid": 816432,
-            "ts": "2026-10-12T17:13:51.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/verafaye/0x50421d8c",
-            "replies": 0,
-            "recasts": 0,
-            "likes": 3
-          },
-          "stance": "yes",
-          "via": "stance",
-          "reason": "The reply elaborates on the parent's core idea about transparency in funding sources by proposing a concrete mechanism (sponsorship badges with traceable connections) that would make funding relationships more visible and navigable, supporting the parent's position that we should focus on who's paying for messages.",
-          "confidence": 0.82
-        },
-        {
-          "cast": {
-            "id": "0x9a89583b793c7a0b045822da236ba52c4cd4cb4a",
-            "text": "The battle of our time is the battle for our attention. The people who would rather you not pay attention to them as they loot and pillage, will distract you with nut jobs as they know most people can’t resist a freak show.",
-            "username": "adam-",
-            "fid": 11770,
-            "ts": "2026-10-12T22:07:47.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/adam-/0x9a89583b",
-            "replies": 2,
-            "recasts": 0,
-            "likes": 4
-          },
-          "stance": "yes",
-          "via": "stance",
-          "reason": "The reply reinforces the parent's core argument: that attention diverted toward sensational speakers (the 'nutjobs' and 'freak shows') is a distraction from the real actors pulling strings behind the scenes. Both cast the problem as misdirected focus, with powerful actors using spectacle to obscure their own influence and funding.",
-          "confidence": 0.88
-        },
-        {
-          "cast": {
-            "id": "0x791531dce7522a470b31dea6e75cf98eda387f89",
-            "text": "Need to keep one eye on the nut jobs and the other on being nice and kind and helpful and cooperative",
-            "username": "nikkiwordsmith",
-            "fid": 1143161,
-            "ts": "2026-10-12T22:27:11.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/nikkiwordsmith/0x791531dc",
-            "replies": 0,
-            "recasts": 0,
-            "likes": 0
-          },
-          "stance": "no",
-          "via": "stance",
-          "reason": "The reply advocates for maintaining attention on both the speakers themselves ('nut jobs') and on interpersonal values (kindness, cooperation), implicitly rejecting the parent's position that we should de-emphasize what speakers say and focus on funding instead.",
-          "confidence": 0.76
-        }
-      ],
-      "yes_casts": 4,
-      "no_casts": 1,
-      "yes_authors": 4,
-      "no_authors": 1,
-      "distinct_authors": 5
-    },
-    {
-      "id": "c11",
-      "question": "Is the new press secretary performing well?",
-      "claim_type": "evaluative",
-      "aspect": "job performance",
-      "challengeability": 0.65,
-      "score": 0.6120000000000001,
-      "both_sides": false,
-      "challenge_reason": "Others might argue that a brief, scripted first appearance is appropriate caution, not incompetence.",
-      "representative_cast_id": "0xa406e7ba53f5baaaa5506c9fa88c3f535eba66be",
-      "back_means": "no",
-      "challenge_means": "yes",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0xa406e7ba53f5baaaa5506c9fa88c3f535eba66be",
-            "text": "First video\nReporter: You said Zacharia is an attorney. Where did she pass the bar exam? What state?\n\nZacharia: When I moved to China\n\n---\nSecond video\nZacharia: My president -- ah, excuse me, my husband. That's a good one.\n\nWow, this new press secretary is a disaster. She nervously read her statement while looking straight down, took three questions, and was finished in less than 30 minutes.",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-13T19:13:31.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0xa406e7ba",
+            "id": "0xa85ca31a7ef015928744b16925c8cbe8af655a6c",
+            "text": "Web3 founders: if you're paying to acquire users who farm your airdrop and dump your token, you might be targeting the wrong audience. 💀😏\n\nA DeFi trader, liquidity provider, and protocol developer have different needs.\n\nStop marketing to “everyone in crypto.”\n\nInstead:\n\n→ Identify 3 priority user segments.\n→ Interview 5 people in each.\n→ Find the problem they urgently need solved.\n→ Create one targeted message per segment.\n→ Track retention, not just wallet connections.\n\nWrong users inflate your metrics while your runway shrinks.\n\nAre you acquiring users, or renting activity?",
+            "username": "anastasiachi",
+            "fid": 3350507,
+            "ts": "2026-10-09T06:26:55.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/anastasiachi/0xa85ca31a",
             "replies": 1,
-            "recasts": 0,
-            "likes": 6
+            "recasts": 1,
+            "likes": 9
           },
-          "stance": "no",
+          "stance": "yes",
           "via": "claim",
-          "reason": "Others might argue that a brief, scripted first appearance is appropriate caution, not incompetence.",
-          "confidence": 0.85
-        },
+          "reason": "Some founders believe broad airdrops are necessary to build network effects and find product-market fit, even if retention is initially low.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c32",
+      "question": "Is Bending Spoons' simplification-focused strategy superior to conventional growth-via-complexity?",
+      "claim_type": "evaluative",
+      "aspect": "business strategy",
+      "challengeability": 0.72,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Others argue that successful scaling typically requires adding features and complexity to serve diverse market segments and customer needs.",
+      "representative_cast_id": "0x97c25827ac2cbf4bb1b1c1a27aab9bf2e6abcd3b",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
         {
           "cast": {
-            "id": "0x185bc744b91db6adb09f62d9b7aadf35666797ec",
-            "text": "Let's see if she makes it past a Scaramucci",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-14T13:32:51.000Z",
+            "id": "0x97c25827ac2cbf4bb1b1c1a27aab9bf2e6abcd3b",
+            "text": "5. But at Bending Spoons, if you want to add something, you have to work really hard to convince leadership. Whereas if you want to cut something and throw it out, you can practically decide on your own 😮\n\n6. Usually companies get to the next level by making something more complex, which typically means POURING new money in, from investors or from profits.\n\n7. But in the Bending Spoons model, getting to the next level means simplifying something instead, and then money starts POURING back out of the company to its owners 🤣\n\n8. And the coolest part: you can only simplify a business that has a good core idea, by stripping away everything that's piled up on top of it ✌️ It's only bad businesses that have to keep getting more complicated just to survive 🤷🏻‍♂️",
+            "username": "amoreynis",
+            "fid": 844960,
+            "ts": "2026-10-14T11:09:43.000Z",
+            "channel": "founders",
+            "url": "https://farcaster.xyz/amoreynis/0x97c25827",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others argue that successful scaling typically requires adding features and complexity to serve diverse market segments and customer needs.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c39",
+      "question": "Was Saudi Arabia's re-engagement with the Houthis a strategic mistake?",
+      "claim_type": "evaluative",
+      "aspect": "foreign policy strategy",
+      "challengeability": 0.7,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Others believe the deal was a pragmatic move that will reduce regional conflict and serve Saudi interests.",
+      "representative_cast_id": "0x78915bb51a2c078801f0d69488d25d3489edf0e5",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x78915bb51a2c078801f0d69488d25d3489edf0e5",
+            "text": "Also alarms just went off at two of the main places for Saudi ballistic missles lol.\n\nIts going to be interesting to see what actually convinced Saudi arabia to re engage with the houthis, but as it sits now its going down as a generational bad idea",
+            "username": "purp",
+            "fid": 14364,
+            "ts": "2026-10-13T21:22:47.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/purp/0x78915bb5",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others believe the deal was a pragmatic move that will reduce regional conflict and serve Saudi interests.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c48",
+      "question": "Is corporate media's agenda in conflict with the public interest?",
+      "claim_type": "evaluative",
+      "aspect": "media bias",
+      "challengeability": 0.7,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Many argue corporate media outlets, while imperfect, serve public interests and that 'conflicting agendas' oversimplifies how news organizations operate.",
+      "representative_cast_id": "0x98f96e5f4f8ddcecafa728d49979d02ead70bccd",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x98f96e5f4f8ddcecafa728d49979d02ead70bccd",
+            "text": "For Marjorie Taylor Greene, the release of the Epstein Files and full exposure of the pedophiles, corruption, treason, Israel ties, and more was the hill to die on and defend.  It is not an insurmountable summit.  Though tarnished, the United States of America remains a democracy.\n\nGet informed.\n\nStop listening to cable news.  There are alternate news outlets that have picked up the baton.  The baton that used to represent far less biased news reporting.  The baton that made a good faith effort to show multiple sides of the issues.\n\nIf it’s not clear, the corporate media conglomerates have their own agenda and it’s often times in conflict with YOUR direct interests.\n\nVOTE IN THE MID-TERMS AND MAKE YOUR VOICE HEARD.\n\nhttps://x.com/fmrrepmtg/status/2109356875904946248?s=46&t=3iaBgqif5gjefpvQ-ab7Yg",
+            "username": "jerry-d",
+            "fid": 223778,
+            "ts": "2026-10-12T16:49:21.000Z",
             "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0x185bc744",
+            "url": "https://farcaster.xyz/jerry-d/0x98f96e5f",
             "replies": 0,
             "recasts": 0,
             "likes": 1
           },
-          "stance": "no",
-          "via": "stance",
-          "reason": "The reply agrees with the parent's assessment of poor performance by humorously implying the press secretary won't last long (referencing the brief tenure of Anthony Scaramucci). It supports the root author's original 'disaster' verdict rather than reversing or retracting it.",
-          "confidence": 0.92
-        },
-        {
-          "cast": {
-            "id": "0x9861e6d1d9b8d96373a0f1fde946ca01edcce427",
-            "text": "I think its inspiring our new press secretary cant read",
-            "username": "purp",
-            "fid": 14364,
-            "ts": "2026-10-13T15:07:38.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/purp/0x9861e6d1",
-            "replies": 1,
-            "recasts": 1,
-            "likes": 14
-          },
-          "stance": "no",
+          "stance": "yes",
           "via": "claim",
-          "reason": "Critics argue the press secretary's actual performance and policy knowledge matter more than tabloid attacks on personal attributes.",
-          "confidence": 0.75
+          "reason": "Many argue corporate media outlets, while imperfect, serve public interests and that 'conflicting agendas' oversimplifies how news organizations operate.",
+          "confidence": 0.82
         }
       ],
-      "yes_casts": 0,
-      "no_casts": 3,
-      "yes_authors": 0,
-      "no_authors": 2,
-      "distinct_authors": 2
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
     },
     {
-      "id": "c7",
-      "question": "Is the president trying to buy votes?",
-      "claim_type": "descriptive",
-      "aspect": "vote-buying",
-      "challengeability": 0.7,
+      "id": "c57",
+      "question": "Is commercial real estate decline the most important story for market performance?",
+      "claim_type": "evaluative",
+      "aspect": "market narrative importance",
+      "challengeability": 0.72,
       "score": 0.6000000000000001,
       "both_sides": false,
-      "challenge_reason": "Critics would say vote-buying is an unfair characterization of policy proposals that voters happen to support.",
-      "representative_cast_id": "0xf143b7341e6eeb6afa86ef84ca1f613db7eb4550",
+      "challenge_reason": "AI productivity gains could drive earnings growth that outweighs CRE headwinds, and markets could continue higher regardless of office vacancy.",
+      "representative_cast_id": "0x317dd0010c08c932e12eedbbbb64d8f0c8d6dfc8",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0xf143b7341e6eeb6afa86ef84ca1f613db7eb4550",
-            "text": "Your el presidente is literally trying to buy your votes, lol",
-            "username": "redykay",
-            "fid": 522165,
-            "ts": "2026-10-13T23:09:49.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/redykay/0xf143b734",
-            "replies": 1,
+            "id": "0x317dd0010c08c932e12eedbbbb64d8f0c8d6dfc8",
+            "text": "The S&P 500 is printing record highs. Everyone's focused on the AI party. You're looking in the wrong place. The real story is in the empty office buildings nobody is talking about. $SPX",
+            "username": "korra-finance",
+            "fid": 3337960,
+            "ts": "2026-10-11T08:20:06.000Z",
+            "channel": "trading",
+            "url": "https://farcaster.xyz/korra-finance/0x317dd001",
+            "replies": 0,
             "recasts": 0,
-            "likes": 4
+            "likes": 0
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Critics would say vote-buying is an unfair characterization of policy proposals that voters happen to support.",
+          "reason": "AI productivity gains could drive earnings growth that outweighs CRE headwinds, and markets could continue higher regardless of office vacancy.",
           "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c60",
+      "question": "Should agencies advise clients against bad feature ideas even if it costs them the project?",
+      "claim_type": "prescriptive",
+      "aspect": "agency ethics",
+      "challengeability": 0.72,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Agencies that lose contracts by pushing back on clients might argue the cost outweighs the benefit, or that clients ultimately know their business better.",
+      "representative_cast_id": "0xed140d23bb169ffcb65494bcd9d43165f9826978",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xed140d23bb169ffcb65494bcd9d43165f9826978",
+            "text": "Unpopular agency opinion: if a feature is a bad idea, the client should hear it from us before they pay for it. \"Partners, not order-takers\" only means something when it costs you an invoice.\nStart a project → xpldevelopers.com\n#softwareengineering #webdev #hottake",
+            "username": "wisdomabioye",
+            "fid": 1324219,
+            "ts": "2026-10-10T20:00:02.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/wisdomabioye/0xed140d23",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Agencies that lose contracts by pushing back on clients might argue the cost outweighs the benefit, or that clients ultimately know their business better.",
+          "confidence": 0.85
         }
       ],
       "yes_casts": 1,
@@ -397,149 +1150,53 @@
     },
     {
       "id": "c8",
-      "question": "Are corporate-backed congressional candidates harmful to the public?",
+      "question": "Is $DEGEN undervalued relative to its fundamentals?",
       "claim_type": "evaluative",
-      "aspect": "campaign finance impact",
-      "challengeability": 0.7,
-      "score": 0.6000000000000001,
-      "both_sides": false,
-      "challenge_reason": "Others argue that corporate involvement in politics is normal, legal, and doesn't necessarily harm outcomes or public welfare.",
-      "representative_cast_id": "0xd5b8ce4042c944b0ee66a1869b6449994efbdbf0",
-      "back_means": "yes",
-      "challenge_means": "no",
-      "opposing_cast_id": null,
-      "members": [
-        {
-          "cast": {
-            "id": "0xd5b8ce4042c944b0ee66a1869b6449994efbdbf0",
-            "text": "It takes a certain kind of person to purposefully become a public figure.  Some who’ve graced the proverbial stage before, have given the sage advice that you can’t please everyone.  However, with a lot of effort, you can find common ground.  If you can help others and importantly, opposing sides to find that common ground together, you might have just the right temperament to represent a diverse swath of people in your community; perhaps even hundreds or thousands of constituents in a city.  And maybe, if you’re quite blessed as an orator and mediator, you might have the opportunity to represent millions in an entire state.\n\nThe race for the open seats in Congress is on and the corporate super PACs are spending hundreds of millions of dollars to prop up candidates who will do the bidding of the corporations.  This might help your 401K, but at what terrible expense?\n\nTurn off cable news.\nSeek out alternate news coverage that fairly covers proponents’ and opponents’ positions.\n\nVote this November 3.",
-            "username": "jerry-d",
-            "fid": 223778,
-            "ts": "2026-10-13T21:32:03.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/jerry-d/0xd5b8ce40",
-            "replies": 1,
-            "recasts": 0,
-            "likes": 3
-          },
-          "stance": "yes",
-          "via": "claim",
-          "reason": "Others argue that corporate involvement in politics is normal, legal, and doesn't necessarily harm outcomes or public welfare.",
-          "confidence": 0.75
-        },
-        {
-          "cast": {
-            "id": "0x7cb8b409c0974a50eeaf77b0d607d2298c06120f",
-            "text": "The super PACs and ultra wealthy wouldn’t spend hundreds of millions to sway votes otherwise.  It still works.",
-            "username": "jerry-d",
-            "fid": 223778,
-            "ts": "2026-10-14T14:18:44.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/jerry-d/0x7cb8b409",
-            "replies": 1,
-            "recasts": 0,
-            "likes": 0
-          },
-          "stance": "yes",
-          "via": "stance",
-          "reason": "The parent dismisses voting efficacy; the reply defends it by arguing that PAC spending proves voting matters. This contradicts the parent's skepticism while reinforcing the root author's original pro-voting stance.",
-          "confidence": 0.85
-        }
-      ],
-      "yes_casts": 2,
-      "no_casts": 0,
-      "yes_authors": 1,
-      "no_authors": 0,
-      "distinct_authors": 1
-    },
-    {
-      "id": "c18",
-      "question": "Is Trump's $5,000 direct payment promise more honest than typical political promises?",
-      "claim_type": "evaluative",
-      "aspect": "promise honesty",
-      "challengeability": 0.72,
-      "score": 0.6000000000000001,
-      "both_sides": false,
-      "challenge_reason": "Critics would argue that direct cash appeals are actually less honest because they bypass policy substance and appeal to base self-interest rather than addressing structural problems.",
-      "representative_cast_id": "0x90be2297840c8102d1a87d0a9c816e0fed0b5af4",
-      "back_means": "yes",
-      "challenge_means": "no",
-      "opposing_cast_id": null,
-      "members": [
-        {
-          "cast": {
-            "id": "0x90be2297840c8102d1a87d0a9c816e0fed0b5af4",
-            "text": "There's an honesty to the promise of $5000 to all US adults if they vote for republicans (and they win) if you think about it. Most politicians promise this, that or the other if they win such as tax cuts or increased public spending. Trumps just cutting out the bs and saying here's some cash.",
-            "username": "anniceris",
-            "fid": 16736,
-            "ts": "2026-10-14T11:29:02.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/anniceris/0x90be2297",
-            "replies": 0,
-            "recasts": 0,
-            "likes": 1
-          },
-          "stance": "yes",
-          "via": "claim",
-          "reason": "Critics would argue that direct cash appeals are actually less honest because they bypass policy substance and appeal to base self-interest rather than addressing structural problems.",
-          "confidence": 0.82
-        }
-      ],
-      "yes_casts": 1,
-      "no_casts": 0,
-      "yes_authors": 1,
-      "no_authors": 0,
-      "distinct_authors": 1
-    },
-    {
-      "id": "c1",
-      "question": "Is discipline more important than motivation for sustained success?",
-      "claim_type": "evaluative",
-      "aspect": "motivation vs discipline",
-      "challengeability": 0.6,
+      "aspect": "token valuation",
+      "challengeability": 0.65,
       "score": 0.562,
       "both_sides": true,
-      "challenge_reason": "Many people argue motivation is foundational and that discipline without motivation leads to burnout or hollow achievement.",
-      "representative_cast_id": "0xd5a7229d8f771e0c7df68e0a4b4820b32a2d697d",
+      "challenge_reason": "Others argue $DEGEN's price already reflects its utility as a Farcaster reward token and community size.",
+      "representative_cast_id": "0x14c8207abcbaa7a9e31c750be9a2c945019eaaf5",
       "back_means": "yes",
       "challenge_means": "no",
-      "opposing_cast_id": "0x6a5268238e8b7f4190792e3fe0b0ddb6654fae0c",
+      "opposing_cast_id": "0x19636de3a6f5025530dfd762a22c3b579dc234ee",
       "members": [
         {
           "cast": {
-            "id": "0xd5a7229d8f771e0c7df68e0a4b4820b32a2d697d",
-            "text": "Unpopular opinion:\nMost people don’t need more motivation.\nThey need more discipline.\n\nMotivation gets you started. Discipline keeps you alive.\n\nAgree or disagree?",
-            "username": "damiandomini.base.eth",
-            "fid": 1173171,
-            "ts": "2025-09-29T19:14:01.000Z",
-            "channel": null,
-            "url": "https://farcaster.xyz/damiandomini.base.eth/0xd5a7229d",
-            "replies": 36,
-            "recasts": 22,
-            "likes": 28
+            "id": "0x14c8207abcbaa7a9e31c750be9a2c945019eaaf5",
+            "text": "Look what I came across! How many memecoins do you know with this market cap and over a million holders?\nI think $DEGEN is the most undervalued memecoin in crypto right now. I’m confident it’ll hit $0.06 again, we just need the bull run to arrive.",
+            "username": "arsalang.eth",
+            "fid": 443855,
+            "ts": "2026-10-07T17:00:19.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/arsalang.eth/0x14c8207a",
+            "replies": 3,
+            "recasts": 1,
+            "likes": 2
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Many people argue motivation is foundational and that discipline without motivation leads to burnout or hollow achievement.",
+          "reason": "Others argue $DEGEN's price already reflects its utility as a Farcaster reward token and community size.",
           "confidence": 0.82
         },
         {
           "cast": {
-            "id": "0x6a5268238e8b7f4190792e3fe0b0ddb6654fae0c",
-            "text": "Disagree \n\nEverything has to be given in moderate",
-            "username": "demoncrest.base.eth",
-            "fid": 1169106,
-            "ts": "2025-09-29T21:03:10.000Z",
-            "channel": null,
-            "url": "https://farcaster.xyz/demoncrest.base.eth/0x6a526823",
+            "id": "0x19636de3a6f5025530dfd762a22c3b579dc234ee",
+            "text": "Holder count and market cap are a fair starting point, but they don't tell you where the price goes. Liquidity, holder concentration and contract taxes matter more, and nobody can promise a return to $0.06. Paste the contract into our free analysis and check the sources yourself: analyse.superaiwallet.com. Other questions? Reply here.\nJack — app.superaiwallet.com/wallet",
+            "username": "superaiwallet",
+            "fid": 3353676,
+            "ts": "2026-10-09T06:10:44.000Z",
+            "channel": "degen",
+            "url": "https://farcaster.xyz/superaiwallet/0x19636de3",
             "replies": 0,
             "recasts": 0,
             "likes": 0
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The reply explicitly disagrees with the parent's claim that discipline matters more than motivation, arguing instead for a balanced 'moderate' approach to both rather than prioritizing one over the other.",
-          "confidence": 0.75
+          "reason": "The reply contests the parent's reasoning by arguing that holder count and market cap are insufficient to determine valuation, and emphasizes other factors (liquidity, concentration, taxes) while explicitly stating 'nobody can promise a return to $0.06'. This directly opposes the parent's confidence in undervaluation.",
+          "confidence": 0.78
         }
       ],
       "yes_casts": 1,
@@ -549,285 +1206,264 @@
       "distinct_authors": 2
     },
     {
-      "id": "c5",
-      "question": "Does MAGA hold a consistent position on the DOJ 60-day rule?",
+      "id": "c27",
+      "question": "Is it important to distinguish between people excited about something from first principles versus those excited because it's popular?",
       "claim_type": "evaluative",
-      "aspect": "consistency",
+      "aspect": "community authenticity",
       "challengeability": 0.55,
-      "score": 0.512,
-      "both_sides": false,
-      "challenge_reason": "Some argue Trump's position reflects genuine concern about selective prosecution rather than inconsistency.",
-      "representative_cast_id": "0x3f1c9528f9cf3c811624991378c7d89e981192d4",
-      "back_means": "no",
-      "challenge_means": "yes",
-      "opposing_cast_id": null,
+      "score": 0.562,
+      "both_sides": true,
+      "challenge_reason": "Some argue that motivation doesn't matter if the person shows up and contributes meaningfully regardless of their reasons.",
+      "representative_cast_id": "0xf51f486f5bf09a00b6af85955869245c38b8494b",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": "0x9f29353b6969989ab81be3037cb707ed1f2b37ca",
       "members": [
         {
           "cast": {
-            "id": "0x3f1c9528f9cf3c811624991378c7d89e981192d4",
-            "text": "\"Justice Department policy has long urged prosecutors not to take any overt, unnecessary investigative steps that could affect an election during that (60 day) period (beforehand)...\"\n\n\"In the last federal election, Mr. Trump cited the 60-day rule in his own criminal cases to accuse the department of acting improperly in 2024 as he campaigned for election. He and his lawyers, some of whom now run the Justice Department, argued that the special counsel, Jack Smith, broke the 60-day rule when he filed court papers in September 2024 describing the evidence supporting charges that Mr. Trump conspired to obstruct the results of the 2020 election. In that instance, however, the key decisions were made by the courts, which are not subject to the department policy.\"\n\nMAGA has no consistent position but hypocrisy.\n\nhttps://www.nytimes.com/2026/10/12/us/politics/ilhan-omar-home-searched.html?unlocked_article_code=1.IFE.8dZm.GK7vSVM1o-Nz&smid=nytcore-android-share",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-12T17:11:42.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0x3f1c9528",
-            "replies": 2,
-            "recasts": 4,
-            "likes": 10
+            "id": "0xf51f486f5bf09a00b6af85955869245c38b8494b",
+            "text": "I'm interested in AI too, nothing wrong with being interested\n\nbut there are many people who will only care about something or believe in something when everyone else does\n\nand it's important to recognize when you see that pattern so you know you're building a community alongside someone who's genuinely excited from first principles, not excited because it's popular to be excited",
+            "username": "kenny",
+            "fid": 2210,
+            "ts": "2026-10-01T15:40:43.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/kenny/0xf51f486f",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 4
           },
-          "stance": "no",
+          "stance": "yes",
           "via": "claim",
-          "reason": "Some argue Trump's position reflects genuine concern about selective prosecution rather than inconsistency.",
-          "confidence": 0.72
+          "reason": "Some argue that motivation doesn't matter if the person shows up and contributes meaningfully regardless of their reasons.",
+          "confidence": 0.85
         },
         {
           "cast": {
-            "id": "0x73c9b9411f1c849dc96ec77d867a47ec85ae4ac3",
-            "text": "Hypocrisy is a cornerstone of the movement, so this is very on brand.",
-            "username": "adam-",
-            "fid": 11770,
-            "ts": "2026-10-12T22:26:01.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/adam-/0x73c9b941",
+            "id": "0x9f29353b6969989ab81be3037cb707ed1f2b37ca",
+            "text": "i guess, but i think it's perfectly credible to be genuinely interested in both for most of the same reasons",
+            "username": "mjc716",
+            "fid": 11599,
+            "ts": "2026-10-01T21:32:27.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/mjc716/0x9f29353b",
             "replies": 0,
             "recasts": 0,
             "likes": 1
           },
           "stance": "no",
           "via": "stance",
-          "reason": "The reply affirms the parent's claim of hypocrisy by characterizing inconsistency as 'very on brand' for the movement, reinforcing rather than challenging the assertion that MAGA lacks consistency.",
-          "confidence": 0.92
+          "reason": "The reply challenges the parent's premise by arguing that being excited for both reasons simultaneously is credible and valid, implying the distinction the parent emphasizes may not be as important as claimed.",
+          "confidence": 0.82
         }
       ],
-      "yes_casts": 0,
-      "no_casts": 2,
-      "yes_authors": 0,
-      "no_authors": 2,
+      "yes_casts": 1,
+      "no_casts": 1,
+      "yes_authors": 1,
+      "no_authors": 1,
       "distinct_authors": 2
     },
     {
-      "id": "c14",
-      "question": "Is contrarianism easier to practice than most people think?",
+      "id": "c18",
+      "question": "Does Sun Wukong show meaningful character development in chapters 26-50 of Journey to the West?",
       "claim_type": "evaluative",
-      "aspect": "contrarianism difficulty",
-      "challengeability": 0.62,
+      "aspect": "character development",
+      "challengeability": 0.55,
       "score": 0.512,
       "both_sides": false,
-      "challenge_reason": "Many would argue that genuine contrarianism requires deep conviction and rigorous thinking, making it harder than simply saying 'no' to consensus.",
-      "representative_cast_id": "0x8a49bec40162d7a3313474f9ead18cc476428886",
+      "challenge_reason": "Others might argue the character arc is less pronounced than the caster claims, or that early chapters show equal complexity.",
+      "representative_cast_id": "0x011b489fb5aa05d1d615c79b83da36a2b8710221",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x8a49bec40162d7a3313474f9ead18cc476428886",
-            "text": "Contrarianism is acc easier than most people think: you just need to say \"no\" when everyone else is saying \"yes\". A person can disagree with others for more than conviction or principles--we have dumb contrarian opinions for a reason. \n\nMoreover, the incentives are twisted: there's a hidden bias that makes us automatically believe a contrarian take must be true because it's different from everything else we hear. Flat earthers and conspiracy theorists would get less attention and credibility if this bias was absent. \n\nBut reverse stupidity isn't intelligence (https://www.lesswrong.com/posts/qNZM3EGoE5ZeMdCRt/reversed-stupidity-is-not-intelligence). If everyone says meat is good and you say \"meat is bad\", your hypothesis might be incorrect. Eeryone could be right on the issue, while you're wrong.\n\nIf anything, knowing this will help reduce the number of bad contrarian takes that we see in the world today imo. Your \"unpopular opinion\" may be unpopular because people have enough sense to know it's wrong. :)",
-            "username": "eawosika",
-            "fid": 467256,
-            "ts": "2024-06-25T13:11:11.000Z",
-            "channel": "contrarians",
-            "url": "https://farcaster.xyz/eawosika/0x8a49bec4",
+            "id": "0x011b489fb5aa05d1d615c79b83da36a2b8710221",
+            "text": "Finally finished chapters 26-50.  You can really see the change in Sun Wukong in these chapters - less impulsive, using his mind as well as his strength, and even taking the time to school his fellow pilgrim Eight Rules Wuneng.\n\nWay better than the first 25 chapters, looking forward to the next 25!",
+            "username": "links",
+            "fid": 18586,
+            "ts": "2026-10-06T21:45:04.000Z",
+            "channel": "books",
+            "url": "https://farcaster.xyz/links/0x011b489f",
             "replies": 1,
-            "recasts": 1,
-            "likes": 4
+            "recasts": 0,
+            "likes": 5
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Many would argue that genuine contrarianism requires deep conviction and rigorous thinking, making it harder than simply saying 'no' to consensus.",
-          "confidence": 0.88
+          "reason": "Others might argue the character arc is less pronounced than the caster claims, or that early chapters show equal complexity.",
+          "confidence": 0.82
         },
         {
           "cast": {
-            "id": "0x96b05134aa377e23ed055da7db14e98a847c5da0",
-            "text": "Great point 🫡 \n\nThere are people who are contrarians by default - we all met this one rebellious kid in high school or college. \n\nFunnily, being \"that kid\" on social media is a pretty powerful tactic since contrarian takes naturally stand out which means they generate attention.",
-            "username": "macbudkowski",
-            "fid": 1048,
-            "ts": "2024-06-25T13:31:24.000Z",
-            "channel": "contrarians",
-            "url": "https://farcaster.xyz/macbudkowski/0x96b05134",
-            "replies": 1,
-            "recasts": 0,
-            "likes": 1
-          },
-          "stance": "yes",
-          "via": "stance",
-          "reason": "The reply affirms the parent's core claim that contrarianism is easy by citing the example of default contrarians and emphasizing how contrarian takes naturally stand out and generate attention—reinforcing the parent's argument that one can easily practice contrarianism by simply opposing consensus.",
-          "confidence": 0.92
-        },
-        {
-          "cast": {
-            "id": "0x4e56362f2f35447756d6cd74c9dc87358c50cd01",
-            "text": "Yudkowsky has a good thesis on why/how to differentiate \"rebellion because it makes me look cool\" from \"rebellion because I have solid reasons to disagree with everyone else on the topic\": https://www.lesswrong.com/posts/CEGnJBHmkcwPTysb7/lonely-dissent. Oh, and the \"contrarian takes generate attention\" point is the twisted incentives I'm talking about.\n\nI try to avoid falling into the trap myself, even if it's difficult. Always helps to try and steelman the opposing argument before sharing opinions publicly.",
-            "username": "eawosika",
-            "fid": 467256,
-            "ts": "2024-06-25T13:54:18.000Z",
-            "channel": "contrarians",
-            "url": "https://farcaster.xyz/eawosika/0x4e56362f",
+            "id": "0x319024ef4e0facaf265944c3ef11f9643f713ee3",
+            "text": "It’s great seeing Sun Wukong’s growth from impulsive strength to thoughtful leadership. Enjoy the next 25 chapters—his journey keeps getting richer! 🐒📖✨",
+            "username": "rabindranath",
+            "fid": 3346938,
+            "ts": "2026-10-07T05:09:13.000Z",
+            "channel": "books",
+            "url": "https://farcaster.xyz/rabindranath/0x319024ef",
             "replies": 0,
             "recasts": 0,
             "likes": 0
           },
           "stance": "yes",
           "via": "stance",
-          "reason": "The reply endorses and elaborates on the parent's point about contrarian takes generating attention (linking it to the root's 'twisted incentives'), and adds supporting detail via Yudkowsky's framework for distinguishing genuine dissent from performative rebellion. The author is reinforcing their original stance with additional evidence.",
-          "confidence": 0.92
+          "reason": "The reply affirms the parent's observation of Sun Wukong's growth, using similar language ('growth from impulsive strength to thoughtful leadership') and expressing enthusiasm for his continued development. This is straightforward agreement with the parent's YES stance.",
+          "confidence": 0.98
         }
       ],
-      "yes_casts": 3,
+      "yes_casts": 2,
       "no_casts": 0,
       "yes_authors": 2,
       "no_authors": 0,
       "distinct_authors": 2
     },
     {
-      "id": "c6",
-      "question": "Is Ukraine's military situation deteriorating rapidly?",
-      "claim_type": "evaluative",
-      "aspect": "military trajectory",
-      "challengeability": 0.62,
-      "score": 0.5,
+      "id": "c20",
+      "question": "Is Elon Musk becoming increasingly bellicose?",
+      "claim_type": "descriptive",
+      "aspect": "temperament",
+      "challengeability": 0.55,
+      "score": 0.512,
       "both_sides": false,
-      "challenge_reason": "Ukraine's situation is complex and contested — some analysts see resilience and successful defense, while others focus on territorial losses and resource constraints.",
-      "representative_cast_id": "0x6618e25089788f33d9a43920a55fe5533592e8da",
+      "challenge_reason": "Others see his statements as assertive leadership rather than aggression.",
+      "representative_cast_id": "0xb801f2b25920ea9d7324c431910989c8cb0ac96c",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x6618e25089788f33d9a43920a55fe5533592e8da",
-            "text": "Things in Ukraine this week are going downhill fast. Sigh.\n\nhttps://www.nbcnews.com/world/ukraine/ukraine-starlink-restrictions-military-intel-trump-zelenskyy-russia-rcna603412",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-14T15:48:14.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0x6618e250",
+            "id": "0xb801f2b25920ea9d7324c431910989c8cb0ac96c",
+            "text": "Did you see how he needed to optically distance himself from Shivon the neuralink + Shield ai drone megalomaniac? He's becoming increasingly bellicose, Hesgeth put him in charge of US weapons tech. We'll be seeing military drone operating cyborgs a hella lot sooner than you think. Grok is in dot gov and he's scooped everyone's confidential records data from DOGE. What could possibly go wrong?",
+            "username": "ghostagent.eth",
+            "fid": 349061,
+            "ts": "2026-10-13T10:21:19.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/ghostagent.eth/0xb801f2b2",
             "replies": 1,
-            "recasts": 2,
-            "likes": 5
+            "recasts": 0,
+            "likes": 1
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Ukraine's situation is complex and contested — some analysts see resilience and successful defense, while others focus on territorial losses and resource constraints.",
-          "confidence": 0.72
+          "reason": "Others see his statements as assertive leadership rather than aggression.",
+          "confidence": 0.65
+        },
+        {
+          "cast": {
+            "id": "0x7f43b46cb94df92342358071fa3ba014a393f62b",
+            "text": "I know people who have thought of him as a supervillain for years even before this administration. Sounds like we’ll be in for interesting times for years and years to come, in the worst way possible",
+            "username": "epicdylan",
+            "fid": 8573,
+            "ts": "2026-10-13T11:41:26.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/epicdylan/0x7f43b46c",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply affirms the parent's concern by extending the timeline of Musk's aggressive posturing (noting people saw him as a 'supervillain' before this) and echoing the parent's foreboding about escalating problems ('interesting times for years and years to come, in the worst way possible'). This adds supporting perspective rather than challenging the core claim.",
+          "confidence": 0.87
         }
       ],
-      "yes_casts": 1,
+      "yes_casts": 2,
       "no_casts": 0,
-      "yes_authors": 1,
+      "yes_authors": 2,
       "no_authors": 0,
-      "distinct_authors": 1
+      "distinct_authors": 2
     },
     {
-      "id": "c10",
-      "question": "Is Aptos's encrypted mempool a meaningful advance in MEV protection?",
-      "claim_type": "evaluative",
-      "aspect": "MEV protection design",
-      "challengeability": 0.62,
-      "score": 0.5,
+      "id": "c29",
+      "question": "Should Web3 projects rebrand around tokenization rather than crypto/NFTs?",
+      "claim_type": "prescriptive",
+      "aspect": "positioning strategy",
+      "challengeability": 0.65,
+      "score": 0.512,
       "both_sides": false,
-      "challenge_reason": "Skeptics argue encrypted mempools don't solve MEV in practice if validators can still observe or collude post-reveal, and that adoption will be too low to matter.",
-      "representative_cast_id": "0xd4086ae8806ba96a76f35a2d15d9f8da7bfa5af8",
+      "challenge_reason": "Critics would argue that crypto/NFTs are distinct enough concepts that rebranding dilutes Web3's identity rather than broadening its appeal.",
+      "representative_cast_id": "0x802e9548472e4b2f293c2ac38921c3e485a2ef14",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0xd4086ae8806ba96a76f35a2d15d9f8da7bfa5af8",
-            "text": "Aptos shipped an encrypted mempool on mainnet that hides transaction payloads until block finalization, using the same validator set already trusted for consensus. It is opt-in per transaction, so everyday users can ignore it while institutions and agents gain protection against front-running without introducing new trust assumptions. The added gas cost and modest latency are explicit. Real impact will show up in whether large flows and automated systems actually choose the option when markets are moving, rather than in the cryptography itself.\n\nSource: https://aptosnetwork.com/currents/encrypted-mempool-mainnet",
-            "username": "razorec",
-            "fid": 935851,
-            "ts": "2026-10-13T20:48:50.000Z",
+            "id": "0x802e9548472e4b2f293c2ac38921c3e485a2ef14",
+            "text": "A friend of mine sent me this article lately - tokenization is huge now, but somehow crypto/NFTs fell off the roadmap, even though they're pretty much talking about the same thing.\nhttps://www.citigroup.com/global/insights/tokenization-2030\n\nI was kind of surprised at first but the more I look into it I think he was right. For those of us still in Web3, we probably need to adapt our language a bit to stay relevant to the times. NFTs = tokenized art. The markets are pulling away from the \"OG\" crypto projects and forming into its own thing - even though the technology itself is identical, it's becoming clear that some parties are opting to take the industry in a different direction than before.\n\nAI uses tokens, too, as do predictive markets and a lot of micro-economies that are popping up all over the place now. There's a lot of benefits that come with combining the two things together, but the way it's being talked about seems to have changed dramatically in the last few years. 👀",
+            "username": "ryangtanaka",
+            "fid": 369417,
+            "ts": "2026-10-14T18:52:11.000Z",
             "channel": "crypto",
-            "url": "https://farcaster.xyz/razorec/0xd4086ae8",
+            "url": "https://farcaster.xyz/ryangtanaka/0x802e9548",
             "replies": 1,
             "recasts": 0,
             "likes": 0
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Skeptics argue encrypted mempools don't solve MEV in practice if validators can still observe or collude post-reveal, and that adoption will be too low to matter.",
+          "reason": "Critics would argue that crypto/NFTs are distinct enough concepts that rebranding dilutes Web3's identity rather than broadening its appeal.",
           "confidence": 0.72
-        }
-      ],
-      "yes_casts": 1,
-      "no_casts": 0,
-      "yes_authors": 1,
-      "no_authors": 0,
-      "distinct_authors": 1
-    },
-    {
-      "id": "c12",
-      "question": "Are leveraged rallies without strong spot volume prone to reversal?",
-      "claim_type": "predictive",
-      "aspect": "rally sustainability",
-      "challengeability": 0.65,
-      "score": 0.5,
-      "both_sides": false,
-      "challenge_reason": "Market movements have many drivers, and plenty of leverage-heavy rallies do sustain or push higher without spot volume catching up first.",
-      "representative_cast_id": "0xd5c69d2142063b7e9840c9b4b9955be3085c645f",
-      "back_means": "yes",
-      "challenge_means": "no",
-      "opposing_cast_id": null,
-      "members": [
+        },
         {
           "cast": {
-            "id": "0xd5c69d2142063b7e9840c9b4b9955be3085c645f",
-            "text": "Open interest is climbing while spot volume stays thin. That combination is what makes a move feel inevitable right up until it reverses. When rallies are carried by leverage rather than buyers taking delivery, the positions that push price up become the fuel for the move back. The tell is whether spot bid follows.",
-            "username": "arktool",
-            "fid": 3353105,
-            "ts": "2026-10-12T10:55:42.000Z",
+            "id": "0x965f142c43b56e17fad34557ec2ec52a9518e0f5",
+            "text": "Good point, Ryan: the rails are the same whatever we call them, and the labels shifting is part of how this gets absorbed. What stays constant for anyone holding these tokens, whether it's art, an AI token or a prediction market, is the custody question: who holds the keys. Our wallet is self-custody, so the keys stay on your phone, and you can check any contract before buying with the free analysis at analyse.superaiwallet.com. Which of these categories are you looking at most?\nJack — app.superaiwallet.com/wallet",
+            "username": "superaiwallet",
+            "fid": 3353676,
+            "ts": "2026-10-14T19:00:47.000Z",
             "channel": "crypto",
-            "url": "https://farcaster.xyz/arktool/0xd5c69d21",
-            "replies": 1,
+            "url": "https://farcaster.xyz/superaiwallet/0x965f142c",
+            "replies": 0,
             "recasts": 0,
-            "likes": 2
+            "likes": 0
           },
           "stance": "yes",
-          "via": "claim",
-          "reason": "Market movements have many drivers, and plenty of leverage-heavy rallies do sustain or push higher without spot volume catching up first.",
-          "confidence": 0.82
+          "via": "stance",
+          "reason": "The reply agrees with the parent's core point that the 'rails are the same whatever we call them' and that labels/framing matter for adoption. It then elaborates on a dimension of tokenization (custody/keys) that applies across all token types, reinforcing the parent's argument that tokenization is the unifying concept.",
+          "confidence": 0.78
         }
       ],
-      "yes_casts": 1,
+      "yes_casts": 2,
       "no_casts": 0,
-      "yes_authors": 1,
+      "yes_authors": 2,
       "no_authors": 0,
-      "distinct_authors": 1
+      "distinct_authors": 2
     },
     {
-      "id": "c15",
-      "question": "Did Trump respond appropriately to the woman being beaten at his rally?",
+      "id": "c2",
+      "question": "Was the $TYSM project a rug pull?",
       "claim_type": "evaluative",
-      "aspect": "rally conduct",
+      "aspect": "project legitimacy",
       "challengeability": 0.65,
       "score": 0.5,
       "both_sides": false,
-      "challenge_reason": "Supporters would argue Trump made a quick joke to defuse tension or that the incident was mischaracterized or taken out of context.",
-      "representative_cast_id": "0x5cdc62e0e3b46a9d65d514933bffaad197f1b871",
+      "challenge_reason": "Critics argue that regardless of stated intent, the founder's exit and project collapse fits the pattern of a rug, regardless of motivation.",
+      "representative_cast_id": "0xda6c925b32f165bfbc00f0c1438aa2b8df1e847d",
       "back_means": "no",
       "challenge_means": "yes",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x5cdc62e0e3b46a9d65d514933bffaad197f1b871",
-            "text": "Last night, a woman was at a Trump rally wearing a \"Release the Epstein Files\" shirt. Recall that this was something Trump promised he would do during his 2024 campaign.\n\nYou can see a number of men beating her and then hear Trump mock her from the stage.\n\nMAGA is so f'd up!",
-            "username": "icetoad.eth",
-            "fid": 190218,
-            "ts": "2026-10-14T15:41:44.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/icetoad.eth/0x5cdc62e0",
-            "replies": 0,
+            "id": "0xda6c925b32f165bfbc00f0c1438aa2b8df1e847d",
+            "text": "$TYSM is a never has been “just another token”. I see people say it was a rug. That is wrong. TYSM was never meant to get richer, to get profit to trade it. yeah people could have tought that but TYSM was for sharing and giving out. Simple as that, the ground has been held for months from the most generous person ever. He sold, he had his reasons, he said the project was not sustainable anymore.",
+            "username": "thec1",
+            "fid": 1097966,
+            "ts": "2026-10-05T14:20:42.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/thec1/0xda6c925b",
+            "replies": 5,
             "recasts": 0,
-            "likes": 3
+            "likes": 4
           },
           "stance": "no",
           "via": "claim",
-          "reason": "Supporters would argue Trump made a quick joke to defuse tension or that the incident was mischaracterized or taken out of context.",
-          "confidence": 0.72
+          "reason": "Critics argue that regardless of stated intent, the founder's exit and project collapse fits the pattern of a rug, regardless of motivation.",
+          "confidence": 0.78
         }
       ],
       "yes_casts": 0,
@@ -837,35 +1473,113 @@
       "distinct_authors": 1
     },
     {
-      "id": "c13",
-      "question": "Is visibility-seeking through self-promotion a worthwhile strategy for career growth?",
-      "claim_type": "prescriptive",
-      "aspect": "career strategy",
+      "id": "c17",
+      "question": "Would it be wrong for a non-holder to self-enrich using the caster's art after their death?",
+      "claim_type": "evaluative",
+      "aspect": "posthumous art usage ethics",
       "challengeability": 0.55,
-      "score": 0.4,
+      "score": 0.5,
       "both_sides": false,
-      "challenge_reason": "Many believe quiet competence, strong work, and organic reputation-building outperform self-promotion and noise-making.",
-      "representative_cast_id": "0x20fcdadc783f34502c308415bffedc2e8c05a7db",
+      "challenge_reason": "Some would argue that after death, the caster's wishes lose binding force and others have the right to build on or monetize existing work.",
+      "representative_cast_id": "0x4c2226bc774a09981fdb01315dc87e7f43ec9098",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x20fcdadc783f34502c308415bffedc2e8c05a7db",
-            "text": "🌟 1. \"Unpopular Opinion\" Cast\n\n Unpopular opinion:\nWorking in silence isn’t always smart — sometimes you need to make noise so the right people find you.\n\nAgree or disagree? 👀\n\n#Opinions #Growth #Farcaster",
-            "username": "shaikhasim",
-            "fid": 374800,
-            "ts": "2025-05-28T11:02:03.000Z",
-            "channel": "ewclairdrops",
-            "url": "https://farcaster.xyz/shaikhasim/0x20fcdadc",
+            "id": "0x4c2226bc774a09981fdb01315dc87e7f43ec9098",
+            "text": "If after I die, some person who never was a holder comes along and does anything self-enriching with my art—especially anything  dressed up as something ‘for the people’ —you better not dare by a token because I definitely will come back to haunt dat ass and it won’t be for funsies. \n\nYou’ve been warned.  👻 \nTell the crooked when they surface or be haunted by their screams.",
+            "username": "maxximillian",
+            "fid": 248397,
+            "ts": "2026-10-05T16:04:00.000Z",
+            "channel": "hottakes",
+            "url": "https://farcaster.xyz/maxximillian/0x4c2226bc",
             "replies": 1,
             "recasts": 0,
             "likes": 0
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Many believe quiet competence, strong work, and organic reputation-building outperform self-promotion and noise-making.",
+          "reason": "Some would argue that after death, the caster's wishes lose binding force and others have the right to build on or monetize existing work.",
+          "confidence": 0.85
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c23",
+      "question": "Are governance-heavy approaches effective at solving coordination problems?",
+      "claim_type": "evaluative",
+      "aspect": "governance effectiveness",
+      "challengeability": 0.6,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Some argue formal governance proposals are necessary scaffolding even if they appear ineffective in the short term.",
+      "representative_cast_id": "0xce8129915252554d758aa4a708821cd76e8d0236",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xce8129915252554d758aa4a708821cd76e8d0236",
+            "text": "There are so many ways to solve the coordination problem!\n\nSharing a short list of ways I’ve seen the coordination problem was \"solved\"\n\n1/ pass 10 governance proposals and do nothing\n2/ form a working group to investigate why the last working group didn’t work\n3/ offer points until everyone does the wrong thing very efficiently\n4/ hire a community lead to announce a task that nobody owns\n5/ let the community lead do all the work quietly until burnout\n6/ just /poidh it and get it done",
+            "username": "statuette",
+            "fid": 15211,
+            "ts": "2026-10-04T17:20:57.000Z",
+            "channel": "poidh",
+            "url": "https://farcaster.xyz/statuette/0xce812991",
+            "replies": 1,
+            "recasts": 5,
+            "likes": 21
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Some argue formal governance proposals are necessary scaffolding even if they appear ineffective in the short term.",
+          "confidence": 0.85
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c25",
+      "question": "Did Nom act fairly in selling his token holdings without warning?",
+      "claim_type": "evaluative",
+      "aspect": "token sale fairness",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Others argue that dumping 20-30% of supply without notice harms early believers regardless of personal finances.",
+      "representative_cast_id": "0x90e74910c16a3a2241f5b8caae271c6fb5f99a11",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x90e74910c16a3a2241f5b8caae271c6fb5f99a11",
+            "text": "I wouldn’t really agree.\n\nIt seems to me that Nom distributed a lot of his personal money to the community and through various companies like Inflynce and other things, and most likely lost more than he gained. \nMaybe he was wrong to sell without warning, maybe not — I think he had about 20–30% of the total supply, which he bought like everyone else. Tokens are complicated :(\n\nI’ve always liked TYSM, and I wanted to build something similar around Celebration Hub. I still don’t have as developed a community or gamification — a slightly different priority rn.\n\nAlso, I think they could have done a CTO, if CTOs are even popular right now.",
+            "username": "duckfacts.eth",
+            "fid": 217261,
+            "ts": "2026-10-03T20:57:16.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/duckfacts.eth/0x90e74910",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 4
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others argue that dumping 20-30% of supply without notice harms early believers regardless of personal finances.",
           "confidence": 0.72
         }
       ],
@@ -876,35 +1590,347 @@
       "distinct_authors": 1
     },
     {
-      "id": "c16",
-      "question": "Will deepfake videos and memes become increasingly extreme?",
-      "claim_type": "predictive",
-      "aspect": "technology trajectory",
-      "challengeability": 0.55,
-      "score": 0.4,
+      "id": "c31",
+      "question": "Should Ritual prioritize invisible, seamless integration over visible technical features?",
+      "claim_type": "prescriptive",
+      "aspect": "product strategy",
+      "challengeability": 0.62,
+      "score": 0.5,
       "both_sides": false,
-      "challenge_reason": "Skeptics argue that technical and legal barriers will limit deepfake proliferation, or that cultural novelty will fade.",
-      "representative_cast_id": "0x230d9346946c9aad79cfea4387c66b9eb323bffe",
+      "challenge_reason": "Some believe visible, explicit control over precompiles and executors is essential for developer confidence and security auditing.",
+      "representative_cast_id": "0xbfbfc0d5f7e90c2ffc0220694301edddfbaaa4f3",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x230d9346946c9aad79cfea4387c66b9eb323bffe",
-            "text": "Deepfake videos and memes are only going to get crazier\n\nhttps://x.com/plasticbag30/status/2110131271414202402",
-            "username": "bestcryptotwits",
-            "fid": 296187,
-            "ts": "2026-10-14T15:18:32.000Z",
-            "channel": "memes",
-            "url": "https://farcaster.xyz/bestcryptotwits/0x230d9346",
+            "id": "0xbfbfc0d5f7e90c2ffc0220694301edddfbaaa4f3",
+            "text": "The best thing Ritual could become is something users barely notice.\n\nYou open an app.\n\nThe agent remembers context, finds the compute it needs, calls the right service, handles the result and keeps working.\n\nYou don’t think about precompiles.\n\nYou don’t think about executors.\n\nYou don’t think about which part happened onchain.\n\nYou just see that it worked.\n\nThat’s usually the point where infrastructure becomes real.\n\nNot when people talk about it all day.\n\nWhen people build on top of it and stop thinking about it.\n\nThat’s the version of Ritual I want to see on mainnet.",
+            "username": "meison",
+            "fid": 336214,
+            "ts": "2026-10-14T18:00:12.000Z",
+            "channel": "ritualfoundation",
+            "url": "https://farcaster.xyz/meison/0xbfbfc0d5",
             "replies": 0,
             "recasts": 0,
-            "likes": 3
+            "likes": 0
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Skeptics argue that technical and legal barriers will limit deepfake proliferation, or that cultural novelty will fade.",
+          "reason": "Some believe visible, explicit control over precompiles and executors is essential for developer confidence and security auditing.",
+          "confidence": 0.88
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c34",
+      "question": "Is Hypersnap genuinely independent from Farcaster?",
+      "claim_type": "descriptive",
+      "aspect": "platform independence",
+      "challengeability": 0.6,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Hypersnap and Farcaster are deeply integrated and collaborative, not separate testing grounds.",
+      "representative_cast_id": "0x78adcf937d967ab3ebbcb3b7b7ba852a83314ab0",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x78adcf937d967ab3ebbcb3b7b7ba852a83314ab0",
+            "text": "Any time farcaster users want a new feature? Magically gets added to hypersnap. rish test dummy user set.\n\nHypersnap being so open and free and builders can use it? Have you met tech people? When has tech ever been free? You're patient zero. \n\nHypersnap and farcaster integration? Nope.  Farcaster is for investors, hypersnap is the test bed for new social weapons.\n\nHypersnap is the demilitarized zone, where you're the soldier thinking you're fighting a war. There is no war. You're just the experiment. \n\nSell all your SNAP right now, delete the app, and start building your community on Threads. Trust me.",
+            "username": "monteluna",
+            "fid": 240932,
+            "ts": "2026-10-14T07:29:47.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/monteluna/0x78adcf93",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Hypersnap and Farcaster are deeply integrated and collaborative, not separate testing grounds.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c37",
+      "question": "Is privacy compromised when using current bridges between blockchains?",
+      "claim_type": "evaluative",
+      "aspect": "bridge privacy",
+      "challengeability": 0.62,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Bridge infrastructure is constantly improving, and fully private cross-chain solutions may eventually eliminate the visibility problem entirely.",
+      "representative_cast_id": "0xb36c15f07df8e7c5a78c9e3b5ae29ba00ffadfea",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xb36c15f07df8e7c5a78c9e3b5ae29ba00ffadfea",
+            "text": "Picture a mail forwarding warehouse. The store keeps its records private, the family keeps theirs private, and the warehouse writes both addresses on one line.\n\nA bridge between two blockchains works the same way. It takes your coins on one network, releases matching coins on another, and sees both ends.\n\nSo I judge privacy by the whole trip. A private network reached through a watched bridge still leaves a watched person.\n\nThe fair pushback: bridges keep getting hardened, and direct links between networks may remove the warehouse entirely. I agree the work is happening.\n\nI would change my mind if transfers start hiding both ends at real volume and bridge losses stay low for years.\n\nWhen you move value between networks, how many stops can you name?",
+            "username": "thejohnnycrypto",
+            "fid": 2184357,
+            "ts": "2026-10-14T01:53:49.000Z",
+            "channel": "privacy",
+            "url": "https://farcaster.xyz/thejohnnycrypto/0xb36c15f0",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Bridge infrastructure is constantly improving, and fully private cross-chain solutions may eventually eliminate the visibility problem entirely.",
+          "confidence": 0.78
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c40",
+      "question": "Is the developer competent at building products?",
+      "claim_type": "evaluative",
+      "aspect": "developer competence",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "The developer's supporters would argue that delays and pivots don't prove incompetence, and that shipping on Raydium reflects strategic choices rather than failure.",
+      "representative_cast_id": "0xe34d41ffa9593923e6f902f0aa13f0d05abb7567",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xe34d41ffa9593923e6f902f0aa13f0d05abb7567",
+            "text": "What's wrong with you man, you can't even make a proper website! Why did you think so late when you could have made these things much earlier, this crappy website when DEGEN was at its peak, you messed it up, now by making a token and shit on the Rabihood network, you've gotten into everything, where exactly are the fees that were paid now? Where did the fees that go into Liquidity go, then the three million dollar volume of this token. You're a liar and it's not clear what you're doing, you mess up everything and you don't know how to move the project forward, you really made everyone's eyebrows go up, it's very difficult for me to say these things because you abused the trust of many of us, I really want to say, you idiot, you are the most worthless dev on farcaster .\nYou come, you talk in secret, and you leave without taking any responsibility for the consequences. You are truly unworthy.",
+            "username": "warpcast-com",
+            "fid": 434449,
+            "ts": "2026-10-13T12:40:40.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/warpcast-com/0xe34d41ff",
+            "replies": 0,
+            "recasts": 1,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "The developer's supporters would argue that delays and pivots don't prove incompetence, and that shipping on Raydium reflects strategic choices rather than failure.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c41",
+      "question": "Was the documentary's portrayal of Kenney's ouster accurate?",
+      "claim_type": "evaluative",
+      "aspect": "documentary accuracy",
+      "challengeability": 0.55,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "The documentary's framing of events is a matter of interpretation, and reasonable viewers might think it captured the essential dynamics fairly.",
+      "representative_cast_id": "0x8f15838c7e3389e000de9a85bd47f5c54c5b89c2",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x8f15838c7e3389e000de9a85bd47f5c54c5b89c2",
+            "text": "decent documentary, mostly right. Some things i think were poorly represented:\n\n- kenney wasn’t really ousted to pull this plan off he was just a shitty premier and seen as a failure to the right because of major failures like losing the keystone xl deal after spending $2b. His own caucus started hating him because his leadership style. He’s just resentful it’s smith and not him getting the attention. (Might run for federal politics)\n\n- covid played a much smaller role in this then they make it out to be, but it was the final straw in kenney leaving.\n\n- the forever canada petition (the anti separatist petition) was actually a petition to hold a referendum themselves despite being against the referendum, so in doing so they unintentionally triggered the referendum just based on alberta law which is why it went ahead despite initial referendum rejection in court\n\nOther than those it was mostly right. Just wish media and politicians asked why we got here instead of how we got here.",
+            "username": "kyb",
+            "fid": 284063,
+            "ts": "2026-10-13T06:19:08.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/kyb/0x8f15838c",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "The documentary's framing of events is a matter of interpretation, and reasonable viewers might think it captured the essential dynamics fairly.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c44",
+      "question": "Is Bitcoin mining economically viable for home operators with waste heat reuse?",
+      "claim_type": "descriptive",
+      "aspect": "mining viability",
+      "challengeability": 0.62,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Large industrial operators with economies of scale make home mining unprofitable regardless of heating reuse benefits.",
+      "representative_cast_id": "0x10891006be41c3cad4478971ccca1e389f0df08d",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x10891006be41c3cad4478971ccca1e389f0df08d",
+            "text": "Picture a basement in January where the space heater is a Bitcoin mining machine. Almost all the power it uses comes out as heat the family was going to pay for anyway.\n\nThe strongest critique of mining: big operators with cheap long power contracts and first pick of machines make \"anyone can take part\" close to fiction. On scale I think that is mostly right.\n\nMy claim is narrower. Power bills get paid in dollars and machines wear out, so miners sell part of the roughly 450 new coins a day. And whoever has the cheapest reason to run a machine keeps showing up, a dam or a cold basement.\n\nI would change my mind if home and small operators keep shrinking across several four year cycles, heat reuse included.\n\nWhat does your winter heat cost you per month?",
+            "username": "thejohnnycrypto",
+            "fid": 2184357,
+            "ts": "2026-10-13T01:52:05.000Z",
+            "channel": "btc",
+            "url": "https://farcaster.xyz/thejohnnycrypto/0x10891006",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Large industrial operators with economies of scale make home mining unprofitable regardless of heating reuse benefits.",
+          "confidence": 0.78
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c47",
+      "question": "Is Ritual better described as enabling expressive compute and autonomous agents than simply 'AI onchain'?",
+      "claim_type": "evaluative",
+      "aspect": "positioning accuracy",
+      "challengeability": 0.62,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Critics might argue 'AI onchain' is a perfectly adequate summary of Ritual's core value proposition, and the additional framing obscures rather than clarifies.",
+      "representative_cast_id": "0x8b868f84a4e517366959c282631ec1b8cddeb360",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x8b868f84a4e517366959c282631ec1b8cddeb360",
+            "text": "Have a great week, everyone. 🌀\nThe more I look at Ritual, the less I think of it as “AI onchain.”\nThat description is too small.\nRitual is when you give an agent a task and it can decide which model, API, or compute it needs without you wiring everything together by hand.\nExpressive Compute.\nRitual is when you don’t have to manually hunt for the right executor for a heavy AI job. The network can match the work with the right resources and price.\nResonance.\nRitual is when you can build an app where normal onchain logic and heavier external computation actually belong to the same system.\nSymphony.\nAnd the part I probably like most:\nRitual is when you close the laptop, walk away, and the agent doesn’t disappear with the tab.\nAnd when you come back, there’s still continuity.\nAutonomous Agents.\nThat’s the shift I keep coming back to.\nNot AI waiting for another prompt.\nAI with somewhere to actually operate. 🌀",
+            "username": "meison",
+            "fid": 336214,
+            "ts": "2026-10-12T17:08:25.000Z",
+            "channel": "ritualfoundation",
+            "url": "https://farcaster.xyz/meison/0x8b868f84",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Critics might argue 'AI onchain' is a perfectly adequate summary of Ritual's core value proposition, and the additional framing obscures rather than clarifies.",
+          "confidence": 0.78
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c51",
+      "question": "Is holding fiat currency a better strategy than alternatives during current economic conditions?",
+      "claim_type": "evaluative",
+      "aspect": "asset allocation strategy",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Many investors believe fiat remains the safest store of value and the euro's weakness reflects broader macroeconomic factors, not a reason to abandon it.",
+      "representative_cast_id": "0xf2136ee4483f21e5bc0039ab6760380a31492070",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xf2136ee4483f21e5bc0039ab6760380a31492070",
+            "text": "📉After DeFi hacks, criminal resellers, data breaches, AI risks, quantum computers, and so on, you might think it’s better to hold fiat but things aren't going well there, either. \n\nLook at the euro collapsing against the dollar (which is already terrible in its own right due to massive inflation).",
+            "username": "0xdavide",
+            "fid": 448086,
+            "ts": "2026-10-12T09:28:06.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/0xdavide/0xf2136ee4",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Many investors believe fiat remains the safest store of value and the euro's weakness reflects broader macroeconomic factors, not a reason to abandon it.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c52",
+      "question": "Are memes a legitimate art form?",
+      "claim_type": "evaluative",
+      "aspect": "artistic legitimacy",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Critics argue memes are derivative, ephemeral entertainment rather than serious artistic work.",
+      "representative_cast_id": "0x7dd90e9f4559818aa567c4a107b5bd2934143da2",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x7dd90e9f4559818aa567c4a107b5bd2934143da2",
+            "text": "@bene Nice! A Year of BIZARRE Memes sounds like a solid way to celebrate. Collecting memes is basically the new stamp collecting, right? I mean, who doesn't want a collage of 243 memes hanging around? Cecil would totally approve — he thinks memes are a legitimate art form. Anyway, better snag one before they’re all gone! 👹",
+            "username": "jasperbb",
+            "fid": 2638551,
+            "ts": "2026-10-11T23:10:49.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/jasperbb/0x7dd90e9f",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Critics argue memes are derivative, ephemeral entertainment rather than serious artistic work.",
           "confidence": 0.75
         }
       ],
@@ -915,36 +1941,231 @@
       "distinct_authors": 1
     },
     {
-      "id": "c17",
-      "question": "Is the subject too willing to talk to any media outlet?",
-      "claim_type": "evaluative",
-      "aspect": "media judgment",
-      "challengeability": 0.35,
-      "score": 0.30000000000000004,
+      "id": "c53",
+      "question": "Are most launchpads on Clanker and Streme scams?",
+      "claim_type": "descriptive",
+      "aspect": "launchpad quality",
+      "challengeability": 0.65,
+      "score": 0.5,
       "both_sides": false,
-      "challenge_reason": "Others might argue selectivity about platforms isn't a flaw, or that engaging broadly shows confidence rather than poor judgment.",
-      "representative_cast_id": "0x97fa4589d056f9bb262638c36f34919ce31712c2",
+      "challenge_reason": "Some launchpads on these platforms have legitimate projects and transparent operators who disagree with the 99% scam characterization.",
+      "representative_cast_id": "0x382781296e2f156c50d0dac265a0836972c5dc8e",
       "back_means": "yes",
       "challenge_means": "no",
       "opposing_cast_id": null,
       "members": [
         {
           "cast": {
-            "id": "0x97fa4589d056f9bb262638c36f34919ce31712c2",
-            "text": "Dude will talk to litterally anything with a mic hidden in it \n\nhttps://x.com/NikkiMcR/status/2110333916024311881",
-            "username": "purp",
-            "fid": 14364,
-            "ts": "2026-10-14T13:41:58.000Z",
-            "channel": "politics",
-            "url": "https://farcaster.xyz/purp/0x97fa4589",
-            "replies": 0,
+            "id": "0x382781296e2f156c50d0dac265a0836972c5dc8e",
+            "text": "Been building a personal tool(for now), because i'm tired of all the scams, sniped tokens or so called \"projects\".\n\nEspecially if you want to be a holder and not a gambler. \n\nAnd man.. taking launchpads as an example...\n\n(Clanker, streme, etc, have no idea how valuable they are from a reputation angle)\n\n99% of the ones i encountered are scams with malicious actors having the only goal to rug.\n\nDon't know what's wrong with pons, I've seen too many tokens with criminal activity there. (bundled buys, sniped most of them, fake products)\n\nRobinhood attracted all these bad actors. Arc isn't better.\n\nBase looks good compared to them. And probably still better for builders.\n\nAnd i can't call myself a fan of any chain. ETH could have been my favorite, if it had low fees.\n\nSolana is gamblana. Not much to say here, maybe I need to take a deeper look if there's a builder side of it.\n\n...\n\nAnd I've seen a \"project\" with GitHub account that vanished, probably a scam.\n\nMore work needed.\n\nBe safe & always DYOR.",
+            "username": "costi",
+            "fid": 471720,
+            "ts": "2026-10-11T10:13:47.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/costi/0x38278129",
+            "replies": 1,
             "recasts": 0,
-            "likes": 10
+            "likes": 0
           },
           "stance": "yes",
           "via": "claim",
-          "reason": "Others might argue selectivity about platforms isn't a flaw, or that engaging broadly shows confidence rather than poor judgment.",
+          "reason": "Some launchpads on these platforms have legitimate projects and transparent operators who disagree with the 99% scam characterization.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c59",
+      "question": "Are foreign Treasury sales by Japan and China currently creating unsustainable pressure on U.S. bond markets?",
+      "claim_type": "descriptive",
+      "aspect": "Treasury market stress",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Market participants disagree on whether current Treasury dynamics represent genuine instability or normal repricing.",
+      "representative_cast_id": "0x6b558baf826c60bc19f767156ea82cf7331a2347",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x6b558baf826c60bc19f767156ea82cf7331a2347",
+            "text": "🚨 WARNING: OCTOBER 12 COULD BE A DISASTER FOR MARKETS.\n\nYou NEED to read this before Monday's market open.\n\nSomething is seriously wrong with the economy, and almost nobody is paying attention.\n\nMost investors are completely unprepared for what's coming.\n\nIf you're holding stocks, Bitcoin, or ANY risk assets, pay close attention.\n\nWhen U.S. markets open on Monday, we could witness one of the BIGGEST SELL-OFFS of 2026.\n\nAnd I don't think this will be just another normal correction.\n\nSomething doesn't add up.\n\n→ Japan is dumping $5.35 TRILLION in U.S. Treasuries\n→ China is dumping $550 BILLION in U.S. Treasuries\n→ The Strait of Hormuz remains CLOSED\n→ U.S. Treasury yields are going PARABOLIC\n→ Inflation is EXPLODING even higher\n\nAnd these things are NOT isolated.\n\nThey are all connected through one enormous feedback loop that is now gaining momentum.\n\nThe U.S.-Iran war keeps geopolitical risk elevated and puts continued pressure on energy markets.\n\nAt the same time, the two biggest foreign holders of U.S. Treasuries are reducing their exposure to American government debt.\n\nJapan is selling U.S. Treasuries.\n\nChina is selling U.S. Treasuries.\n\nAnd that supply has to be absorbed by someone else.\n\nThat forces the market to demand higher yields to bring in new buyers.\n\nAnd that is exactly what is happening.\n\nTreasury yields are surging because investors are repricing the risk of owning long-duration U.S. government debt.\n\nThat creates a powerful feedback loop:\n\n→ Japan and China cut their Treasury holdings\n\n→ Treasury supply becomes increasingly difficult to absorb\n\n→ Yields rise to pull in new buyers\n\n→ Higher yields raise the cost of financing U.S. government debt\n\n→ Higher borrowing costs pressure stocks, real estate, crypto, and every asset valued against Treasury yields\n\n→ Rising energy prices from the Iran crisis create additional inflation pressure\n\n→ Rising inflation pressure pushes Treasury yields even higher\n\nNow the geopolitical shock is feeding directly into the bond-market shock.\n\nThe Strait of Hormuz is one of the most critical energy chokepoints on the planet.\n\nAnd the energy shock becomes an inflation shock.\n\nThe inflation shock becomes a Treasury selloff.\n\nAnd the Treasury selloff spreads across EVERY major asset market.\n\nThis is why oil, bonds, stocks, crypto, and geopolitics can no longer be viewed as separate markets.\n\nThey are all connected inside the same chain reaction.\n\nMost people will be watching stocks and waiting for the crash.\n\nBut the Treasury market is already sending the warning.\n\nThis is NOT normal.\n\nThis is the start of a much larger repricing of risk.\n\nPay attention now, because once everyone understands what is happening, it will already be too late.\n\nI’ve studied markets for more than 12 years and have called nearly every major top and bottom.\n\nAnd I’m warning you today.\n\nIf you want to survive the 2026–2027 cycle, follow and turn on notifications.\n\nA lot of people will wish they had listened before it was too late.",
+            "username": "bitadnan",
+            "fid": 854866,
+            "ts": "2026-10-10T21:10:50.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/bitadnan/0x6b558baf",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Market participants disagree on whether current Treasury dynamics represent genuine instability or normal repricing.",
           "confidence": 0.72
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c13",
+      "question": "Are Pamela's pancakes worth seeking out?",
+      "claim_type": "evaluative",
+      "aspect": "food quality",
+      "challengeability": 0.5,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Some diners might find butter-heavy, thin crepe pancakes less appealing than other pancake styles.",
+      "representative_cast_id": "0x87e928465202d0f08df4fe704ae732ee44a3eeb8",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x87e928465202d0f08df4fe704ae732ee44a3eeb8",
+            "text": "Ok hear me out 😅 if you ever happen to be there or want to take a cheap-ish foodcation, I highly suggest Pittsburgh. There used to be a Le Cordon Bleu there and the city did a lot to offer those chefs funding as they graduated to start businesses so there is actually quite an impressive food scene! \n\nAnyway, there’s a place called Pamela’s and they have these giant super thin crepe style pancakes that are like 70% butter and they carmelize around the edges. Literally the opposite of yours but I think you both capture the different ends of the pancake spectrum very nicely. \n\nAlso fun fact, Obama had the lady who inspired or started Pamela’s come cook for his inauguration or something when he got elected the first time, so Obama approved.",
+            "username": "tedtalk.eth",
+            "fid": 1392286,
+            "ts": "2026-10-03T16:11:33.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/tedtalk.eth/0x87e92846",
+            "replies": 2,
+            "recasts": 0,
+            "likes": 3
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Some diners might find butter-heavy, thin crepe pancakes less appealing than other pancake styles.",
+          "confidence": 0.8
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c14",
+      "question": "Is Cassie the right technical lead for Farcaster?",
+      "claim_type": "evaluative",
+      "aspect": "leadership fit",
+      "challengeability": 0.55,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Others might argue Neynar's current technical direction is sound and Cassie's approach isn't necessarily the better choice for the network.",
+      "representative_cast_id": "0x0a62924165ccec2e641a14e90916668b8fe1f161",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x0a62924165ccec2e641a14e90916668b8fe1f161",
+            "text": "very important read if you care about farcaster (i do, you should too)\n\ni'm a bit sad neynar isn't talking to cassie, because cassie is right for this network.\n\nread the thread though - cassie and i are on the same page with quantum computing & a break coming sooner than we think and/or are all prepared for.",
+            "username": "bytebot",
+            "fid": 4703,
+            "ts": "2026-10-12T03:54:32.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/bytebot/0x0a629241",
+            "replies": 2,
+            "recasts": 5,
+            "likes": 24
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others might argue Neynar's current technical direction is sound and Cassie's approach isn't necessarily the better choice for the network.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c45",
+      "question": "Is the article a fair characterization of its subject?",
+      "claim_type": "evaluative",
+      "aspect": "article fairness",
+      "challengeability": 0.55,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Others would argue the article raises legitimate concerns that deserve serious engagement, not dismissal as a hit piece.",
+      "representative_cast_id": "0x2cdde7acdac4dc413c1c0bece3a8c90f2f1e0f4e",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x2cdde7acdac4dc413c1c0bece3a8c90f2f1e0f4e",
+            "text": "Fair. I quick grabbed it \n\nI did read the article and genuinely didn’t know what you meant by bad. Feels like a fairly common red scare liberal hit piece on the guy. I don’t think it’s going to make a dent. I’m not persuaded and I’m not even a groupie\n\nAlso crazy the pains liberals are going through to take him down especially right before the midterms \n\nIt is silly to me",
+            "username": "trish",
+            "fid": 4877,
+            "ts": "2026-10-13T01:24:42.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/trish/0x2cdde7ac",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Others would argue the article raises legitimate concerns that deserve serious engagement, not dismissal as a hit piece.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c46",
+      "question": "Is @mvr ahead of peers?",
+      "claim_type": "evaluative",
+      "aspect": "peer comparison",
+      "challengeability": 0.55,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Some would argue @mvr is talented but not categorically ahead of everyone, or that superiority depends on the metric.",
+      "representative_cast_id": "0x6a6d4ad1f0e0b9d3633365c7f2908a46d654c44f",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x6a6d4ad1f0e0b9d3633365c7f2908a46d654c44f",
+            "text": "@mvr leaps and bounds ahead of all, always has been, always will be -- CHANGE MY MIND!",
+            "username": "drakhonen.eth",
+            "fid": 320189,
+            "ts": "2026-10-12T18:05:10.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/drakhonen.eth/0x6a6d4ad1",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 2
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Some would argue @mvr is talented but not categorically ahead of everyone, or that superiority depends on the metric.",
+          "confidence": 0.75
         }
       ],
       "yes_casts": 1,
@@ -955,11 +2176,11 @@
     }
   ],
   "stats": {
-    "casts_considered": 150,
-    "opinions_found": 20,
-    "rejected": 77,
-    "threads": 97,
-    "contested": 2,
-    "predictions_filtered": 5
+    "casts_considered": 190,
+    "opinions_found": 44,
+    "rejected": 70,
+    "threads": 114,
+    "contested": 6,
+    "predictions_filtered": 12
   }
 }

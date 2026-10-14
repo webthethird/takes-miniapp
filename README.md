@@ -52,8 +52,7 @@ pipeline offline and the result is imported here:
 
 ```sh
 # in takes-classifier
-pnpm feed --trending-channels 1d --channel politics --search "unpopular opinion" \
-  --unchallenged 60 --top 30
+pnpm feed --search-preset --max-age 14 --unchallenged 80 --top 40
 
 # here
 pnpm import-feed ../takes-classifier/feed_<timestamp>.json
