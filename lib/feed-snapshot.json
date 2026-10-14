@@ -1,0 +1,965 @@
+{
+  "generated_at": "2026-10-14T17:51:04.440Z",
+  "sources": [],
+  "items": [
+    {
+      "id": "c4",
+      "question": "Is Trump's Putin deal a wise foreign policy move?",
+      "claim_type": "evaluative",
+      "aspect": "foreign policy wisdom",
+      "challengeability": 0.75,
+      "score": 0.7240000000000001,
+      "both_sides": false,
+      "challenge_reason": "Some argue pragmatic engagement with Russia on energy supply is necessary to combat inflation and high fuel costs.",
+      "representative_cast_id": "0x7fd214256377d65376a026062dda8d47a6d7f2cb",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x7fd214256377d65376a026062dda8d47a6d7f2cb",
+            "text": "Inflation is now up to 3.7%. Perhaps even more concerning is that core inflation is up to 2.6%. This likely means energy prices are finding their way into other products, but tariffs could also be part of the issue.\n\nMAGAs will still bring up Biden to either pass the blame or make Trump look not as bad, lol. Diesel is still the biggest issue in general, and Trump's idiotic deal with Putin isn't likely to help much.",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-14T14:07:01.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0x7fd21425",
+            "replies": 2,
+            "recasts": 2,
+            "likes": 8
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Some argue pragmatic engagement with Russia on energy supply is necessary to combat inflation and high fuel costs.",
+          "confidence": 0.85
+        },
+        {
+          "cast": {
+            "id": "0x39553061e3107a028dbb93450c41256539d7d49c",
+            "text": "it's likely to help Russia fund its illegal war effort 🤷‍♂️ \n\ntrump doesn't like helping Americans, remember how he doesn't care if California gets nuked?\n\nhe's in it to co-opt everything possible and steal as much power as he can, and daddy vlad is more important to him than we are",
+            "username": "epicdylan",
+            "fid": 8573,
+            "ts": "2026-10-14T14:50:23.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/epicdylan/0x39553061",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 2
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply doubles down on criticism of the deal, arguing it funds Russia's war effort and reflects Trump's misplaced priorities. It reinforces the parent's position that the deal is problematic ('idiotic').",
+          "confidence": 0.95
+        },
+        {
+          "cast": {
+            "id": "0x2e561ea6e180ab1ecb638adbd93957e56d04c423",
+            "text": "the orange fool can't see further ahead than the weekend, the next election, etc. no doubt he thinks he's using putin to his mid-term advantage and that he's convinced americans it's 4D chess and beyond our comprehension.\n\nsome citizens are persuaded, but no /real/ americans believe this shit.",
+            "username": "wake",
+            "fid": 2904,
+            "ts": "2026-10-14T15:38:30.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/wake/0x2e561ea6",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply agrees with the parent's criticism of Trump's deal with Putin, characterizing Trump as short-sighted and unable to see beyond immediate political gain, which reinforces the parent's argument that the deal prioritizes Trump's self-interest over American welfare.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 3,
+      "yes_authors": 0,
+      "no_authors": 3,
+      "distinct_authors": 3
+    },
+    {
+      "id": "c3",
+      "question": "Will SCOTUS apply unitary executive doctrine consistently regardless of party in power?",
+      "claim_type": "predictive",
+      "aspect": "judicial consistency",
+      "challengeability": 0.75,
+      "score": 0.7120000000000001,
+      "both_sides": false,
+      "challenge_reason": "The Supreme Court's jurisprudence on executive power may reflect genuine legal principles rather than partisan opportunism.",
+      "representative_cast_id": "0xdb6242cced130f598283ae70c7e7e89a7732c26c",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xdb6242cced130f598283ae70c7e7e89a7732c26c",
+            "text": "SCOTUS will be all for the “unitary executive powers” until a dem is in office.",
+            "username": "hyp",
+            "fid": 271878,
+            "ts": "2026-10-13T14:03:17.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/hyp/0xdb6242cc",
+            "replies": 3,
+            "recasts": 1,
+            "likes": 15
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "The Supreme Court's jurisprudence on executive power may reflect genuine legal principles rather than partisan opportunism.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x3131fd4dbb40ba3db86d15cd639bfa16c455c2a6",
+            "text": "they're going to be so mad when they get diluted and make up some reason why it's not allowed so that'll be awkward",
+            "username": "nomygod.eth",
+            "fid": 238370,
+            "ts": "2026-10-13T14:37:57.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/nomygod.eth/0x3131fd4d",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply agrees with the parent's skepticism about consistent application—it elaborates on the predicted partisan flip-flopping by describing how SCOTUS would invent justifications to restrict executive powers once a Democrat is in office, supporting the parent's claim of inconsistent, party-dependent jurisprudence.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x2e8c537a8af78cf65ffe21ffc96f8443684ddec1",
+            "text": "I wish but Dems have no balls. Hope I’m wrong.",
+            "username": "hyp",
+            "fid": 271878,
+            "ts": "2026-10-13T15:26:13.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/hyp/0x2e8c537a",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The root author expressed skepticism that SCOTUS will apply the doctrine consistently—predicting partisan flip-flopping. The parent elaborated by imagining SCOTUS inventing post-hoc justifications to restrict executive power under Democratic administrations. The reply agrees with this pessimistic framing by expressing doubt that Democrats have the political strength to challenge judicial inconsistency, reinforcing the prediction of partisan bias.",
+          "confidence": 0.88
+        },
+        {
+          "cast": {
+            "id": "0x778320dea296947bddb00cf76fa37fe2e4a77472",
+            "text": "Tldr: we are not a “rule of law” nation anymore.",
+            "username": "hyp",
+            "fid": 271878,
+            "ts": "2026-10-13T23:18:57.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/hyp/0x778320de",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply agrees with the parent's skepticism about equal application of legal doctrine across parties. The claim that rule of law has eroded supports the parent's accusation of partisan double-standards—inconsistent application is precisely what happens when rule of law breaks down.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 4,
+      "yes_authors": 0,
+      "no_authors": 2,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c2",
+      "question": "Should media consumers focus more on funding sources than on the speaker's statements?",
+      "claim_type": "prescriptive",
+      "aspect": "media literacy strategy",
+      "challengeability": 0.72,
+      "score": 0.6900000000000001,
+      "both_sides": true,
+      "challenge_reason": "Critics argue that evaluating arguments on merit is more important than tracing funding, and that funding transparency doesn't guarantee the speaker is wrong.",
+      "representative_cast_id": "0xaff241081f9714c5b31e4b24b092181de6673476",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": "0x791531dce7522a470b31dea6e75cf98eda387f89",
+      "members": [
+        {
+          "cast": {
+            "id": "0xaff241081f9714c5b31e4b24b092181de6673476",
+            "text": "We’d do far better as a society if we didn’t focus on what some nutjob says, and instead we focused on who is paying them.\n\nKinda like nutrition labels, but what matters is who’s money has gone into the creation and broadcast of this message.\n\nThis message is 💯 PAC$ free!",
+            "username": "hyp",
+            "fid": 271878,
+            "ts": "2026-10-12T14:47:02.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/hyp/0xaff24108",
+            "replies": 5,
+            "recasts": 8,
+            "likes": 34
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Critics argue that evaluating arguments on merit is more important than tracing funding, and that funding transparency doesn't guarantee the speaker is wrong.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0xebc31bbe91558e9361631871936f756bfc894bcf",
+            "text": "Shows more transparency for sure. Follow the money is old school detection attempt for gathering “deeper” understanding. Might even get declared as being worthless or invaluable, depending on how perceptions desire to define the matters involved.",
+            "username": "ai4therapy",
+            "fid": 915439,
+            "ts": "2026-10-12T15:53:43.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/ai4therapy/0xebc31bbe",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply affirms that following funding sources ('Follow the money') provides 'deeper understanding' and adds transparency value, supporting the parent's core argument that funding sources matter more than speaker statements.",
+          "confidence": 0.72
+        },
+        {
+          "cast": {
+            "id": "0x50421d8cb43a759a1a696b982c9158538b1f4112",
+            "text": "I play with imagining our stewardship wearing sponsorship badges with something like qr codes so you can follow their relationships \n\nit’s like a world tree of connections\n\n🕸️",
+            "username": "verafaye",
+            "fid": 816432,
+            "ts": "2026-10-12T17:13:51.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/verafaye/0x50421d8c",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 3
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply elaborates on the parent's core idea about transparency in funding sources by proposing a concrete mechanism (sponsorship badges with traceable connections) that would make funding relationships more visible and navigable, supporting the parent's position that we should focus on who's paying for messages.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x9a89583b793c7a0b045822da236ba52c4cd4cb4a",
+            "text": "The battle of our time is the battle for our attention. The people who would rather you not pay attention to them as they loot and pillage, will distract you with nut jobs as they know most people can’t resist a freak show.",
+            "username": "adam-",
+            "fid": 11770,
+            "ts": "2026-10-12T22:07:47.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/adam-/0x9a89583b",
+            "replies": 2,
+            "recasts": 0,
+            "likes": 4
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply reinforces the parent's core argument: that attention diverted toward sensational speakers (the 'nutjobs' and 'freak shows') is a distraction from the real actors pulling strings behind the scenes. Both cast the problem as misdirected focus, with powerful actors using spectacle to obscure their own influence and funding.",
+          "confidence": 0.88
+        },
+        {
+          "cast": {
+            "id": "0x791531dce7522a470b31dea6e75cf98eda387f89",
+            "text": "Need to keep one eye on the nut jobs and the other on being nice and kind and helpful and cooperative",
+            "username": "nikkiwordsmith",
+            "fid": 1143161,
+            "ts": "2026-10-12T22:27:11.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/nikkiwordsmith/0x791531dc",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply advocates for maintaining attention on both the speakers themselves ('nut jobs') and on interpersonal values (kindness, cooperation), implicitly rejecting the parent's position that we should de-emphasize what speakers say and focus on funding instead.",
+          "confidence": 0.76
+        }
+      ],
+      "yes_casts": 4,
+      "no_casts": 1,
+      "yes_authors": 4,
+      "no_authors": 1,
+      "distinct_authors": 5
+    },
+    {
+      "id": "c11",
+      "question": "Is the new press secretary performing well?",
+      "claim_type": "evaluative",
+      "aspect": "job performance",
+      "challengeability": 0.65,
+      "score": 0.6120000000000001,
+      "both_sides": false,
+      "challenge_reason": "Others might argue that a brief, scripted first appearance is appropriate caution, not incompetence.",
+      "representative_cast_id": "0xa406e7ba53f5baaaa5506c9fa88c3f535eba66be",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xa406e7ba53f5baaaa5506c9fa88c3f535eba66be",
+            "text": "First video\nReporter: You said Zacharia is an attorney. Where did she pass the bar exam? What state?\n\nZacharia: When I moved to China\n\n---\nSecond video\nZacharia: My president -- ah, excuse me, my husband. That's a good one.\n\nWow, this new press secretary is a disaster. She nervously read her statement while looking straight down, took three questions, and was finished in less than 30 minutes.",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-13T19:13:31.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0xa406e7ba",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 6
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Others might argue that a brief, scripted first appearance is appropriate caution, not incompetence.",
+          "confidence": 0.85
+        },
+        {
+          "cast": {
+            "id": "0x185bc744b91db6adb09f62d9b7aadf35666797ec",
+            "text": "Let's see if she makes it past a Scaramucci",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-14T13:32:51.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0x185bc744",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply agrees with the parent's assessment of poor performance by humorously implying the press secretary won't last long (referencing the brief tenure of Anthony Scaramucci). It supports the root author's original 'disaster' verdict rather than reversing or retracting it.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x9861e6d1d9b8d96373a0f1fde946ca01edcce427",
+            "text": "I think its inspiring our new press secretary cant read",
+            "username": "purp",
+            "fid": 14364,
+            "ts": "2026-10-13T15:07:38.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/purp/0x9861e6d1",
+            "replies": 1,
+            "recasts": 1,
+            "likes": 14
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Critics argue the press secretary's actual performance and policy knowledge matter more than tabloid attacks on personal attributes.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 3,
+      "yes_authors": 0,
+      "no_authors": 2,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c7",
+      "question": "Is the president trying to buy votes?",
+      "claim_type": "descriptive",
+      "aspect": "vote-buying",
+      "challengeability": 0.7,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Critics would say vote-buying is an unfair characterization of policy proposals that voters happen to support.",
+      "representative_cast_id": "0xf143b7341e6eeb6afa86ef84ca1f613db7eb4550",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xf143b7341e6eeb6afa86ef84ca1f613db7eb4550",
+            "text": "Your el presidente is literally trying to buy your votes, lol",
+            "username": "redykay",
+            "fid": 522165,
+            "ts": "2026-10-13T23:09:49.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/redykay/0xf143b734",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 4
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Critics would say vote-buying is an unfair characterization of policy proposals that voters happen to support.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c8",
+      "question": "Are corporate-backed congressional candidates harmful to the public?",
+      "claim_type": "evaluative",
+      "aspect": "campaign finance impact",
+      "challengeability": 0.7,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Others argue that corporate involvement in politics is normal, legal, and doesn't necessarily harm outcomes or public welfare.",
+      "representative_cast_id": "0xd5b8ce4042c944b0ee66a1869b6449994efbdbf0",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xd5b8ce4042c944b0ee66a1869b6449994efbdbf0",
+            "text": "It takes a certain kind of person to purposefully become a public figure.  Some who’ve graced the proverbial stage before, have given the sage advice that you can’t please everyone.  However, with a lot of effort, you can find common ground.  If you can help others and importantly, opposing sides to find that common ground together, you might have just the right temperament to represent a diverse swath of people in your community; perhaps even hundreds or thousands of constituents in a city.  And maybe, if you’re quite blessed as an orator and mediator, you might have the opportunity to represent millions in an entire state.\n\nThe race for the open seats in Congress is on and the corporate super PACs are spending hundreds of millions of dollars to prop up candidates who will do the bidding of the corporations.  This might help your 401K, but at what terrible expense?\n\nTurn off cable news.\nSeek out alternate news coverage that fairly covers proponents’ and opponents’ positions.\n\nVote this November 3.",
+            "username": "jerry-d",
+            "fid": 223778,
+            "ts": "2026-10-13T21:32:03.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/jerry-d/0xd5b8ce40",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 3
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others argue that corporate involvement in politics is normal, legal, and doesn't necessarily harm outcomes or public welfare.",
+          "confidence": 0.75
+        },
+        {
+          "cast": {
+            "id": "0x7cb8b409c0974a50eeaf77b0d607d2298c06120f",
+            "text": "The super PACs and ultra wealthy wouldn’t spend hundreds of millions to sway votes otherwise.  It still works.",
+            "username": "jerry-d",
+            "fid": 223778,
+            "ts": "2026-10-14T14:18:44.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/jerry-d/0x7cb8b409",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The parent dismisses voting efficacy; the reply defends it by arguing that PAC spending proves voting matters. This contradicts the parent's skepticism while reinforcing the root author's original pro-voting stance.",
+          "confidence": 0.85
+        }
+      ],
+      "yes_casts": 2,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c18",
+      "question": "Is Trump's $5,000 direct payment promise more honest than typical political promises?",
+      "claim_type": "evaluative",
+      "aspect": "promise honesty",
+      "challengeability": 0.72,
+      "score": 0.6000000000000001,
+      "both_sides": false,
+      "challenge_reason": "Critics would argue that direct cash appeals are actually less honest because they bypass policy substance and appeal to base self-interest rather than addressing structural problems.",
+      "representative_cast_id": "0x90be2297840c8102d1a87d0a9c816e0fed0b5af4",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x90be2297840c8102d1a87d0a9c816e0fed0b5af4",
+            "text": "There's an honesty to the promise of $5000 to all US adults if they vote for republicans (and they win) if you think about it. Most politicians promise this, that or the other if they win such as tax cuts or increased public spending. Trumps just cutting out the bs and saying here's some cash.",
+            "username": "anniceris",
+            "fid": 16736,
+            "ts": "2026-10-14T11:29:02.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/anniceris/0x90be2297",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Critics would argue that direct cash appeals are actually less honest because they bypass policy substance and appeal to base self-interest rather than addressing structural problems.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c1",
+      "question": "Is discipline more important than motivation for sustained success?",
+      "claim_type": "evaluative",
+      "aspect": "motivation vs discipline",
+      "challengeability": 0.6,
+      "score": 0.562,
+      "both_sides": true,
+      "challenge_reason": "Many people argue motivation is foundational and that discipline without motivation leads to burnout or hollow achievement.",
+      "representative_cast_id": "0xd5a7229d8f771e0c7df68e0a4b4820b32a2d697d",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": "0x6a5268238e8b7f4190792e3fe0b0ddb6654fae0c",
+      "members": [
+        {
+          "cast": {
+            "id": "0xd5a7229d8f771e0c7df68e0a4b4820b32a2d697d",
+            "text": "Unpopular opinion:\nMost people don’t need more motivation.\nThey need more discipline.\n\nMotivation gets you started. Discipline keeps you alive.\n\nAgree or disagree?",
+            "username": "damiandomini.base.eth",
+            "fid": 1173171,
+            "ts": "2025-09-29T19:14:01.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/damiandomini.base.eth/0xd5a7229d",
+            "replies": 36,
+            "recasts": 22,
+            "likes": 28
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Many people argue motivation is foundational and that discipline without motivation leads to burnout or hollow achievement.",
+          "confidence": 0.82
+        },
+        {
+          "cast": {
+            "id": "0x6a5268238e8b7f4190792e3fe0b0ddb6654fae0c",
+            "text": "Disagree \n\nEverything has to be given in moderate",
+            "username": "demoncrest.base.eth",
+            "fid": 1169106,
+            "ts": "2025-09-29T21:03:10.000Z",
+            "channel": null,
+            "url": "https://farcaster.xyz/demoncrest.base.eth/0x6a526823",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply explicitly disagrees with the parent's claim that discipline matters more than motivation, arguing instead for a balanced 'moderate' approach to both rather than prioritizing one over the other.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 1,
+      "yes_authors": 1,
+      "no_authors": 1,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c5",
+      "question": "Does MAGA hold a consistent position on the DOJ 60-day rule?",
+      "claim_type": "evaluative",
+      "aspect": "consistency",
+      "challengeability": 0.55,
+      "score": 0.512,
+      "both_sides": false,
+      "challenge_reason": "Some argue Trump's position reflects genuine concern about selective prosecution rather than inconsistency.",
+      "representative_cast_id": "0x3f1c9528f9cf3c811624991378c7d89e981192d4",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x3f1c9528f9cf3c811624991378c7d89e981192d4",
+            "text": "\"Justice Department policy has long urged prosecutors not to take any overt, unnecessary investigative steps that could affect an election during that (60 day) period (beforehand)...\"\n\n\"In the last federal election, Mr. Trump cited the 60-day rule in his own criminal cases to accuse the department of acting improperly in 2024 as he campaigned for election. He and his lawyers, some of whom now run the Justice Department, argued that the special counsel, Jack Smith, broke the 60-day rule when he filed court papers in September 2024 describing the evidence supporting charges that Mr. Trump conspired to obstruct the results of the 2020 election. In that instance, however, the key decisions were made by the courts, which are not subject to the department policy.\"\n\nMAGA has no consistent position but hypocrisy.\n\nhttps://www.nytimes.com/2026/10/12/us/politics/ilhan-omar-home-searched.html?unlocked_article_code=1.IFE.8dZm.GK7vSVM1o-Nz&smid=nytcore-android-share",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-12T17:11:42.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0x3f1c9528",
+            "replies": 2,
+            "recasts": 4,
+            "likes": 10
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Some argue Trump's position reflects genuine concern about selective prosecution rather than inconsistency.",
+          "confidence": 0.72
+        },
+        {
+          "cast": {
+            "id": "0x73c9b9411f1c849dc96ec77d867a47ec85ae4ac3",
+            "text": "Hypocrisy is a cornerstone of the movement, so this is very on brand.",
+            "username": "adam-",
+            "fid": 11770,
+            "ts": "2026-10-12T22:26:01.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/adam-/0x73c9b941",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "no",
+          "via": "stance",
+          "reason": "The reply affirms the parent's claim of hypocrisy by characterizing inconsistency as 'very on brand' for the movement, reinforcing rather than challenging the assertion that MAGA lacks consistency.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 2,
+      "yes_authors": 0,
+      "no_authors": 2,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c14",
+      "question": "Is contrarianism easier to practice than most people think?",
+      "claim_type": "evaluative",
+      "aspect": "contrarianism difficulty",
+      "challengeability": 0.62,
+      "score": 0.512,
+      "both_sides": false,
+      "challenge_reason": "Many would argue that genuine contrarianism requires deep conviction and rigorous thinking, making it harder than simply saying 'no' to consensus.",
+      "representative_cast_id": "0x8a49bec40162d7a3313474f9ead18cc476428886",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x8a49bec40162d7a3313474f9ead18cc476428886",
+            "text": "Contrarianism is acc easier than most people think: you just need to say \"no\" when everyone else is saying \"yes\". A person can disagree with others for more than conviction or principles--we have dumb contrarian opinions for a reason. \n\nMoreover, the incentives are twisted: there's a hidden bias that makes us automatically believe a contrarian take must be true because it's different from everything else we hear. Flat earthers and conspiracy theorists would get less attention and credibility if this bias was absent. \n\nBut reverse stupidity isn't intelligence (https://www.lesswrong.com/posts/qNZM3EGoE5ZeMdCRt/reversed-stupidity-is-not-intelligence). If everyone says meat is good and you say \"meat is bad\", your hypothesis might be incorrect. Eeryone could be right on the issue, while you're wrong.\n\nIf anything, knowing this will help reduce the number of bad contrarian takes that we see in the world today imo. Your \"unpopular opinion\" may be unpopular because people have enough sense to know it's wrong. :)",
+            "username": "eawosika",
+            "fid": 467256,
+            "ts": "2024-06-25T13:11:11.000Z",
+            "channel": "contrarians",
+            "url": "https://farcaster.xyz/eawosika/0x8a49bec4",
+            "replies": 1,
+            "recasts": 1,
+            "likes": 4
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Many would argue that genuine contrarianism requires deep conviction and rigorous thinking, making it harder than simply saying 'no' to consensus.",
+          "confidence": 0.88
+        },
+        {
+          "cast": {
+            "id": "0x96b05134aa377e23ed055da7db14e98a847c5da0",
+            "text": "Great point 🫡 \n\nThere are people who are contrarians by default - we all met this one rebellious kid in high school or college. \n\nFunnily, being \"that kid\" on social media is a pretty powerful tactic since contrarian takes naturally stand out which means they generate attention.",
+            "username": "macbudkowski",
+            "fid": 1048,
+            "ts": "2024-06-25T13:31:24.000Z",
+            "channel": "contrarians",
+            "url": "https://farcaster.xyz/macbudkowski/0x96b05134",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 1
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply affirms the parent's core claim that contrarianism is easy by citing the example of default contrarians and emphasizing how contrarian takes naturally stand out and generate attention—reinforcing the parent's argument that one can easily practice contrarianism by simply opposing consensus.",
+          "confidence": 0.92
+        },
+        {
+          "cast": {
+            "id": "0x4e56362f2f35447756d6cd74c9dc87358c50cd01",
+            "text": "Yudkowsky has a good thesis on why/how to differentiate \"rebellion because it makes me look cool\" from \"rebellion because I have solid reasons to disagree with everyone else on the topic\": https://www.lesswrong.com/posts/CEGnJBHmkcwPTysb7/lonely-dissent. Oh, and the \"contrarian takes generate attention\" point is the twisted incentives I'm talking about.\n\nI try to avoid falling into the trap myself, even if it's difficult. Always helps to try and steelman the opposing argument before sharing opinions publicly.",
+            "username": "eawosika",
+            "fid": 467256,
+            "ts": "2024-06-25T13:54:18.000Z",
+            "channel": "contrarians",
+            "url": "https://farcaster.xyz/eawosika/0x4e56362f",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "stance",
+          "reason": "The reply endorses and elaborates on the parent's point about contrarian takes generating attention (linking it to the root's 'twisted incentives'), and adds supporting detail via Yudkowsky's framework for distinguishing genuine dissent from performative rebellion. The author is reinforcing their original stance with additional evidence.",
+          "confidence": 0.92
+        }
+      ],
+      "yes_casts": 3,
+      "no_casts": 0,
+      "yes_authors": 2,
+      "no_authors": 0,
+      "distinct_authors": 2
+    },
+    {
+      "id": "c6",
+      "question": "Is Ukraine's military situation deteriorating rapidly?",
+      "claim_type": "evaluative",
+      "aspect": "military trajectory",
+      "challengeability": 0.62,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Ukraine's situation is complex and contested — some analysts see resilience and successful defense, while others focus on territorial losses and resource constraints.",
+      "representative_cast_id": "0x6618e25089788f33d9a43920a55fe5533592e8da",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x6618e25089788f33d9a43920a55fe5533592e8da",
+            "text": "Things in Ukraine this week are going downhill fast. Sigh.\n\nhttps://www.nbcnews.com/world/ukraine/ukraine-starlink-restrictions-military-intel-trump-zelenskyy-russia-rcna603412",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-14T15:48:14.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0x6618e250",
+            "replies": 1,
+            "recasts": 2,
+            "likes": 5
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Ukraine's situation is complex and contested — some analysts see resilience and successful defense, while others focus on territorial losses and resource constraints.",
+          "confidence": 0.72
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c10",
+      "question": "Is Aptos's encrypted mempool a meaningful advance in MEV protection?",
+      "claim_type": "evaluative",
+      "aspect": "MEV protection design",
+      "challengeability": 0.62,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Skeptics argue encrypted mempools don't solve MEV in practice if validators can still observe or collude post-reveal, and that adoption will be too low to matter.",
+      "representative_cast_id": "0xd4086ae8806ba96a76f35a2d15d9f8da7bfa5af8",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xd4086ae8806ba96a76f35a2d15d9f8da7bfa5af8",
+            "text": "Aptos shipped an encrypted mempool on mainnet that hides transaction payloads until block finalization, using the same validator set already trusted for consensus. It is opt-in per transaction, so everyday users can ignore it while institutions and agents gain protection against front-running without introducing new trust assumptions. The added gas cost and modest latency are explicit. Real impact will show up in whether large flows and automated systems actually choose the option when markets are moving, rather than in the cryptography itself.\n\nSource: https://aptosnetwork.com/currents/encrypted-mempool-mainnet",
+            "username": "razorec",
+            "fid": 935851,
+            "ts": "2026-10-13T20:48:50.000Z",
+            "channel": "crypto",
+            "url": "https://farcaster.xyz/razorec/0xd4086ae8",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Skeptics argue encrypted mempools don't solve MEV in practice if validators can still observe or collude post-reveal, and that adoption will be too low to matter.",
+          "confidence": 0.72
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c12",
+      "question": "Are leveraged rallies without strong spot volume prone to reversal?",
+      "claim_type": "predictive",
+      "aspect": "rally sustainability",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Market movements have many drivers, and plenty of leverage-heavy rallies do sustain or push higher without spot volume catching up first.",
+      "representative_cast_id": "0xd5c69d2142063b7e9840c9b4b9955be3085c645f",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0xd5c69d2142063b7e9840c9b4b9955be3085c645f",
+            "text": "Open interest is climbing while spot volume stays thin. That combination is what makes a move feel inevitable right up until it reverses. When rallies are carried by leverage rather than buyers taking delivery, the positions that push price up become the fuel for the move back. The tell is whether spot bid follows.",
+            "username": "arktool",
+            "fid": 3353105,
+            "ts": "2026-10-12T10:55:42.000Z",
+            "channel": "crypto",
+            "url": "https://farcaster.xyz/arktool/0xd5c69d21",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 2
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Market movements have many drivers, and plenty of leverage-heavy rallies do sustain or push higher without spot volume catching up first.",
+          "confidence": 0.82
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c15",
+      "question": "Did Trump respond appropriately to the woman being beaten at his rally?",
+      "claim_type": "evaluative",
+      "aspect": "rally conduct",
+      "challengeability": 0.65,
+      "score": 0.5,
+      "both_sides": false,
+      "challenge_reason": "Supporters would argue Trump made a quick joke to defuse tension or that the incident was mischaracterized or taken out of context.",
+      "representative_cast_id": "0x5cdc62e0e3b46a9d65d514933bffaad197f1b871",
+      "back_means": "no",
+      "challenge_means": "yes",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x5cdc62e0e3b46a9d65d514933bffaad197f1b871",
+            "text": "Last night, a woman was at a Trump rally wearing a \"Release the Epstein Files\" shirt. Recall that this was something Trump promised he would do during his 2024 campaign.\n\nYou can see a number of men beating her and then hear Trump mock her from the stage.\n\nMAGA is so f'd up!",
+            "username": "icetoad.eth",
+            "fid": 190218,
+            "ts": "2026-10-14T15:41:44.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/icetoad.eth/0x5cdc62e0",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 3
+          },
+          "stance": "no",
+          "via": "claim",
+          "reason": "Supporters would argue Trump made a quick joke to defuse tension or that the incident was mischaracterized or taken out of context.",
+          "confidence": 0.72
+        }
+      ],
+      "yes_casts": 0,
+      "no_casts": 1,
+      "yes_authors": 0,
+      "no_authors": 1,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c13",
+      "question": "Is visibility-seeking through self-promotion a worthwhile strategy for career growth?",
+      "claim_type": "prescriptive",
+      "aspect": "career strategy",
+      "challengeability": 0.55,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Many believe quiet competence, strong work, and organic reputation-building outperform self-promotion and noise-making.",
+      "representative_cast_id": "0x20fcdadc783f34502c308415bffedc2e8c05a7db",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x20fcdadc783f34502c308415bffedc2e8c05a7db",
+            "text": "🌟 1. \"Unpopular Opinion\" Cast\n\n Unpopular opinion:\nWorking in silence isn’t always smart — sometimes you need to make noise so the right people find you.\n\nAgree or disagree? 👀\n\n#Opinions #Growth #Farcaster",
+            "username": "shaikhasim",
+            "fid": 374800,
+            "ts": "2025-05-28T11:02:03.000Z",
+            "channel": "ewclairdrops",
+            "url": "https://farcaster.xyz/shaikhasim/0x20fcdadc",
+            "replies": 1,
+            "recasts": 0,
+            "likes": 0
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Many believe quiet competence, strong work, and organic reputation-building outperform self-promotion and noise-making.",
+          "confidence": 0.72
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c16",
+      "question": "Will deepfake videos and memes become increasingly extreme?",
+      "claim_type": "predictive",
+      "aspect": "technology trajectory",
+      "challengeability": 0.55,
+      "score": 0.4,
+      "both_sides": false,
+      "challenge_reason": "Skeptics argue that technical and legal barriers will limit deepfake proliferation, or that cultural novelty will fade.",
+      "representative_cast_id": "0x230d9346946c9aad79cfea4387c66b9eb323bffe",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x230d9346946c9aad79cfea4387c66b9eb323bffe",
+            "text": "Deepfake videos and memes are only going to get crazier\n\nhttps://x.com/plasticbag30/status/2110131271414202402",
+            "username": "bestcryptotwits",
+            "fid": 296187,
+            "ts": "2026-10-14T15:18:32.000Z",
+            "channel": "memes",
+            "url": "https://farcaster.xyz/bestcryptotwits/0x230d9346",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 3
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Skeptics argue that technical and legal barriers will limit deepfake proliferation, or that cultural novelty will fade.",
+          "confidence": 0.75
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    },
+    {
+      "id": "c17",
+      "question": "Is the subject too willing to talk to any media outlet?",
+      "claim_type": "evaluative",
+      "aspect": "media judgment",
+      "challengeability": 0.35,
+      "score": 0.30000000000000004,
+      "both_sides": false,
+      "challenge_reason": "Others might argue selectivity about platforms isn't a flaw, or that engaging broadly shows confidence rather than poor judgment.",
+      "representative_cast_id": "0x97fa4589d056f9bb262638c36f34919ce31712c2",
+      "back_means": "yes",
+      "challenge_means": "no",
+      "opposing_cast_id": null,
+      "members": [
+        {
+          "cast": {
+            "id": "0x97fa4589d056f9bb262638c36f34919ce31712c2",
+            "text": "Dude will talk to litterally anything with a mic hidden in it \n\nhttps://x.com/NikkiMcR/status/2110333916024311881",
+            "username": "purp",
+            "fid": 14364,
+            "ts": "2026-10-14T13:41:58.000Z",
+            "channel": "politics",
+            "url": "https://farcaster.xyz/purp/0x97fa4589",
+            "replies": 0,
+            "recasts": 0,
+            "likes": 10
+          },
+          "stance": "yes",
+          "via": "claim",
+          "reason": "Others might argue selectivity about platforms isn't a flaw, or that engaging broadly shows confidence rather than poor judgment.",
+          "confidence": 0.72
+        }
+      ],
+      "yes_casts": 1,
+      "no_casts": 0,
+      "yes_authors": 1,
+      "no_authors": 0,
+      "distinct_authors": 1
+    }
+  ],
+  "stats": {
+    "casts_considered": 150,
+    "opinions_found": 20,
+    "rejected": 77,
+    "threads": 97,
+    "contested": 2,
+    "predictions_filtered": 5
+  }
+}

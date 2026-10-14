@@ -1,6 +1,9 @@
 # takes-miniapp
 
-The Farcaster mini app for **Takes** — an on-chain opinion market. Type a take, it gets classified into a canonical YES/NO question, and you back your side with USDC on Base. There is no oracle: the time-weighted popular side wins at lockup.
+The Farcaster mini app for **Takes** — an on-chain opinion market. Real opinions
+from Farcaster get classified into canonical YES/NO questions; you back the
+person who said it, or challenge them, with USDC on Base. There is no oracle:
+the time-weighted popular side wins at lockup.
 
 Part of a three-repo project:
 
@@ -10,11 +13,71 @@ Part of a three-repo project:
 
 ## Status
 
-Deployed to Vercel at [takes-miniapp.vercel.app](https://takes-miniapp.vercel.app), pointed at the **Base Sepolia** factory. Works end to end inside Farcaster on mobile: classify → stake → cast.
+Deployed to Vercel at [takes-miniapp.vercel.app](https://takes-miniapp.vercel.app), pointed at the **Base Sepolia** factory.
 
-**Development is paused.** The flow works; it never found an audience. A time-weighted market needs both sides staked before the standing means anything, and the cold-start problem — getting enough people into a two-sided market from zero — is what actually killed it, not the mechanics.
+**Active again, rebuilt around a feed.** The original product opened on an empty
+composer and asked you to invent a take. That is the cold-start problem stated
+as a UI: a time-weighted market means nothing until both sides are staked, and
+nobody wants to be the first person arguing with themselves.
 
-## How it works
+`/feed` inverts it. You arrive to real Farcaster opinions other people already
+posted, each with the yes/no question Takes derived from it, and you back or
+challenge *that person*. Nothing to compose, no wallet needed to read.
+
+### What a visitor can actually do
+
+| | |
+| --- | --- |
+| Browse `/feed` and `/feed/<id>` | **Anywhere**, including a plain browser with no Farcaster account and no wallet |
+| Follow any cast back to its original | Anywhere — every card links to Farcaster |
+| Back or challenge with USDC | **Only inside Farcaster**, where the host app provides a wallet. In a browser the app says so plainly instead of showing a button that fails |
+
+Staking is live on **Base Sepolia** with testnet USDC, not mainnet. The composer
+(`/`) and `/browse` are the original product and still work inside Farcaster.
+
+## The feed
+
+The feed is a **committed snapshot**, not a live ingestion service. Classifying
+is slow and paid, the interesting content changes on the order of hours, and a
+demo URL has to load instantly for someone who has never heard of Takes. So
+[takes-classifier](https://github.com/webthethird/takes-classifier) runs the
+pipeline offline and the result is imported here:
+
+```sh
+# in takes-classifier
+pnpm feed --trending-channels 1d --channel politics --search "unpopular opinion" \
+  --unchallenged 60 --top 30
+
+# here
+pnpm import-feed ../takes-classifier/feed_<timestamp>.json
+pnpm test        # snapshot invariants + transforms
+```
+
+`import-feed` validates as it converts and **fails loudly** rather than shipping
+a broken card: every representative cast must exist among its own members, any
+highlighted rebuttal must really be on the other side, and no cast may front
+more than one card.
+
+### Card anatomy
+
+- **The person's words lead.** The derived question sits underneath in a
+  subordinate block. The question supplies normalization — it's what lets two
+  people who disagree land in the same market — but the cast supplies the
+  person, the context and the reason anyone cares.
+- **Back / Challenge are relative to the cast, never the question.** If the lead
+  cast argues `no` on a positively-framed question, "Back" is a `no` stake and
+  "Challenge" is a `yes` stake. Resolved upstream as `back_means` /
+  `challenge_means` so the UI can't disagree with the pipeline, and asserted in
+  `pnpm test`. A reader should never have to understand canonical framing to
+  disagree with somebody.
+- **Real disagreement outranks hypothesised disagreement.** When an opposing
+  cast from a different person exists it's shown inline under "Someone already
+  disagrees". Only when none exists does the card fall back to the classifier's
+  guess, labelled **AI hypothesis**. Evidence and guesswork must not look alike.
+- **Counts say what they are.** "4 casts · 3 people" — one author posting four
+  times is not four people, and none of it is stake, votes, or a poll.
+
+## How the composer works
 
 ```
 cast text ──▶ Claude (structured output) ──▶ canonical YES/NO question
@@ -72,6 +135,9 @@ settlement rules, including the impaired and escrow-failure paths.
 
 ```
 app/
+├── feed/
+│   ├── page.tsx                  THE feed — cast-first, no wallet needed
+│   └── [id]/page.tsx             one card: full thread, back/challenge
 ├── page.tsx                      compose (or reply, via ?market=&side=)
 ├── browse/page.tsx               all markets with live tallies
 ├── snap/route.ts                 Farcaster snap; serves snap JSON or HTML by Accept header
@@ -83,10 +149,15 @@ app/
 │           ├── route.ts          GET one
 │           └── positions/route.ts POST a position (commits the market on first stake)
 └── _components/
-    ├── composer.tsx              the main surface: classify, stake, cast
+    ├── feed-card.tsx             cast-first card (server component)
+    ├── stake-actions.tsx         back/challenge; wallet-gated (client)
+    ├── composer.tsx              the original surface: classify, stake, cast
     ├── onboarding-modal.tsx      first-open mechanic explainer
     └── emoji-picker.tsx
 lib/
+├── feed.ts                       snapshot accessors + UI transforms
+├── feed-types.ts                 the classifier -> app data contract
+├── feed-snapshot.json            committed feed data (via pnpm import-feed)
 ├── classify.ts                   Claude call + system prompt (canonical framing rules)
 ├── embed.ts                      OpenAI embeddings + cosine
 ├── market-index.ts               match/propose/commit, time-weighted tally
@@ -128,7 +199,10 @@ via the mini-app developer tools. `public/.well-known/farcaster.json` holds the
 manifest and the domain account association, so the signature is tied to the
 deployed domain and must be regenerated if the domain changes.
 
-`pnpm tsx scripts/clear-markets.ts` wipes the market index when testing against a
+`pnpm tsx scripts/
+├── import-feed.ts                classifier report -> committed snapshot
+├── test-feed.ts                  pnpm test
+└── clear-markets.ts` wipes the market index when testing against a
 fresh factory deployment.
 
 ### Pointing at a new factory

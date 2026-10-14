@@ -28,6 +28,12 @@ export default function RootLayout({
             </Link>
             <nav className="flex gap-1 text-sm">
               <Link
+                href="/feed"
+                className="rounded-md px-3 py-1.5 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
+              >
+                Feed
+              </Link>
+              <Link
                 href="/"
                 className="rounded-md px-3 py-1.5 text-zinc-400 hover:bg-zinc-900 hover:text-zinc-200"
               >
