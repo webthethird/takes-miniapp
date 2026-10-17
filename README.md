@@ -208,18 +208,13 @@ via the mini-app developer tools. `public/.well-known/farcaster.json` holds the
 manifest and the domain account association, so the signature is tied to the
 deployed domain and must be regenerated if the domain changes.
 
-`pnpm tsx scripts/
-├── import-feed.ts                classifier report -> committed snapshot
-├── test-feed.ts                  pnpm test
-└── clear-markets.ts` wipes the market index when testing against a
-fresh factory deployment.
 
 ### Pointing at a new factory
 
-Update `TAKES_FACTORY` (and `USDC`/`CHAIN` if the network changes) in
-`lib/contracts.ts`. Factory signatures changed across versions, so a redeploy of
-the contracts means a matching ABI update here. Clear the market index too —
-stored markets reference on-chain markets that no longer exist.
+Update `TAKES_FACTORY` (and `USDC`/`CHAIN` if the network changes) in `lib/contracts.ts`. Factory signatures changed across versions, so a redeploy of the contracts requires a matching ABI update here.
+
+Run `pnpm tsx scripts/clear-markets.ts` to wipe the off-chain market index, since stored markets reference on-chain contracts that no longer exist.
+
 
 ## Notes for anyone picking this up
 
